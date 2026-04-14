@@ -20,6 +20,9 @@
 # production
 /build
 
+# large local assets (scroll sequence frames; app uses planters.jpg)
+/public/frames/
+
 # misc
 .DS_Store
 *.pem

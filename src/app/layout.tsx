@@ -1,29 +1,35 @@
 import type { Metadata } from "next";
-import { DM_Sans, Fraunces } from "next/font/google";
+import { Inter, Newsreader, Geist } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const display = Fraunces({
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
+const display = Newsreader({
   variable: "--font-display",
-  subsets: ["latin"],
-  axes: ["SOFT", "WONK"],
-});
-
-const body = DM_Sans({
-  variable: "--font-body",
   subsets: ["latin"],
   weight: ["400", "500"],
 });
 
-const ui = DM_Sans({
+const body = Inter({
+  variable: "--font-body",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+const ui = Inter({
   variable: "--font-ui",
   subsets: ["latin"],
   weight: ["500", "600"],
 });
 
 export const metadata: Metadata = {
-  title: "Leafo — Fiber pots & modules",
+  title: {
+    default: "LEAFO — FRP planters, fiber pots & modular systems",
+    template: "%s | LEAFO",
+  },
   description:
-    "Manufacture of fiber pots, planters, and modular fiber systems. Coming soon.",
+    "Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Anand, Gujarat.",
 };
 
 export default function RootLayout({
@@ -34,9 +40,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${display.variable} ${body.variable} ${ui.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", display.variable, body.variable, ui.variable, "font-sans", geist.variable)}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col grain-bg">{children}</body>
     </html>
   );
 }

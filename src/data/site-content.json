@@ -1,0 +1,559 @@
+{
+  "navigation": [
+    { "href": "/collections", "label": "Collections" },
+    { "href": "/finishes", "label": "Finishes" },
+    { "href": "/projects", "label": "Projects" },
+    { "href": "/about", "label": "About" },
+    { "href": "/contact", "label": "Contact" }
+  ],
+  "footer": {
+    "tagline": "Fiber pots, planters, and modular fiber systems. Made in India.",
+    "location": "Anand, Gujarat, India",
+    "email": "leafoindia@gmail.com",
+    "phone": "+91 95948 97176",
+    "note": "© 2026 LEAFO®. All rights reserved.",
+    "exploreLinks": [
+      { "href": "/collections", "label": "Collections" },
+      { "href": "/finishes", "label": "Finishes" },
+      { "href": "/projects", "label": "Projects" },
+      { "href": "/about", "label": "About" }
+    ],
+    "connectLinks": [
+      { "href": "/contact", "label": "Inquire" },
+      { "href": "https://wa.me/919594897176", "label": "WhatsApp" },
+      { "href": "https://www.instagram.com/", "label": "Instagram" },
+      { "href": "https://www.linkedin.com/", "label": "LinkedIn" },
+      { "href": "https://www.facebook.com/", "label": "Facebook" }
+    ],
+    "creditLabel": "Designed and built by",
+    "creditName": "sadique.co",
+    "creditHref": "https://sadique.co"
+  },
+  "collectionsPage": {
+    "title": "Collections",
+    "intro": "Twelve series, each designed around a single idea. Filter by shape, finish, or scale. Every collection is available across our finish palette and ships nationwide.",
+    "heroImageSrc": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
+    "heroImageAlt": "Minimal interior with planters and greenery in soft daylight",
+    "emptyFilter": "No collections match those filters yet. Reset filters or browse all twelve.",
+    "filters": {
+      "shape": {
+        "label": "By shape",
+        "options": ["Round", "Tall", "Bowl", "Rectangle", "Faceted"]
+      },
+      "finish": {
+        "label": "By finish",
+        "options": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"]
+      },
+      "size": {
+        "label": "By size",
+        "options": ["Tabletop", "Small", "Medium", "Large", "Architectural"]
+      }
+    }
+  },
+  "finishesPage": {
+    "title": "Finishes",
+    "intro": "Every LEAFO planter is finished by hand. Five surface treatments, each engineered for a different light, climate, and visual register. Specified at order, applied in our Anand workshop.",
+    "heroImageSrc": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
+    "heroImageAlt": "Calm architectural interior with tactile surfaces and light",
+    "ctaLabel": "Inquire about a finish",
+    "items": [
+      {
+        "name": "Gloss",
+        "description": "High-sheen automotive paint. Holds colour under direct sun and rain, reads as enamel. Best for interiors and shaded outdoor spaces where reflection is part of the design.",
+        "imageSrc": "https://images.unsplash.com/photo-1609061801093-1b7a8a574c69?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Glossy dark surface reflecting soft light"
+      },
+      {
+        "name": "Matte",
+        "description": "A flat, non-reflective finish. Sits quietly in a room. Pairs well with raw materials: stone, wood, linen, brushed metal.",
+        "imageSrc": "https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Muted matte interior with plant and natural materials"
+      },
+      {
+        "name": "Rustic",
+        "description": "A hand-worked surface with tonal depth and visible texture. No two pieces are identical. Reads as ceramic, weighs a fraction of it.",
+        "imageSrc": "https://images.unsplash.com/photo-1589523795613-c3fce27eea23?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Textured ceramic-like vessel surface"
+      },
+      {
+        "name": "Stone",
+        "description": "A mineral finish that imitates carved stone. Suited to landscape, entry courtyards, and hospitality projects where the planter should disappear into the architecture.",
+        "imageSrc": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Rough stone architecture and courtyard"
+      },
+      {
+        "name": "Orange Peel",
+        "description": "A subtle dimpled texture, named for its surface pattern. Catches light without reflecting it. Best at human scale, where the surface can be touched.",
+        "imageSrc": "https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Soft dappled light on a tactile surface"
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "intro": "A selection of LEAFO installations across India. Residences, hotels, offices, civic spaces. Updated as new projects complete.",
+    "comingLabel": "Project gallery launching soon.",
+    "comingBody": "To request reference images for your own project, contact our team.",
+    "heroImageSrc": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
+    "heroImageAlt": "Contemporary office lobby with plants and natural light"
+  },
+  "home": {
+    "eyebrow": "FRP planters · Made in India",
+    "title": "Planters, quietly considered.",
+    "intro": "A diverse range of fiber-reinforced planters for homes, hotels, offices, and landscapes across India and beyond.",
+    "primaryCta": { "href": "/collections", "label": "Explore Collections" },
+    "secondaryCta": { "href": "/contact", "label": "Inquire" },
+    "heroImageSrc": "/hero/hero-image.jpg",
+    "heroImageAlt": "Outdoor row of planters with varied foliage against a pale tiled wall in sunlight",
+    "brandStatement": "LEAFO designs and manufactures fiber pots, planters, and modular fiber systems from Anand, Gujarat. Twelve collections. Five finishes. Sizes from desktop to architectural scale. Built to hold a plant for a decade and look good doing it.",
+    "collectionsHeading": "Collections",
+    "collectionsIntro": "Twelve series. Each shaped for a different room, terrace, or lobby.",
+    "finishesHeading": "Finishes",
+    "finishesIntro": "Five surface treatments. Specified per project.",
+    "finishesShort": [
+      {
+        "name": "Gloss",
+        "blurb": "High-sheen automotive paint. Reflects light, holds colour.",
+        "imageSrc": "https://images.unsplash.com/photo-1609061801093-1b7a8a574c69?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Reflective gloss surface"
+      },
+      {
+        "name": "Matte",
+        "blurb": "Soft, non-reflective surface. Recedes into a space.",
+        "imageSrc": "https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Calm matte interior with greenery"
+      },
+      {
+        "name": "Rustic",
+        "blurb": "Hand-worked texture with depth and tonal variation.",
+        "imageSrc": "https://images.unsplash.com/photo-1589523795613-c3fce27eea23?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Rustic textured planter surface"
+      },
+      {
+        "name": "Stone",
+        "blurb": "Mineral surface that reads as carved stone.",
+        "imageSrc": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Stone and architecture"
+      },
+      {
+        "name": "Orange Peel",
+        "blurb": "Subtle dimpled finish. Tactile under direct light.",
+        "imageSrc": "https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Dappled light on texture"
+      }
+    ],
+    "builtForHeading": "Built for spaces.",
+    "builtForTiles": [
+      {
+        "title": "Residences",
+        "caption": "Balconies, courtyards, entryways.",
+        "imageSrc": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Residential courtyard with seating and plants"
+      },
+      {
+        "title": "Hospitality",
+        "caption": "Hotels, resorts, restaurants.",
+        "imageSrc": "https://images.unsplash.com/photo-1759301495186-d3787210df5b?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Hotel lobby with warm lighting"
+      },
+      {
+        "title": "Workplaces",
+        "caption": "Offices, lobbies, breakout floors.",
+        "imageSrc": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Office interior with plants by windows"
+      },
+      {
+        "title": "Landscape",
+        "caption": "Terraces, roof gardens, civic projects.",
+        "imageSrc": "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+        "imageAlt": "Roof garden with walkways and greenery"
+      }
+    ],
+    "processTitle": "Made in Anand. Shipped across India.",
+    "processSupporting": "Fiber-reinforced plastic. Hand-laid, hand-finished, painted with weather-grade automotive coatings. Built to last outdoors.",
+    "metrics": [
+      { "label": "Collections", "value": "12" },
+      { "label": "Finishes", "value": "5" },
+      { "label": "Size variants", "value": "60+" }
+    ],
+    "inquiryHeadline": "Designing a space?",
+    "inquirySub": "Tell us what you're working on. We'll come back with options, sizes, and lead times.",
+    "inquiryCta": { "href": "/contact", "label": "Start an inquiry" }
+  },
+  "collections": [
+    {
+      "slug": "corso",
+      "name": "Corso",
+      "subtitle": "A confident cone. Three sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 19.5 × 30 cm", "B — 15.5 × 24 cm", "C — 11.5 × 18 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "Wide at the base, narrowing cleanly upward. Reads as sculptural without competing with the plant.",
+      "story": [
+        "Wide at the base, narrowing cleanly upward. Reads as sculptural without competing with the plant.",
+        "A confident cone in three sizes for tabletops, consoles, and compact floors."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Specified in any finish across our palette"],
+      "imageSrc": "https://images.unsplash.com/photo-1609062111394-0427aa22d6c1?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Sculptural cone-shaped ceramic planter on neutral background",
+      "shapes": ["Round", "Tall"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium"]
+    },
+    {
+      "slug": "corsa",
+      "name": "Corsa",
+      "subtitle": "Tall and tapered. Four sizes, gloss to matte.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 22 × 40 cm", "B — 17 × 32 cm", "C — 13 × 25 cm", "D — 10 × 18 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "Four heights of the same gentle silhouette. Pairs with palms, ficus, and large-leaf indoor plants.",
+      "story": [
+        "Four heights of the same gentle silhouette. Pairs with palms, ficus, and large-leaf indoor plants.",
+        "Tall and tapered, scaled from desktop to floor-standing focal points."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Ideal for height without a wide footprint"],
+      "imageSrc": "https://images.unsplash.com/photo-1466781783364-36c955e42a7f?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Tall green indoor plants in a bright interior",
+      "shapes": ["Tall", "Round"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
+    },
+    {
+      "slug": "felio",
+      "name": "Felio",
+      "subtitle": "Slim, vertical, architectural. Four sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 16 × 40 cm", "B — 13 × 33 cm", "C — 11 × 28 cm", "D — 8 × 21 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "A narrow column with quiet shoulders. Designed for tight spaces where height matters more than footprint.",
+      "story": [
+        "A narrow column with quiet shoulders. Designed for tight spaces where height matters more than footprint.",
+        "Slim, vertical, and quietly architectural beside doorways and glazing."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Pairs with narrow corridors and terraces"],
+      "imageSrc": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Minimal succulent in a tall narrow planter",
+      "shapes": ["Tall", "Round"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
+    },
+    {
+      "slug": "queen",
+      "name": "Queen",
+      "subtitle": "Bell-shaped, soft-shouldered. Four sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 27.5 × 32.5 cm", "B — 23.5 × 28.5 cm", "C — 20.5 × 24.5 cm", "D — 17 × 20.5 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "A rounded base that opens slightly outward. Comfortable in residential and hospitality settings.",
+      "story": [
+        "A rounded base that opens slightly outward. Comfortable in residential and hospitality settings.",
+        "Bell-shaped and soft-shouldered, with four sizes across the range."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Suited to lobbies and living rooms alike"],
+      "imageSrc": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Bell-shaped planter with sculptural succulent",
+      "shapes": ["Round", "Bowl"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Small", "Medium", "Large"]
+    },
+    {
+      "slug": "pomo",
+      "name": "Pomo",
+      "subtitle": "The full range. Nine sizes from desktop to floor.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A — 36 × 36 cm",
+        "B — 30 × 30 cm",
+        "C — 24 × 24 cm",
+        "D — 22 × 18 cm",
+        "E — 18 × 18 cm",
+        "F — 18 × 14 cm",
+        "G — 15 × 15 cm",
+        "H — 12 × 12 cm",
+        "I — 12 × 9 cm"
+      ],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "From desktop to floor-standing. Pomo is the working horse of the catalogue, configured for spaces of any scale.",
+      "story": [
+        "From desktop to floor-standing. Pomo is the working horse of the catalogue, configured for spaces of any scale.",
+        "Nine sizes cover tabletop accents through architectural-scale planting."
+      ],
+      "features": ["Indoor · Outdoor · Both", "The broadest footprint in the LEAFO range"],
+      "imageSrc": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Round planters with cacti and succulents",
+      "shapes": ["Round", "Bowl"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium", "Large", "Architectural"]
+    },
+    {
+      "slug": "potros",
+      "name": "Potros",
+      "subtitle": "Wide-mouthed bowls. Five sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 36 × 26 cm", "B — 31 × 22 cm", "C — 25 × 18 cm", "D — 19 × 14 cm", "E — 14 × 10 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "Low and broad. Designed for shallow plantings, stone arrangements, and centrepiece installations.",
+      "story": [
+        "Low and broad. Designed for shallow plantings, stone arrangements, and centrepiece installations.",
+        "Wide-mouthed bowls that sit comfortably on tables, plinths, and paving."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Layered compositions at a low sight line"],
+      "imageSrc": "https://images.unsplash.com/photo-1563419837758-e48ef1b731dd?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Wide bowl planters with lush greenery",
+      "shapes": ["Bowl", "Round"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
+    },
+    {
+      "slug": "leppo",
+      "name": "Leppo",
+      "subtitle": "Capsule form, generous body. Five sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 16 × 30 cm", "B — 14 × 22 cm", "C — 14 × 14 cm", "D — 12 × 16 cm", "E — 10 × 11 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "A rounded vertical with a soft top. Sits well alongside furniture in residential and office floors.",
+      "story": [
+        "A rounded vertical with a soft top. Sits well alongside furniture in residential and office floors.",
+        "Capsule form with a generous body in five practical sizes."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Soft silhouette beside seating groups"],
+      "imageSrc": "https://images.unsplash.com/photo-1588440691140-09155c1be58a?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Garden terrace with planters and greenery",
+      "shapes": ["Round", "Tall"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium"]
+    },
+    {
+      "slug": "marles",
+      "name": "Marles",
+      "subtitle": "Faceted, geometric.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 18 × 26 cm", "More sizes in development"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "Hard-edged surfaces in a controlled silhouette. Reads as architectural object before planter.",
+      "story": [
+        "Hard-edged surfaces in a controlled silhouette. Reads as architectural object before planter.",
+        "Faceted geometry for contemporary interiors and crisp landscape lines."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Additional sizes rolling out with the line"],
+      "imageSrc": "https://images.unsplash.com/photo-1528475563668-e15742001b92?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Geometric faceted vessel with branches",
+      "shapes": ["Faceted", "Round"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium"]
+    },
+    {
+      "slug": "sabin",
+      "name": "Sabin",
+      "subtitle": "A single, quiet silhouette.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 11 × 14.5 cm", "More sizes in development"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "One form, considered. For spaces that need a planter without a statement.",
+      "story": [
+        "One form, considered. For spaces that need a planter without a statement.",
+        "A single, quiet silhouette that slips into shelves and consoles."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Compact footprint for edited interiors"],
+      "imageSrc": "https://images.unsplash.com/photo-1680677780993-75e140b4f06f?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Minimal interior with small plant on table",
+      "shapes": ["Round"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small"]
+    },
+    {
+      "slug": "diamond",
+      "name": "Diamond",
+      "subtitle": "Textured surface, compact form.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 9 × 8 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "A dimensional pattern across the body, kept small to suit shelves, consoles, and tabletops.",
+      "story": [
+        "A dimensional pattern across the body, kept small to suit shelves, consoles, and tabletops.",
+        "Textured surface and compact form for foreground planting."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Best at intimate viewing distances"],
+      "imageSrc": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Small potted plant on shelf in soft light",
+      "shapes": ["Round", "Faceted"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop"]
+    },
+    {
+      "slug": "rectangle",
+      "name": "Rectangle",
+      "subtitle": "Six rectangular formats for hedges and dividers.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A — 24 × 12 × 12 cm",
+        "B — 36 × 12 × 12 cm",
+        "C — 24 × 16 × 12 cm",
+        "D — 36 × 16 × 12 cm",
+        "E — 35.4 × 19.7 × 19.7 cm",
+        "F — 34 × 34 × 25 cm"
+      ],
+      "finish": "Matte emphasised across linear formats; full palette on request",
+      "priceNote": "",
+      "summary": "Linear planters for terraces, balconies, and zoning open spaces. Available in matte across the range.",
+      "story": [
+        "Linear planters for terraces, balconies, and zoning open spaces. Available in matte across the range.",
+        "Six formats for hedges, dividers, and continuous runs along architecture."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Runs that align to façade and railing rhythm"],
+      "imageSrc": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Succulents in rectangular planter trough",
+      "shapes": ["Rectangle"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Small", "Medium", "Large", "Architectural"]
+    },
+    {
+      "slug": "bueno",
+      "name": "Bueno",
+      "subtitle": "Urn-shaped, hand-finished. Three sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": ["A — 10.5 × 29 cm", "B — 12 × 18 cm", "C — 10 × 14 cm"],
+      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "priceNote": "",
+      "summary": "A traditional silhouette with a contemporary surface. Suited to entryways, courtyards, and quieter corners.",
+      "story": [
+        "A traditional silhouette with a contemporary surface. Suited to entryways, courtyards, and quieter corners.",
+        "Urn-shaped, hand-finished, in three balanced sizes."
+      ],
+      "features": ["Indoor · Outdoor · Both", "Soft form language at doorways and garden paths"],
+      "imageSrc": "https://images.unsplash.com/photo-1510520745063-ceaa7314a820?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
+      "imageAlt": "Classic urn-shaped vessel with plant",
+      "shapes": ["Round", "Tall"],
+      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "scaleTags": ["Tabletop", "Small", "Medium"]
+    }
+  ],
+  "about": {
+    "eyebrow": "About",
+    "title": "Made in India, designed for the way people actually live.",
+    "intro": "",
+    "storyBlocks": [
+      {
+        "title": "Origin",
+        "paragraphs": [
+          "LEAFO is a planter manufacturer based in Anand, Gujarat. We make fiber pots, full-size planters, and modular fiber systems for homes, commercial spaces, and landscape projects.",
+          "The company started with a simple observation: India had hundreds of pot manufacturers, but very few thinking about planters as designed objects. Most catalogues offered shape, but not silhouette. Colour, but not finish. We started LEAFO to close that gap."
+        ]
+      },
+      {
+        "title": "Approach",
+        "paragraphs": [
+          "Every series in the catalogue is drawn before it's moulded. Sizes are chosen so that a single design works at desktop scale and architectural scale. Finishes are tested for outdoor weather over multiple seasons. Production happens in our own facility, with hand-laying, hand-finishing, and quality control done in-house."
+        ]
+      }
+    ],
+    "whatWeMakeTitle": "What we make",
+    "whatWeMake": [
+      "12 collections, 60+ size variants",
+      "5 finishes: gloss, matte, rustic, stone, orange peel",
+      "Material: fiber-reinforced plastic (FRP)",
+      "Built for indoor and outdoor use",
+      "Shipped across India, exported on request"
+    ],
+    "closing": "If you're an architect, designer, hotelier, or homeowner working on a space, we'd like to hear what you're planning.",
+    "cta": { "href": "/contact", "label": "Start an inquiry" },
+    "imageSrc": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
+    "imageAlt": "Warm studio workspace with materials samples"
+  },
+  "contact": {
+    "title": "Inquire",
+    "intro": "Tell us a little about the project. We'll come back within two business days with options, sizing, and a quote.",
+    "heroImageSrc": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
+    "heroImageAlt": "Design team collaborating at a workspace table",
+    "submitLabel": "Send inquiry",
+    "thankYouTitle": "Thank you.",
+    "thankYouBody": "Your inquiry is in. We'll be in touch within two business days at the email or phone you shared.",
+    "reachTitle": "Reach us directly",
+    "visitTitle": "Visit",
+    "hoursTitle": "Hours",
+    "hours": "Monday to Saturday, 10am – 6pm IST",
+    "followTitle": "Follow",
+    "followLinks": [
+      { "href": "https://www.instagram.com/", "label": "Instagram" },
+      { "href": "https://www.linkedin.com/", "label": "LinkedIn" },
+      { "href": "https://www.facebook.com/", "label": "Facebook" }
+    ],
+    "fields": [
+      { "name": "name", "label": "Name", "type": "text", "required": true, "placeholder": "Full name" },
+      { "name": "company", "label": "Company / studio", "type": "text", "required": false, "placeholder": "Optional" },
+      {
+        "name": "role",
+        "label": "Role",
+        "type": "select",
+        "required": false,
+        "placeholder": "Select",
+        "options": [
+          "Architect",
+          "Interior designer",
+          "Landscape designer",
+          "Hotelier",
+          "Developer",
+          "Homeowner",
+          "Other"
+        ]
+      },
+      { "name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "you@studio.com" },
+      { "name": "phone", "label": "Phone", "type": "tel", "required": true, "placeholder": "With country code" },
+      { "name": "city", "label": "City", "type": "text", "required": false, "placeholder": "City" },
+      {
+        "name": "projectType",
+        "label": "Project type",
+        "type": "select",
+        "required": false,
+        "placeholder": "Select",
+        "options": [
+          "Residential",
+          "Hospitality",
+          "Workplace",
+          "Retail",
+          "Civic / public",
+          "Landscape",
+          "Other"
+        ]
+      },
+      {
+        "name": "quantity",
+        "label": "Approximate quantity",
+        "type": "select",
+        "required": false,
+        "placeholder": "Select",
+        "options": ["1–5", "6–20", "21–50", "51–100", "100+"]
+      },
+      {
+        "name": "message",
+        "label": "Tell us about the project",
+        "type": "textarea",
+        "required": false,
+        "placeholder": "Site, timeline, finishes, references…"
+      }
+    ]
+  }
+}

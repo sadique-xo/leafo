@@ -33,11 +33,15 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env — secrets & local overrides; commit .env.example as the template
 .env*
+!.env.example
 
 # vercel
 .vercel
+
+# local tool / IDE (Cursor workspaces, MCP bins, editor settings)
+.cursor/
 
 # typescript
 *.tsbuildinfo

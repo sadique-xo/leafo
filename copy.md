@@ -1,4 +1,4 @@
-# LEAFO — Website Copy v1
+# LEAFO - Website Copy v1
 
 **Tone:** editorial, restrained, gallery-like. Sentences are short. No exclamation marks except where flagged. No corporate filler. No emoji. British/Indian English spelling (colour, programme, optimise).
 
@@ -197,74 +197,74 @@ Anand, Gujarat, India
 ### 4.1 Corso
 **Tagline:** A confident cone.
 **Description:** Wide at the base, narrowing cleanly upward. Reads as sculptural without competing with the plant.
-**Sizes:** A — 19.5 × 30 cm · B — 15.5 × 24 cm · C — 11.5 × 18 cm
+**Sizes:** A - 19.5 × 30 cm · B - 15.5 × 24 cm · C - 11.5 × 18 cm
 
 ### 4.2 Corsa
 **Tagline:** Tall and tapered.
 **Description:** Four heights of the same gentle silhouette. Pairs with palms, ficus, and large-leaf indoor plants.
-**Sizes:** A — 22 × 40 cm · B — 17 × 32 cm · C — 13 × 25 cm · D — 10 × 18 cm
+**Sizes:** A - 22 × 40 cm · B - 17 × 32 cm · C - 13 × 25 cm · D - 10 × 18 cm
 
 ### 4.3 Felio
 **Tagline:** Slim, vertical, architectural.
 **Description:** A narrow column with quiet shoulders. Designed for tight spaces where height matters more than footprint.
-**Sizes:** A — 16 × 40 cm · B — 13 × 33 cm · C — 11 × 28 cm · D — 8 × 21 cm
+**Sizes:** A - 16 × 40 cm · B - 13 × 33 cm · C - 11 × 28 cm · D - 8 × 21 cm
 
 ### 4.4 Queen
 **Tagline:** Bell-shaped, soft-shouldered.
 **Description:** A rounded base that opens slightly outward. Comfortable in residential and hospitality settings.
-**Sizes:** A — 27.5 × 32.5 cm · B — 23.5 × 28.5 cm · C — 20.5 × 24.5 cm · D — 17 × 20.5 cm
+**Sizes:** A - 27.5 × 32.5 cm · B - 23.5 × 28.5 cm · C - 20.5 × 24.5 cm · D - 17 × 20.5 cm
 
 ### 4.5 Pomo
 **Tagline:** Nine sizes. The full range.
 **Description:** From desktop to floor-standing. Pomo is the working horse of the catalogue, configured for spaces of any scale.
-**Sizes:** A — 36 × 36 cm · B — 30 × 30 cm · C — 24 × 24 cm · D — 22 × 18 cm · E — 18 × 18 cm · F — 18 × 14 cm · G — 15 × 15 cm · H — 12 × 12 cm · I — 12 × 9 cm
+**Sizes:** A - 36 × 36 cm · B - 30 × 30 cm · C - 24 × 24 cm · D - 22 × 18 cm · E - 18 × 18 cm · F - 18 × 14 cm · G - 15 × 15 cm · H - 12 × 12 cm · I - 12 × 9 cm
 
 ### 4.6 Potros
 **Tagline:** Wide-mouthed bowls.
 **Description:** Low and broad. Designed for shallow plantings, stone arrangements, and centrepiece installations.
-**Sizes:** A — 36 × 26 cm · B — 31 × 22 cm · C — 25 × 18 cm · D — 19 × 14 cm · E — 14 × 10 cm
+**Sizes:** A - 36 × 26 cm · B - 31 × 22 cm · C - 25 × 18 cm · D - 19 × 14 cm · E - 14 × 10 cm
 
 ### 4.7 Leppo
 **Tagline:** Capsule form, generous body.
 **Description:** A rounded vertical with a soft top. Sits well alongside furniture in residential and office floors.
-**Sizes:** A — 16 × 30 cm · B — 14 × 22 cm · C — 14 × 14 cm · D — 12 × 16 cm · E — 10 × 11 cm
+**Sizes:** A - 16 × 30 cm · B - 14 × 22 cm · C - 14 × 14 cm · D - 12 × 16 cm · E - 10 × 11 cm
 
 ### 4.8 Marles
 **Tagline:** Faceted, geometric.
 **Description:** Hard-edged surfaces in a controlled silhouette. Reads as architectural object before planter.
-**Sizes:** A — 18 × 26 cm *(more sizes in development)*
+**Sizes:** A - 18 × 26 cm *(more sizes in development)*
 
 ### 4.9 Sabin
 **Tagline:** A single, quiet silhouette.
 **Description:** One form, considered. For spaces that need a planter without a statement.
-**Sizes:** A — 11 × 14.5 cm *(more sizes in development)*
+**Sizes:** A - 11 × 14.5 cm *(more sizes in development)*
 
 ### 4.10 Diamond
 **Tagline:** Textured surface, compact form.
 **Description:** A dimensional pattern across the body, kept small to suit shelves, consoles, and tabletops.
-**Sizes:** A — 9 × 8 cm
+**Sizes:** A - 9 × 8 cm
 
 ### 4.11 Rectangle
 **Tagline:** Six formats for hedges, dividers, and runs.
 **Description:** Linear planters for terraces, balconies, and zoning open spaces. Available in matte across the range.
 **Sizes:**
-- A — 24 × 12 × 12 cm
-- B — 36 × 12 × 12 cm
-- C — 24 × 16 × 12 cm
-- D — 36 × 16 × 12 cm
-- E — 35.4 × 19.7 × 19.7 cm
-- F — 34 × 34 × 25 cm
+- A - 24 × 12 × 12 cm
+- B - 36 × 12 × 12 cm
+- C - 24 × 16 × 12 cm
+- D - 36 × 16 × 12 cm
+- E - 35.4 × 19.7 × 19.7 cm
+- F - 34 × 34 × 25 cm
 
 ### 4.12 Bueno
 **Tagline:** Urn-shaped, hand-finished.
 **Description:** A traditional silhouette with a contemporary surface. Suited to entryways, courtyards, and quieter corners.
-**Sizes:** A — 10.5 × 29 cm · B — 12 × 18 cm · C — 10 × 14 cm
+**Sizes:** A - 10.5 × 29 cm · B - 12 × 18 cm · C - 10 × 14 cm
 
 ### Placeholder structure for unnamed series (#14, #15, #16)
 *(For shradha to confirm names + descriptors. Use the same template above.)*
-- **[Series 14 — round]** *(name pending)*
-- **[Series 15 — stone / boulder]** *(name pending. Likely a feature stone for landscape installations.)*
-- **[Series 16 — wood texture]** *(name pending. Likely a plank or rectangular planter with wood-grain finish.)*
+- **[Series 14 - round]** *(name pending)*
+- **[Series 15 - stone / boulder]** *(name pending. Likely a feature stone for landscape installations.)*
+- **[Series 16 - wood texture]** *(name pending. Likely a plank or rectangular planter with wood-grain finish.)*
 
 ---
 
@@ -318,12 +318,12 @@ A subtle dimpled texture, named for its surface pattern. Catches light without r
 
 ### Story (two short blocks)
 
-**Block 1 — Origin**
+**Block 1 - Origin**
 > LEAFO is a planter manufacturer based in Anand, Gujarat. We make fiber pots, full-size planters, and modular fiber systems for homes, commercial spaces, and landscape projects.
 
 > The company started with a simple observation: India had hundreds of pot manufacturers, but very few thinking about planters as designed objects. Most catalogues offered shape, but not silhouette. Colour, but not finish. We started LEAFO to close that gap.
 
-**Block 2 — Approach**
+**Block 2 - Approach**
 > Every series in the catalogue is drawn before it's moulded. Sizes are chosen so that a single design works at desktop scale and architectural scale. Finishes are tested for outdoor weather over multiple seasons. Production happens in our own facility, with hand-laying, hand-finishing, and quality control done in-house.
 
 ### What we make (summary block)
@@ -400,35 +400,35 @@ Instagram · LinkedIn · Facebook
 *(Use these on respective pages. Keep titles under 60 characters, descriptions under 155.)*
 
 ### Homepage
-- **Title:** LEAFO — FRP planters, fiber pots & modular systems
+- **Title:** LEAFO - FRP planters, fiber pots & modular systems
 - **Description:** Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Anand, Gujarat.
 
 ### Collections listing
-- **Title:** Collections — LEAFO planters
+- **Title:** Collections - LEAFO planters
 - **Description:** Twelve series of FRP planters. Filter by shape, finish, and size. Inquire for project quotes.
 
 ### Single collection (template)
-- **Title:** [Series name] — LEAFO FRP planter collection
+- **Title:** [Series name] - LEAFO FRP planter collection
 - **Description:** [Series name] is a [shape descriptor] planter from LEAFO, available in [number] sizes and five finishes. Made in India.
 
 ### Finishes
-- **Title:** Finishes — LEAFO planters
+- **Title:** Finishes - LEAFO planters
 - **Description:** Five hand-applied surface treatments: gloss, matte, rustic, stone, and orange peel. Specified per project.
 
 ### Projects
-- **Title:** Projects — LEAFO installations
+- **Title:** Projects - LEAFO installations
 - **Description:** Selected LEAFO planter installations across residential, hospitality, workplace, and landscape projects in India.
 
 ### About
-- **Title:** About LEAFO — design-led planter manufacturer in India
+- **Title:** About LEAFO - design-led planter manufacturer in India
 - **Description:** LEAFO is a fiber-reinforced planter manufacturer based in Anand, Gujarat. Designed for the way people actually live.
 
 ### Contact
-- **Title:** Inquire — LEAFO
+- **Title:** Inquire - LEAFO
 - **Description:** Tell us about your project. We respond within two business days with options, sizing, and a quote.
 
 ### Open Graph / social
-- **OG Title:** LEAFO — Planters, quietly considered.
+- **OG Title:** LEAFO - Planters, quietly considered.
 - **OG Description:** A diverse range of FRP planters for homes, hotels, offices, and landscapes. Made in Anand, Gujarat.
 - **OG Image:** [hero shot, 1200 × 630, single planter on bone background, centred]
 - **Twitter Card:** summary_large_image

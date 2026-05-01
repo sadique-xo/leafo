@@ -76,7 +76,7 @@ export default async function AdminInquiriesPage() {
                   </a>
                 </TableCell>
                 <TableCell className="hidden max-w-[12rem] truncate text-muted-foreground md:table-cell">
-                  {r.project_type || "—"}
+                  {r.project_type || "-"}
                 </TableCell>
                 <TableCell className="text-right">
                   <Link href={`/admin/inquiries/${r.id}`} className={cn(buttonVariants({ size: "sm", variant: "secondary" }))}>

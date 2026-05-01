@@ -29,7 +29,7 @@ async function assertAdmin() {
 
   if (!email || email !== ADMIN) {
     throw new Error(
-      "Unauthorized — stay signed in with the same email as ADMIN_EMAIL in .env.local (no extra spaces).",
+      "Unauthorized - stay signed in with the same email as ADMIN_EMAIL in .env.local (no extra spaces).",
     );
   }
 }

@@ -3,14 +3,18 @@ import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealStagger } from "@/components/motion/reveal-stagger";
+import { ProjectShowcase } from "@/components/site/project-showcase";
 import { projectsPage } from "@/data/site-content";
 import { getPublishedProjects, hasProjects } from "@/lib/cms/get-projects";
 
 export const metadata: Metadata = {
-  title: "Projects — LEAFO installations",
+  title: "Projects - LEAFO installations",
   description:
     "Selected LEAFO planter installations across residential, hospitality, workplace, and landscape projects in India.",
 };
+
+/** CMS-backed list; avoid stale static shell from build-time empty cache. */
+export const dynamic = "force-dynamic";
 
 export default async function ProjectsPage() {
   const projects = await getPublishedProjects();
@@ -41,25 +45,13 @@ export default async function ProjectsPage() {
         {showGallery ? (
           <RevealStagger
             staggerKey={projects.map((p) => p.id).join("-")}
-            className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
+            className="mt-16 md:mt-20"
           >
-            {projects.map((p) => (
-              <article key={p.id} data-stagger-item>
-                <div className="relative aspect-[4/3] overflow-hidden bg-[color:var(--surface-strong)]">
-                  {p.imageSrc ? (
-                    <Image
-                      src={p.imageSrc}
-                      alt={p.imageAlt}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                    />
-                  ) : null}
-                </div>
-                <h2 className="font-display mt-4 text-xl text-[color:var(--charcoal)]">{p.title}</h2>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.summary}</p>
-              </article>
-            ))}
+            <div className="flex flex-col">
+              {projects.map((p, i) => (
+                <ProjectShowcase key={p.id} project={p} index={i} />
+              ))}
+            </div>
           </RevealStagger>
         ) : (
           <>

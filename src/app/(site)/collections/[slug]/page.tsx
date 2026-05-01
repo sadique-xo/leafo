@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
   }
 
   return {
-    title: `${collection.name} — LEAFO FRP planter collection`,
+    title: `${collection.name} - LEAFO FRP planter collection`,
     description: `${collection.summary} Available in five finishes and multiple sizes. Made in Anand, Gujarat.`,
   };
 }

@@ -4,88 +4,86 @@ import Link from "next/link";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
 import { RevealStagger } from "@/components/motion/reveal-stagger";
+import { CornerFrame } from "@/components/site/corner-frame";
+import { HomeFeaturedProject } from "@/components/site/home-featured-project";
+import { HomeHoverSlider } from "@/components/site/home-hover-slider";
+import { HomeHero } from "@/components/site/home-hero";
+import { DotPattern } from "@/components/ui/dot-pattern";
 import { getPublishedCollections } from "@/lib/cms/get-collections";
-import { about, home } from "@/data/site-content";
+import { about, getHomeHeroSlides, home } from "@/data/site-content";
+
+const ogHero = getHomeHeroSlides()[0];
 
 export const metadata: Metadata = {
-  title: "LEAFO — FRP planters, fiber pots & modular systems",
+  title: "LEAFO - FRP planters, fiber pots & modular systems",
   description:
     "Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Anand, Gujarat.",
   openGraph: {
-    title: "LEAFO — Planters, quietly considered.",
+    title: "LEAFO - Planters, quietly considered.",
     description:
       "A diverse range of FRP planters for homes, hotels, offices, and landscapes. Made in Anand, Gujarat.",
-    images: [{ url: home.heroImageSrc, width: 1200, height: 800, alt: home.heroImageAlt }],
+    images: [{ url: ogHero.src, width: 1200, height: 800, alt: ogHero.alt }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "LEAFO — Planters, quietly considered.",
+    title: "LEAFO - Planters, quietly considered.",
     description:
       "A diverse range of FRP planters for homes, hotels, offices, and landscapes. Made in Anand, Gujarat.",
-    images: [home.heroImageSrc],
+    images: [ogHero.src],
   },
 };
 
 export default async function HomePage() {
   const collections = await getPublishedCollections();
+  const heroSlides = getHomeHeroSlides();
+
   return (
     <>
-      <section className="relative isolate min-h-svh w-full overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src={home.heroImageSrc}
-            alt={home.heroImageAlt}
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-        </div>
-        {/* Left-heavy scrim: keeps FRP/planter photography visible while text stays legible */}
-        <div
-          className="absolute inset-0 bg-gradient-to-r from-[color:var(--surface-alt)] via-[color:var(--surface-alt)]/88 to-[color:var(--surface-alt)]/25 md:via-[color:var(--surface-alt)]/75 md:to-transparent"
-          aria-hidden
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--surface-alt)]/40 via-transparent to-[color:var(--surface-alt)]/30 md:to-transparent" aria-hidden />
+      <HomeHero
+        slides={heroSlides}
+        eyebrow={home.eyebrow}
+        title={home.title}
+        intro={home.intro}
+        primaryCta={home.primaryCta}
+        secondaryCta={home.secondaryCta}
+      />
 
-        <div className="relative z-10 flex min-h-svh flex-col justify-end pb-12 pt-24 sm:pb-14 sm:pt-28 md:justify-end md:pb-16 md:pt-32 lg:pb-20">
-          <div className="site-container">
-            <div className="max-w-2xl lg:max-w-3xl">
-              <Reveal start="top 90%" y={24}>
-              <p className="label-ui text-[11px] text-muted-foreground">{home.eyebrow}</p>
-              <h1 className="font-display mt-4 max-w-[18ch] text-4xl leading-[1.06] tracking-tight text-[color:var(--charcoal)] sm:mt-5 sm:max-w-none sm:text-5xl md:text-6xl">
-                {home.title}
-              </h1>
-              <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground md:mt-6 md:text-lg">
-                {home.intro}
-              </p>
-              <p className="label-ui mt-6 text-[10px] tracking-[0.14em] text-muted-foreground md:mt-7 md:text-[11px]">
-                {about.whatWeMake.slice(0, 3).join(" · ")}
-              </p>
-              <div className="mt-7 flex flex-wrap gap-3 md:mt-8">
-                <Link
-                  href={home.primaryCta.href}
-                  className="label-ui inline-flex h-11 items-center bg-[color:var(--primary)] px-8 text-[11px] text-white transition-all duration-300 hover:bg-[color:var(--primary-hover)] active:scale-[0.98]"
-                >
-                  {home.primaryCta.label}
-                </Link>
-                <Link
-                  href={home.secondaryCta.href}
-                  className="label-ui inline-flex h-11 items-center border border-[color:var(--primary-ink)] bg-[color:var(--surface-alt)]/85 px-8 text-[11px] text-[color:var(--primary-ink)] backdrop-blur-[2px] transition-all duration-300 hover:bg-[color:var(--primary-ink)] hover:text-white active:scale-[0.98]"
-                >
-                  {home.secondaryCta.label}
-                </Link>
+      <section className="relative overflow-hidden border-t border-[color:var(--border)] bg-[color:var(--surface)]">
+        <DotPattern className="fill-[color:var(--outline)]/[0.1] md:fill-[color:var(--outline)]/[0.13]" />
+        <Reveal className="relative z-10 site-container py-12 md:py-16">
+          <p className="label-ui text-[11px] text-muted-foreground">{home.heroFactsEyebrow}</p>
+          <dl className="mt-8 grid gap-10 md:grid-cols-3 md:gap-8 lg:gap-12">
+            {home.heroFacts.map((fact) => (
+              <div
+                key={fact.label}
+                className="border-l border-[color:var(--border)] pl-6 md:border-l-[length:var(--rule-width)] md:pl-8"
+              >
+                <dt className="label-ui text-[10px] text-muted-foreground">{fact.label}</dt>
+                <dd className="mt-3 max-w-sm text-sm leading-relaxed text-[color:var(--charcoal)] md:text-[0.9375rem] md:leading-[1.58]">
+                  {fact.body}
+                </dd>
               </div>
-              </Reveal>
-            </div>
-          </div>
-        </div>
+            ))}
+          </dl>
+        </Reveal>
       </section>
 
-      <section className="bg-[color:var(--surface-alt)]">
-        <Reveal className="site-container section-space">
-          <div className="grid grid-cols-1 gap-12 divide-y divide-[length:var(--rule-width)] divide-[color:var(--border)] lg:grid-cols-[1fr_1.05fr] lg:items-stretch lg:gap-x-16 lg:divide-x lg:divide-y-0 lg:divide-[length:var(--rule-width)] lg:divide-[color:var(--border)]">
-            <div className="min-w-0 lg:pr-0">
+      <HomeHoverSlider
+        slides={home.finishesShort.map((f) => ({
+          id: f.name,
+          title: f.name.toLowerCase(),
+          imageUrl: f.imageSrc,
+          alt: f.imageAlt,
+        }))}
+      />
+
+      <HomeFeaturedProject {...home.featuredProject} />
+
+      <section className="relative overflow-hidden bg-[color:var(--surface-alt)]">
+        <DotPattern className="fill-[color:var(--charcoal)]/[0.045] md:fill-[color:var(--charcoal)]/[0.065]" />
+        <Reveal className="relative z-10 site-container section-space">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-start lg:gap-x-16">
+            <div className="min-w-0">
               <p className="label-ui text-[11px] text-muted-foreground">{about.eyebrow}</p>
               <h2 className="font-display mt-4 text-3xl tracking-tight text-[color:var(--charcoal)] md:text-4xl">
                 {about.storyBlocks[0]?.title}
@@ -96,8 +94,15 @@ export default async function HomePage() {
                 ))}
               </div>
             </div>
-            <div className="min-w-0 pt-12 lg:pt-8 lg:pl-12">
-              <h2 className="font-display text-3xl tracking-tight text-[color:var(--charcoal)] md:text-4xl">
+            <div className="min-w-0 border-t border-[color:var(--border)] pt-12 lg:border-l-[length:var(--rule-width)] lg:border-t-0 lg:pl-12 lg:pt-0">
+              {/* Mirrors Origin eyebrow height so “Approach” aligns with “Origin” and the vertical rule reads straight */}
+              <p
+                className="label-ui mb-0 mt-0 hidden text-[11px] lg:invisible lg:block"
+                aria-hidden
+              >
+                {about.eyebrow}
+              </p>
+              <h2 className="font-display mt-4 text-3xl tracking-tight text-[color:var(--charcoal)] md:text-4xl">
                 {about.storyBlocks[1]?.title}
               </h2>
               <div className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground md:text-base">
@@ -107,51 +112,80 @@ export default async function HomePage() {
               </div>
             </div>
           </div>
-        <div className="rule-section-h-soft mt-14 pt-12">
-            <p className="max-w-3xl text-base leading-relaxed text-[color:var(--charcoal)] md:text-lg">
-              {home.brandStatement}
-            </p>
-          </div>
-          <div className="mt-8">
-            <Link href="/about" className="link-underline-editorial label-ui text-[11px]">
-              Read the full story →
-            </Link>
+
+          <div className="mt-14 border-t-[length:var(--rule-width-strong)] border-[color:var(--rule-color)] pt-12 md:mt-16 md:pt-14">
+            <CornerFrame innerClassName="p-6 md:p-8 lg:p-10">
+              <div className="grid gap-12 lg:grid-cols-12 lg:items-start lg:gap-10">
+                <div className="min-w-0 lg:col-span-7">
+                  <p className="font-display text-[1.625rem] leading-[1.22] tracking-[-0.02em] text-[color:var(--charcoal)] md:text-[2rem] md:leading-[1.2] lg:text-[2.125rem]">
+                    {home.brandStatementLead}
+                  </p>
+                  <p className="mt-6 max-w-2xl text-base leading-[1.72] text-muted-foreground md:mt-8 md:text-[1.0625rem] md:leading-[1.75]">
+                    {home.brandStatement}
+                  </p>
+                </div>
+                <aside className="flex min-w-0 flex-col gap-8 border-[color:var(--border)] border-t pt-10 lg:col-span-5 lg:border-t-0 lg:border-l-[length:var(--rule-width)] lg:pl-10 lg:pt-2">
+                  <div>
+                    <p className="label-ui text-[10px] text-muted-foreground">
+                      {home.brandStatementAsideEyebrow}
+                    </p>
+                    <p className="mt-3 text-sm leading-relaxed text-[color:var(--charcoal)] md:text-[0.9375rem]">
+                      {home.brandStatementAside}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-x-8 gap-y-3">
+                    <Link href="/about" className="link-underline-editorial label-ui text-[11px]">
+                      Read the full story →
+                    </Link>
+                    <Link href="/collections" className="link-underline-editorial label-ui text-[11px]">
+                      View collections →
+                    </Link>
+                  </div>
+                </aside>
+              </div>
+            </CornerFrame>
           </div>
         </Reveal>
       </section>
 
       <Reveal>
-        <section className="border-t border-[color:var(--border)]">
-          <div className="site-container pt-10 md:pt-12">
-            <RevealRuleLine className="mt-0" start="top 90%" delay={0.04} />
-          </div>
-          <div className="site-container grid gap-10 py-14 md:grid-cols-3 md:py-16">
-            {home.metrics.map((m) => (
-              <div key={m.label} className="border-l border-[var(--border)] pl-6 md:border-l-[length:var(--rule-width)]">
-                <p className="label-ui text-[10px] text-muted-foreground">{m.label}</p>
-                <p className="font-display mt-3 text-4xl text-[color:var(--charcoal)]">{m.value}</p>
-              </div>
-            ))}
-          </div>
-          <div className="site-container rule-section-h-soft py-8 md:py-10">
-            <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
-              {home.processSupporting}
-            </p>
-            <p className="label-ui mt-4 text-[10px] text-muted-foreground">{home.processTitle}</p>
+        <section className="relative overflow-hidden border-t border-[color:var(--border)]">
+          <DotPattern className="fill-[color:var(--outline)]/[0.085] md:fill-[color:var(--outline)]/[0.11]" />
+          <div className="relative z-10">
+            <div className="site-container pt-10 md:pt-12">
+              <RevealRuleLine className="mt-0" start="top 90%" delay={0.04} />
+            </div>
+            <div className="site-container grid gap-10 py-14 md:grid-cols-3 md:py-16">
+              {home.metrics.map((m) => (
+                <div key={m.label} className="border-l border-[var(--border)] pl-6 md:border-l-[length:var(--rule-width)]">
+                  <p className="label-ui text-[10px] text-muted-foreground">{m.label}</p>
+                  <p className="font-display mt-3 text-4xl text-[color:var(--charcoal)]">{m.value}</p>
+                </div>
+              ))}
+            </div>
+            <div className="site-container rule-section-h-soft py-8 md:py-10">
+              <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                {home.processSupporting}
+              </p>
+              <p className="label-ui mt-4 text-[10px] text-muted-foreground">{home.processTitle}</p>
+            </div>
           </div>
         </section>
       </Reveal>
 
       <section className="bg-[color:var(--surface-alt)]">
         <div className="site-container section-space">
-          <Reveal>
-            <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-              {home.collectionsHeading}
-            </h2>
-            <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
-              {home.collectionsIntro}
-            </p>
-          </Reveal>
+          <div className="relative overflow-hidden">
+            <DotPattern className="fill-[color:var(--charcoal)]/[0.05] md:fill-[color:var(--charcoal)]/[0.07]" />
+            <Reveal className="relative z-10">
+              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
+                {home.collectionsHeading}
+              </h2>
+              <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
+                {home.collectionsIntro}
+              </p>
+            </Reveal>
+          </div>
           <RevealStagger
             staggerKey={collections.map((f) => f.slug).join("-")}
             className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
@@ -189,14 +223,17 @@ export default async function HomePage() {
 
       <section className="rule-section-h">
         <div className="site-container section-space">
-          <Reveal>
-            <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-              {home.finishesHeading}
-            </h2>
-            <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
-              {home.finishesIntro}
-            </p>
-          </Reveal>
+          <div className="relative overflow-hidden">
+            <DotPattern className="fill-[color:var(--outline)]/[0.09] md:fill-[color:var(--outline)]/[0.12]" />
+            <Reveal className="relative z-10">
+              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
+                {home.finishesHeading}
+              </h2>
+              <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
+                {home.finishesIntro}
+              </p>
+            </Reveal>
+          </div>
           <RevealStagger
             staggerKey={home.finishesShort.map((f) => f.name).join("-")}
             className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5"
@@ -229,11 +266,14 @@ export default async function HomePage() {
 
       <section className="bg-[color:var(--surface-alt)]">
         <div className="site-container section-space">
-          <Reveal>
-            <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-              {home.builtForHeading}
-            </h2>
-          </Reveal>
+          <div className="relative overflow-hidden">
+            <DotPattern className="fill-[color:var(--charcoal)]/[0.045] md:fill-[color:var(--charcoal)]/[0.065]" />
+            <Reveal className="relative z-10">
+              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
+                {home.builtForHeading}
+              </h2>
+            </Reveal>
+          </div>
           <RevealStagger
             staggerKey={home.builtForTiles.map((t) => t.title).join("-")}
             className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
@@ -258,22 +298,25 @@ export default async function HomePage() {
       </section>
 
       <Reveal>
-        <div className="site-container pt-14 md:pt-16">
-          <RevealRuleLine start="top 92%" duration={0.92} />
-        </div>
-        <div className="site-container flex flex-col gap-6 pb-16 pt-10 md:flex-row md:items-end md:justify-between md:pb-20 md:pt-12">
-          <div className="max-w-xl">
-            <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-              {home.inquiryHeadline}
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">{home.inquirySub}</p>
+        <div className="relative overflow-hidden">
+          <DotPattern className="fill-[color:var(--outline)]/[0.095] md:fill-[color:var(--outline)]/[0.12]" />
+          <div className="relative z-10 site-container pt-14 md:pt-16">
+            <RevealRuleLine start="top 92%" duration={0.92} />
           </div>
-          <Link
-            href={home.inquiryCta.href}
-            className="label-ui inline-flex h-11 shrink-0 items-center bg-[color:var(--primary)] px-8 text-[11px] text-white transition-all duration-300 hover:bg-[color:var(--primary-hover)] active:scale-[0.98]"
-          >
-            {home.inquiryCta.label}
-          </Link>
+          <div className="relative z-10 site-container flex flex-col gap-6 pb-16 pt-10 md:flex-row md:items-end md:justify-between md:pb-20 md:pt-12">
+            <div className="max-w-xl">
+              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
+                {home.inquiryHeadline}
+              </h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">{home.inquirySub}</p>
+            </div>
+            <Link
+              href={home.inquiryCta.href}
+              className="label-ui inline-flex h-11 shrink-0 items-center bg-[color:var(--primary)] px-8 text-[11px] text-white transition-all duration-300 hover:bg-[color:var(--primary-hover)] active:scale-[0.98]"
+            >
+              {home.inquiryCta.label}
+            </Link>
+          </div>
         </div>
       </Reveal>
     </>

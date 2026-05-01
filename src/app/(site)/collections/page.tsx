@@ -3,7 +3,7 @@ import { CollectionsCatalog } from "@/components/site/collections-catalog";
 import { getPublishedCollections } from "@/lib/cms/get-collections";
 
 export const metadata: Metadata = {
-  title: "Collections — LEAFO planters",
+  title: "Collections - LEAFO planters",
   description:
     "Twelve series of FRP planters. Filter by shape, finish, and size. Inquire for project quotes.",
 };

@@ -47,6 +47,9 @@ export async function submitInquiryAction(
   if (phone.length < 5) {
     return { status: "error", message: "Please enter a phone number (with country code)." };
   }
+  if (!message) {
+    return { status: "error", message: "Please add a short note about what you're looking for." };
+  }
 
   const company = trimStr(formData.get("company"), MAX.company);
   const role = trimStr(formData.get("role"), MAX.role);

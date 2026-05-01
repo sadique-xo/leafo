@@ -26,7 +26,7 @@ function formatWhen(iso: string) {
 }
 
 function Row({ label, value }: { label: string; value: string }) {
-  const display = value.trim() || "—";
+  const display = value.trim() || "-";
   return (
     <div className="border-b border-border py-4 last:border-b-0">
       <p className="label-ui text-[10px] text-muted-foreground">{label}</p>

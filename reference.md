@@ -1,4 +1,4 @@
-# Scroll Image Sequence Effect — Reusable Prompt
+# Scroll Image Sequence Effect - Reusable Prompt
 
 ## What This Does
 Apple-style scroll-driven image sequence. Frames from a video play forward/backward as the user scrolls. Works with any Next.js + Tailwind project.

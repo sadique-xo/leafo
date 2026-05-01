@@ -85,6 +85,12 @@ type AboutStoryBlock = {
   paragraphs: string[];
 };
 
+export type HomeHeroSlideContent = {
+  src: string;
+  alt: string;
+  navTone?: "dark" | "light";
+};
+
 type SiteContent = {
   navigation: LinkItem[];
   footer: {
@@ -124,7 +130,21 @@ type SiteContent = {
     secondaryCta: LinkItem;
     heroImageSrc: string;
     heroImageAlt: string;
+    heroSlides?: HomeHeroSlideContent[];
+    heroFactsEyebrow: string;
+    heroFacts: Array<{ label: string; body: string }>;
+    brandStatementLead: string;
     brandStatement: string;
+    brandStatementAsideEyebrow: string;
+    brandStatementAside: string;
+    featuredProject: {
+      eyebrow: string;
+      title: string;
+      body: string;
+      imageSrc: string;
+      imageAlt: string;
+      cta: LinkItem;
+    };
     collectionsHeading: string;
     collectionsIntro: string;
     finishesHeading: string;
@@ -166,6 +186,9 @@ type SiteContent = {
     hours: string;
     followTitle: string;
     followLinks: LinkItem[];
+    drawerTitle: string;
+    drawerIntro: string;
+    drawerMoreLabel: string;
     fields: ContactField[];
   };
 };
@@ -178,6 +201,19 @@ export const collectionsPage = content.collectionsPage;
 export const finishesPage = content.finishesPage;
 export const projectsPage = content.projectsPage;
 export const home = content.home;
+
+/** Hero carousel slides; falls back to single `heroImageSrc` when unset. */
+export function getHomeHeroSlides(): HomeHeroSlideContent[] {
+  const slides = content.home.heroSlides;
+  if (slides?.length) return slides;
+  return [
+    {
+      src: content.home.heroImageSrc,
+      alt: content.home.heroImageAlt,
+      navTone: "light",
+    },
+  ];
+}
 export const collections = content.collections;
 export const about = content.about;
 export const contact = content.contact;

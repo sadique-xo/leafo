@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
 import { ContactInquiryForm } from "@/components/site/contact-inquiry-form";
+import { CornerFrame } from "@/components/site/corner-frame";
 import { contact, footer } from "@/data/site-content";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Inquire — LEAFO",
+  title: "Inquire - LEAFO",
   description:
     "Tell us about your project. We respond within two business days with options, sizing, and a quote.",
 };
@@ -74,12 +76,19 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={0.08} start="top 85%">
-            <ContactInquiryForm
-              fields={contact.fields}
-              submitLabel={contact.submitLabel}
-              thankYouTitle={contact.thankYouTitle}
-              thankYouBody={contact.thankYouBody}
-            />
+            <CornerFrame
+              innerClassName={cn(
+                "p-6 md:p-8 lg:p-10",
+                "[&>form]:border-t-0 [&>form]:pt-0 [&>div]:border-t-0 [&>div]:pt-0",
+              )}
+            >
+              <ContactInquiryForm
+                fields={contact.fields}
+                submitLabel={contact.submitLabel}
+                thankYouTitle={contact.thankYouTitle}
+                thankYouBody={contact.thankYouBody}
+              />
+            </CornerFrame>
           </Reveal>
         </div>
       </section>

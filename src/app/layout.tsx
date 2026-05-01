@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Newsreader, Geist } from "next/font/google";
+import { Caveat, Inter, Newsreader, Geist } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -23,9 +23,15 @@ const ui = Inter({
   weight: ["500", "600"],
 });
 
+const cosmicScript = Caveat({
+  variable: "--font-cosmic-script",
+  subsets: ["latin"],
+  weight: ["600", "700"],
+});
+
 export const metadata: Metadata = {
   title: {
-    default: "LEAFO — FRP planters, fiber pots & modular systems",
+    default: "LEAFO - FRP planters, fiber pots & modular systems",
     template: "%s | LEAFO",
   },
   description:
@@ -40,7 +46,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased", display.variable, body.variable, ui.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full antialiased font-sans",
+        display.variable,
+        body.variable,
+        ui.variable,
+        geist.variable,
+        cosmicScript.variable,
+      )}
     >
       <body className="min-h-full flex flex-col grain-bg">{children}</body>
     </html>

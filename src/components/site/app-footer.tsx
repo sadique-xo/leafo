@@ -38,7 +38,7 @@ export function AppFooter() {
             "grid grid-cols-1 gap-12 md:grid-cols-3 md:grid-rows-1 md:items-stretch md:gap-x-10 md:gap-y-0 lg:gap-x-14 xl:gap-x-[4.25rem]",
           )}
         >
-          {/* Column 1 — brand + legal (fills height; legal sits at bottom) */}
+          {/* Column 1 - brand + legal (fills height; legal sits at bottom) */}
           <div className="flex min-h-0 flex-col md:min-h-full">
             <div>
               <FooterSectionTitle>LEAFO®</FooterSectionTitle>
@@ -62,7 +62,7 @@ export function AppFooter() {
             </div>
           </div>
 
-          {/* Column 2 — Explore | Connect side by side, single row */}
+          {/* Column 2 - Explore | Connect side by side, single row */}
           <div className="min-h-0 min-w-0">
             <div className="grid grid-cols-2 gap-x-8 sm:gap-x-10 xl:gap-x-12">
               <nav aria-label="Explore">
@@ -88,7 +88,7 @@ export function AppFooter() {
             </div>
           </div>
 
-          {/* Column 3 — Reach */}
+          {/* Column 3 - Reach */}
           <div className="min-w-0 md:self-start">
             <FooterSectionTitle>Reach</FooterSectionTitle>
             <div className="space-y-2 text-sm leading-relaxed">

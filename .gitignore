@@ -33,7 +33,7 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env — secrets & local overrides; commit .env.example as the template
+# env - secrets & local overrides; commit .env.example as the template
 .env*
 !.env.example
 

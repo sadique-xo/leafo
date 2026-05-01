@@ -13,7 +13,7 @@ type ParallaxHeroImageProps = {
 };
 
 /**
- * Subtle vertical parallax on scroll (scrub) — editorial depth without gimmicks.
+ * Subtle vertical parallax on scroll (scrub) - editorial depth without gimmicks.
  */
 export function ParallaxHeroImage({ src, alt, sizes, priority }: ParallaxHeroImageProps) {
   const wrapRef = useRef<HTMLDivElement>(null);

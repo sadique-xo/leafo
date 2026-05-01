@@ -6,7 +6,7 @@ import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { finishesPage } from "@/data/site-content";
 
 export const metadata: Metadata = {
-  title: "Finishes — LEAFO planters",
+  title: "Finishes - LEAFO planters",
   description:
     "Five hand-applied surface treatments: gloss, matte, rustic, stone, and orange peel. Specified per project.",
 };

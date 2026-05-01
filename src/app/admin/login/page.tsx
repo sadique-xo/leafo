@@ -12,7 +12,7 @@ export default function AdminLoginPage() {
         <div>
           <h1 className="text-2xl font-semibold tracking-tight">Sign in</h1>
           <p className="text-muted-foreground mt-2 text-sm">
-            Magic link — use the configured admin email only.
+            Magic link - use the configured admin email only.
           </p>
         </div>
         <Suspense fallback={<p className="text-sm text-muted-foreground">Loading…</p>}>

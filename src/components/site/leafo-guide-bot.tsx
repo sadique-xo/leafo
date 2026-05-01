@@ -146,7 +146,7 @@ export function LeafoGuideBot() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="pointer-events-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-0 bg-[color:var(--primary)] text-white transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.98] md:h-auto md:w-auto md:gap-2 md:rounded-none md:border-2 md:border-[color:var(--primary-ink)] md:bg-[color:var(--surface-container-lowest)] md:pl-3 md:pr-4 md:text-[color:var(--charcoal)] md:hover:-translate-y-0.5 md:active:translate-x-0.5 md:active:translate-y-0.5 md:active:scale-100"
+          className="pointer-events-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-0 bg-[color:var(--primary)] text-white transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.98] md:h-auto md:w-auto md:gap-2 md:rounded-none md:border-2 md:border-[color:var(--primary-ink)] md:bg-[color:var(--surface-container-lowest)] md:pl-3 md:pr-4 md:text-[color:var(--charcoal)] md:shadow-[4px_4px_0_0_var(--primary)] md:hover:-translate-y-0.5 md:active:translate-x-0.5 md:active:translate-y-0.5 md:active:scale-100 md:active:shadow-none"
           aria-expanded={false}
           aria-haspopup="dialog"
           aria-label="Chat with Leafy"

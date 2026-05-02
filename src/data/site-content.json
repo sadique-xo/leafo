@@ -104,6 +104,14 @@
     "secondaryCta": { "href": "/contact", "label": "Inquire" },
     "heroImageSrc": "/hero/hero-slide-1.png",
     "heroImageAlt": "Outdoor row of planters with varied foliage against a pale tiled wall in sunlight",
+    "weAre": {
+      "lines": [
+        { "line": "makers crafting planters for your space." },
+        { "line": "creators combining form & finish." },
+        { "line": "partners growing with your vision." }
+      ],
+      "closingCopy": "Great planters shouldn't be complicated. Clear finish. Honest form. Built to last."
+    },
     "heroFactsEyebrow": "At a glance",
     "heroFacts": [
       { "label": "Range", "body": "12 collections · 60+ size variants" },

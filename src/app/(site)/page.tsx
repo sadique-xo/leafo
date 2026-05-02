@@ -8,11 +8,29 @@ import { CornerFrame } from "@/components/site/corner-frame";
 import { HomeFeaturedProject } from "@/components/site/home-featured-project";
 import { HomeHoverSlider } from "@/components/site/home-hover-slider";
 import { HomeHero } from "@/components/site/home-hero";
+import { HomeWeAre } from "@/components/site/home-we-are";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { getPublishedCollections } from "@/lib/cms/get-collections";
-import { about, getHomeHeroSlides, home } from "@/data/site-content";
+import { about, getHomeHeroSlides, home, type HomeHeroSlideContent } from "@/data/site-content";
 
 const ogHero = getHomeHeroSlides()[0];
+
+function getWeAreImageSlides(
+  heroSlides: HomeHeroSlideContent[],
+  fallback: HomeHeroSlideContent,
+) {
+  const slides = heroSlides.slice(1, 4);
+
+  if (slides.length < 3) {
+    console.warn("HomeWeAre expected 3 post-hero slides; padding with the hero image.");
+  }
+
+  while (slides.length < 3) {
+    slides.push(fallback);
+  }
+
+  return slides;
+}
 
 export const metadata: Metadata = {
   title: "LEAFO - FRP planters, fiber pots & modular systems",
@@ -36,16 +54,33 @@ export const metadata: Metadata = {
 export default async function HomePage() {
   const collections = await getPublishedCollections();
   const heroSlides = getHomeHeroSlides();
+  const heroSlide = heroSlides[0] ?? {
+    src: home.heroImageSrc,
+    alt: home.heroImageAlt,
+    navTone: "light" as const,
+  };
+  const weAreImageSlides = getWeAreImageSlides(heroSlides, heroSlide);
 
   return (
     <>
       <HomeHero
-        slides={heroSlides}
+        slide={heroSlide}
         eyebrow={home.eyebrow}
         title={home.title}
         intro={home.intro}
         primaryCta={home.primaryCta}
         secondaryCta={home.secondaryCta}
+      />
+
+      <HomeWeAre
+        slides={home.weAre.lines.map((line, index) => ({
+          image: {
+            src: weAreImageSlides[index]?.src ?? heroSlide.src,
+            alt: weAreImageSlides[index]?.alt ?? heroSlide.alt,
+          },
+          line,
+        }))}
+        closingCopy={home.weAre.closingCopy}
       />
 
       <section className="relative overflow-hidden border-t border-[color:var(--border)] bg-[color:var(--surface)]">

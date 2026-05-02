@@ -91,6 +91,11 @@ export type HomeHeroSlideContent = {
   navTone?: "dark" | "light";
 };
 
+type HomeWeAreContent = {
+  lines: Array<{ line: string }>;
+  closingCopy?: string;
+};
+
 type SiteContent = {
   navigation: LinkItem[];
   footer: {
@@ -131,6 +136,7 @@ type SiteContent = {
     heroImageSrc: string;
     heroImageAlt: string;
     heroSlides?: HomeHeroSlideContent[];
+    weAre: HomeWeAreContent;
     heroFactsEyebrow: string;
     heroFacts: Array<{ label: string; body: string }>;
     brandStatementLead: string;

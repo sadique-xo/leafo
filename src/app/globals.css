@@ -77,6 +77,9 @@
   --gutter: 24px;
   --section-gap: 128px;
   --margin-edge: 64px;
+  --we-are-copy-bottom: clamp(7rem, 18vh, 11rem);
+  --we-are-line-gap: clamp(0.5rem, 1.5vh, 1rem);
+  --we-are-closing-bottom: clamp(2.75rem, 7vh, 4.5rem);
   /* Sharp corners - manufacturing precision */
   --radius: 0;
 
@@ -188,6 +191,34 @@ body {
   font-family: var(--font-ui), Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.14em;
+}
+
+.we-are-eyebrow {
+  font-family: var(--font-display), "Times New Roman", serif;
+  flex-shrink: 0;
+  font-size: clamp(2.25rem, 4.8vw, 4.75rem);
+  line-height: 1;
+  letter-spacing: -0.045em;
+  color: white;
+  will-change: transform;
+}
+
+.we-are-line {
+  max-width: 44rem;
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  line-height: 1.18;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: white;
+  text-wrap: balance;
+  will-change: opacity;
+}
+
+.we-are-closing {
+  max-width: 42rem;
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  line-height: 1.65;
+  color: rgb(255 255 255 / 0.78);
 }
 
 .grain-bg {
@@ -389,6 +420,10 @@ body {
     border-width 200ms var(--ease-editorial);
 }
 
+.site-header-floating {
+  transition: opacity 260ms var(--ease-editorial);
+}
+
 .field-underline-editorial:focus {
   outline: none;
 }
@@ -420,7 +455,8 @@ body {
     transform: scaleX(1);
   }
 
-  .site-header-bar {
+  .site-header-bar,
+  .site-header-floating {
     transition: none;
   }
 

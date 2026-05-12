@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import { footer } from "@/data/site-content";
 import { cn } from "@/lib/utils";
+import { useMobileNavSheet } from "@/components/site/mobile-nav-sheet-context";
 
 function dialFromPhone(phone: string): string {
   return phone.replace(/\D/g, "");
@@ -115,6 +116,7 @@ function buildWhatsAppHref(answers: string[]): string {
 }
 
 export function LeafoGuideBot() {
+  const { open: mobileNavOpen } = useMobileNavSheet();
   const [open, setOpen] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
@@ -141,7 +143,12 @@ export function LeafoGuideBot() {
   };
 
   return (
-    <div className="pointer-events-none fixed bottom-4 right-4 z-[60] flex flex-col items-end gap-2 md:bottom-6 md:right-6">
+    <div
+      className={cn(
+        "pointer-events-none fixed bottom-4 right-4 z-[60] flex flex-col items-end gap-2 md:bottom-6 md:right-6",
+        mobileNavOpen && "hidden",
+      )}
+    >
       {!open ? (
         <button
           type="button"
@@ -174,7 +181,7 @@ export function LeafoGuideBot() {
                 </div>
                 <div className="min-w-0">
                   <p className="font-display text-sm tracking-tight text-[color:var(--primary-ink)]">Leafy</p>
-                  <p className="text-[10px] text-muted-foreground">Try me, it's all taps.</p>
+                  <p className="text-[10px] text-muted-foreground">Try me, it&apos;s all taps.</p>
                 </div>
               </div>
               <button

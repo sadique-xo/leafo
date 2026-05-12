@@ -145,7 +145,7 @@ export function CosmicSpectrum({ color = "original", blur = false }: CosmicSpect
   return (
     <div ref={containerRef} className="relative bg-[color:var(--background)]">
       <div className="animation-section rule-section-h relative min-h-[200svh] border-t border-foreground/[0.06]">
-        <aside className="cosmic-deep-note pointer-events-none fixed inset-x-0 bottom-[min(42svh,24rem)] z-[60] mx-auto flex max-w-2xl flex-col items-center px-6 text-center text-white">
+        <aside className="cosmic-deep-note pointer-events-none fixed inset-x-0 bottom-[min(42svh,24rem)] z-40 mx-auto flex max-w-2xl flex-col items-center px-6 text-center text-white">
           <p className="font-cosmic-script text-balance text-3xl leading-[1.35] md:text-4xl lg:text-[clamp(2rem,4.5vw,2.625rem)]">
             You scrolled like someone who secretly roots for the planet, welcome to moss-level curiosity.
           </p>
@@ -161,15 +161,15 @@ export function CosmicSpectrum({ color = "original", blur = false }: CosmicSpect
           >
             <svg className="h-full w-full" viewBox="0 0 1567 584" preserveAspectRatio="none" fill="none">
               <g clipPath="url(#cosmic_clip)" filter={blur ? "url(#cosmic_blur)" : undefined}>
-                <path d="M1219 584H1393V184H1219V584Z" fill="url(#cosmic_grad0)" />
-                <path d="M1045 584H1219V104H1045V584Z" fill="url(#cosmic_grad1)" />
-                <path d="M348 584H174L174 184H348L348 584Z" fill="url(#cosmic_grad2)" />
-                <path d="M522 584H348L348 104H522L522 584Z" fill="url(#cosmic_grad3)" />
-                <path d="M697 584H522L522 54H697L697 584Z" fill="url(#cosmic_grad4)" />
-                <path d="M870 584H1045V54H870V584Z" fill="url(#cosmic_grad5)" />
-                <path d="M870 584H697L697 0H870L870 584Z" fill="url(#cosmic_grad6)" />
-                <path d="M174 585H0.000183105L-3.75875e-06 295H174L174 585Z" fill="url(#cosmic_grad7)" />
-                <path d="M1393 584H1567V294H1393V584Z" fill="url(#cosmic_grad8)" />
+                <path className="level-2" d="M1219 584H1393V184H1219V584Z" fill="url(#cosmic_grad0)" />
+                <path className="level-3" d="M1045 584H1219V104H1045V584Z" fill="url(#cosmic_grad1)" />
+                <path className="level-2" d="M348 584H174L174 184H348L348 584Z" fill="url(#cosmic_grad2)" />
+                <path className="level-3" d="M522 584H348L348 104H522L522 584Z" fill="url(#cosmic_grad3)" />
+                <path className="level-4" d="M697 584H522L522 54H697L697 584Z" fill="url(#cosmic_grad4)" />
+                <path className="level-4" d="M870 584H1045V54H870V584Z" fill="url(#cosmic_grad5)" />
+                <path className="level-5" d="M870 584H697L697 0H870L870 584Z" fill="url(#cosmic_grad6)" />
+                <path className="level-1" d="M174 585H0.000183105L-3.75875e-06 295H174L174 585Z" fill="url(#cosmic_grad7)" />
+                <path className="level-1" d="M1393 584H1567V294H1393V584Z" fill="url(#cosmic_grad8)" />
               </g>
               <defs>
                 <filter

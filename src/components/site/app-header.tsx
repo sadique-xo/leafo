@@ -8,6 +8,8 @@ import { MenuIcon } from "lucide-react";
 import { navigation, contact } from "@/data/site-content";
 import { cn } from "@/lib/utils";
 import { useHeroOverlay } from "@/components/site/hero-overlay-context";
+import { useInquiryDrawer } from "@/components/site/inquiry-drawer-context";
+import { useMobileNavSheet } from "@/components/site/mobile-nav-sheet-context";
 import { ContactInquiryForm } from "@/components/site/contact-inquiry-form";
 import { Button } from "@/components/ui/button";
 import {
@@ -39,26 +41,23 @@ const LOGO_WHITE_SRC = "/Leafo_Logo_White.png";
 export function AppHeader() {
   const pathname = usePathname();
   const { state } = useHeroOverlay();
-  const [compactChrome, setCompactChrome] = useState(() => pathname !== "/");
-  const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const [inquiryOpen, setInquiryOpen] = useState(false);
-  const [inquiryFormKey, setInquiryFormKey] = useState(0);
+  const [compactChrome, setCompactChrome] = useState(false);
+  const { open: mobileNavOpen, setOpen: setMobileNavOpen } = useMobileNavSheet();
+  const {
+    open: inquiryOpen,
+    setOpen: setInquiryOpen,
+    formKey: inquiryFormKey,
+    openInquiry,
+  } = useInquiryDrawer();
   const [hoveredMenuLabel, setHoveredMenuLabel] = useState<string | null>(null);
 
-  const isHome = pathname === "/";
   const navToneLight = Boolean(
-    isHome &&
-      !compactChrome &&
+    !compactChrome &&
       state &&
       state.slides[0]?.navTone === "light",
   );
 
   useEffect(() => {
-    if (pathname !== "/") {
-      setCompactChrome(true);
-      return;
-    }
-
     const update = () => {
       const vh = window.innerHeight || 800;
       setCompactChrome(window.scrollY >= vh * 0.25);
@@ -74,9 +73,13 @@ export function AppHeader() {
   }, [pathname]);
 
   useEffect(() => {
-    setMobileNavOpen(false);
-    setInquiryOpen(false);
-  }, [pathname]);
+    const closeOpenDrawers = window.setTimeout(() => {
+      setMobileNavOpen(false);
+      setInquiryOpen(false);
+    }, 0);
+
+    return () => window.clearTimeout(closeOpenDrawers);
+  }, [pathname, setInquiryOpen, setMobileNavOpen]);
 
   return (
     <header
@@ -135,10 +138,7 @@ export function AppHeader() {
                 ? "bg-black text-white hover:bg-white hover:text-[color:var(--charcoal)]"
                 : "border border-[color:var(--primary-ink)] bg-[color:var(--background)]/88 text-[color:var(--primary-ink)] backdrop-blur-md hover:bg-[color:var(--primary-ink)] hover:text-white",
             )}
-            onClick={() => {
-              setInquiryFormKey((k) => k + 1);
-              setInquiryOpen(true);
-            }}
+            onClick={openInquiry}
           >
             Inquire
           </button>
@@ -181,14 +181,9 @@ export function AppHeader() {
                 </div>
 
                 <SheetHeader className="relative z-10 flex-row items-center justify-between border-b border-[color:var(--border)]/70 px-6 py-5 text-left md:px-10">
-                  <div>
-                    <SheetTitle className="label-ui text-[11px] tracking-[0.18em] text-[color:var(--primary-ink)]">
-                      Menu
-                    </SheetTitle>
-                    <SheetDescription className="mt-1 max-w-sm text-xs text-muted-foreground">
-                      Move through the Leafo catalogue, finishes, projects, and story.
-                    </SheetDescription>
-                  </div>
+                  <SheetTitle className="label-ui text-[11px] tracking-[0.18em] text-[color:var(--primary-ink)]">
+                    Menu
+                  </SheetTitle>
                 </SheetHeader>
 
                 <nav
@@ -235,22 +230,11 @@ export function AppHeader() {
                   </div>
                 </nav>
 
-                <SheetFooter className="relative z-10 grid gap-4 border-t border-[color:var(--border)]/70 px-6 py-5 md:grid-cols-[1fr_auto] md:items-center md:px-10">
+                <SheetFooter className="relative z-10 border-t border-[color:var(--border)]/70 px-6 py-5 md:px-10">
                   <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">
                     FRP planters, finishes, and modular systems for homes, hotels, offices,
                     and landscapes.
                   </p>
-                  <button
-                    type="button"
-                    className="label-ui inline-flex h-12 items-center justify-center rounded-full bg-[color:var(--primary-ink)] px-7 text-[11px] text-white transition-all hover:bg-[color:var(--primary-hover)] active:scale-[0.98]"
-                    onClick={() => {
-                      setMobileNavOpen(false);
-                      setInquiryFormKey((k) => k + 1);
-                      setInquiryOpen(true);
-                    }}
-                  >
-                    Start an inquiry
-                  </button>
                 </SheetFooter>
               </div>
             </SheetContent>

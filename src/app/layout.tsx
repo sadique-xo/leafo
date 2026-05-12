@@ -29,7 +29,10 @@ const cosmicScript = Caveat({
   weight: ["600", "700"],
 });
 
+const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000");
+
 export const metadata: Metadata = {
+  metadataBase,
   title: {
     default: "LEAFO - FRP planters, fiber pots & modular systems",
     template: "%s | LEAFO",
@@ -46,6 +49,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={cn(
         "h-full antialiased font-sans",
         display.variable,

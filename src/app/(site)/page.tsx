@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
-import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { CornerFrame } from "@/components/site/corner-frame";
+import { HomeCollectionsRail } from "@/components/site/home-collections-rail";
 import { HomeFeaturedProject } from "@/components/site/home-featured-project";
 import { HomeHoverSlider } from "@/components/site/home-hover-slider";
 import { HomeHero } from "@/components/site/home-hero";
 import { HomeWeAre } from "@/components/site/home-we-are";
+import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import { DotPattern } from "@/components/ui/dot-pattern";
+import { ImageGallery } from "@/components/ui/image-gallery";
 import { getPublishedCollections } from "@/lib/cms/get-collections";
+import { faqPage, homeFaqItems } from "@/data/faq-content";
 import { about, getHomeHeroSlides, home, type HomeHeroSlideContent } from "@/data/site-content";
 
 const ogHero = getHomeHeroSlides()[0];
@@ -81,6 +83,19 @@ export default async function HomePage() {
           line,
         }))}
         closingCopy={home.weAre.closingCopy}
+      />
+
+      <HomeCollectionsRail
+        collections={collections}
+        title={home.collectionsHeading}
+        intro={home.collectionsIntro}
+      />
+
+      <ImageGallery
+        eyebrow="Applications"
+        title={home.builtForHeading}
+        intro="From compact balconies to hotel entries and workplace courtyards, LEAFO scales quietly with the room."
+        items={home.builtForTiles}
       />
 
       <section className="relative overflow-hidden border-t border-[color:var(--border)] bg-[color:var(--surface)]">
@@ -198,138 +213,51 @@ export default async function HomePage() {
                 </div>
               ))}
             </div>
-            <div className="site-container rule-section-h-soft py-8 md:py-10">
-              <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground md:text-base">
-                {home.processSupporting}
-              </p>
-              <p className="label-ui mt-4 text-[10px] text-muted-foreground">{home.processTitle}</p>
-            </div>
           </div>
         </section>
       </Reveal>
 
-      <section className="bg-[color:var(--surface-alt)]">
-        <div className="site-container section-space">
-          <div className="relative overflow-hidden">
-            <DotPattern className="fill-[color:var(--charcoal)]/[0.05] md:fill-[color:var(--charcoal)]/[0.07]" />
-            <Reveal className="relative z-10">
-              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-                {home.collectionsHeading}
+      <section className="relative overflow-hidden border-t border-[color:var(--border)] bg-[color:var(--surface-alt)]">
+        <DotPattern className="fill-[color:var(--charcoal)]/[0.045] md:fill-[color:var(--charcoal)]/[0.065]" />
+        <Reveal className="relative z-10 site-container py-14 md:py-20">
+          <div className="grid gap-10 lg:grid-cols-[0.38fr_0.62fr] lg:items-start lg:gap-16">
+            <div className="max-w-md">
+              <p className="label-ui text-[11px] text-muted-foreground">{faqPage.eyebrow}</p>
+              <h2 className="font-display mt-4 text-3xl tracking-tight text-[color:var(--charcoal)] md:text-4xl">
+                Questions before you specify.
               </h2>
-              <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
-                {home.collectionsIntro}
+              <p className="mt-5 text-sm leading-relaxed text-muted-foreground md:text-base">
+                A short set of answers on material, finish, ordering, and delivery.
               </p>
-            </Reveal>
-          </div>
-          <RevealStagger
-            staggerKey={collections.map((f) => f.slug).join("-")}
-            className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
-          >
-            {collections.map((item) => (
               <Link
-                key={item.slug}
-                href={`/collections/${item.slug}`}
-                className="group block"
-                data-stagger-item
+                href="/faq"
+                className="link-underline-editorial label-ui mt-7 inline-flex text-[11px]"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-[color:var(--surface-strong)]">
-                  <Image
-                    src={item.imageSrc}
-                    alt={item.imageAlt}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
-                    sizes="(max-width: 768px) 100vw, 25vw"
-                  />
-                </div>
-                <p className="label-ui mt-4 text-[11px] text-[color:var(--charcoal)]">{item.name}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{item.subtitle}</p>
-              </Link>
-            ))}
-          </RevealStagger>
-          <Reveal>
-            <div className="mt-12">
-              <Link href="/collections" className="link-underline-editorial label-ui text-[11px]">
-                View all collections →
+                View all FAQ →
               </Link>
             </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="rule-section-h">
-        <div className="site-container section-space">
-          <div className="relative overflow-hidden">
-            <DotPattern className="fill-[color:var(--outline)]/[0.09] md:fill-[color:var(--outline)]/[0.12]" />
-            <Reveal className="relative z-10">
-              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-                {home.finishesHeading}
-              </h2>
-              <p className="mt-4 max-w-xl text-sm text-muted-foreground md:text-base">
-                {home.finishesIntro}
-              </p>
-            </Reveal>
-          </div>
-          <RevealStagger
-            staggerKey={home.finishesShort.map((f) => f.name).join("-")}
-            className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-5"
-          >
-            {home.finishesShort.map((f) => (
-              <article key={f.name} className="group" data-stagger-item>
-                <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--surface-strong)]">
-                  <Image
-                    src={f.imageSrc}
-                    alt={f.imageAlt}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                    sizes="(max-width: 768px) 100vw, 20vw"
-                  />
-                </div>
-                <h3 className="font-display mt-4 text-xl text-[color:var(--primary-ink)]">{f.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.blurb}</p>
-              </article>
-            ))}
-          </RevealStagger>
-          <Reveal>
-            <div className="mt-12">
-              <Link href="/finishes" className="link-underline-editorial label-ui text-[11px]">
-                See finishes in detail →
-              </Link>
+            <div className="divide-y divide-[color:var(--border)] border-y border-[color:var(--border)]">
+              {homeFaqItems.map((item) => (
+                <details key={item.question} className="group">
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 text-left marker:hidden">
+                    <span className="font-display text-lg leading-snug text-[color:var(--charcoal)] md:text-xl">
+                      {item.question}
+                    </span>
+                    <span
+                      className="mt-1 text-xl leading-none text-[color:var(--primary-ink)] transition-transform duration-300 group-open:rotate-45"
+                      aria-hidden
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="pb-6 text-sm leading-relaxed text-muted-foreground md:text-base">
+                    {item.answer}
+                  </p>
+                </details>
+              ))}
             </div>
-          </Reveal>
-        </div>
-      </section>
-
-      <section className="bg-[color:var(--surface-alt)]">
-        <div className="site-container section-space">
-          <div className="relative overflow-hidden">
-            <DotPattern className="fill-[color:var(--charcoal)]/[0.045] md:fill-[color:var(--charcoal)]/[0.065]" />
-            <Reveal className="relative z-10">
-              <h2 className="font-display text-3xl text-[color:var(--charcoal)] md:text-4xl">
-                {home.builtForHeading}
-              </h2>
-            </Reveal>
           </div>
-          <RevealStagger
-            staggerKey={home.builtForTiles.map((t) => t.title).join("-")}
-            className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
-          >
-            {home.builtForTiles.map((tile) => (
-              <article key={tile.title} data-stagger-item>
-                <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--surface-strong)]">
-                  <Image
-                    src={tile.imageSrc}
-                    alt={tile.imageAlt}
-                    fill
-                    className="object-cover transition-transform duration-700 ease-out hover:scale-[1.02]"
-                    sizes="(max-width: 768px) 100vw, 25vw"
-                  />
-                </div>
-                <h3 className="label-ui mt-4 text-[11px] text-[color:var(--charcoal)]">{tile.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{tile.caption}</p>
-              </article>
-            ))}
-          </RevealStagger>
-        </div>
+        </Reveal>
       </section>
 
       <Reveal>
@@ -345,12 +273,18 @@ export default async function HomePage() {
               </h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">{home.inquirySub}</p>
             </div>
-            <Link
-              href={home.inquiryCta.href}
-              className="label-ui inline-flex h-11 shrink-0 items-center bg-[color:var(--primary)] px-8 text-[11px] text-white transition-all duration-300 hover:bg-[color:var(--primary-hover)] active:scale-[0.98]"
-            >
-              {home.inquiryCta.label}
-            </Link>
+            {home.inquiryCta.href === "/contact" ? (
+              <InquiryTrigger className="label-ui inline-flex h-11 shrink-0 items-center bg-[color:var(--primary)] px-8 text-[11px] text-white transition-all duration-300 hover:bg-[color:var(--primary-hover)] active:scale-[0.98]">
+                {home.inquiryCta.label}
+              </InquiryTrigger>
+            ) : (
+              <Link
+                href={home.inquiryCta.href}
+                className="label-ui inline-flex h-11 shrink-0 items-center bg-[color:var(--primary)] px-8 text-[11px] text-white transition-all duration-300 hover:bg-[color:var(--primary-hover)] active:scale-[0.98]"
+              >
+                {home.inquiryCta.label}
+              </Link>
+            )}
           </div>
         </div>
       </Reveal>

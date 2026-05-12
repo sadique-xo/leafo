@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
+import { SiteHero } from "@/components/site/site-hero";
 import { about } from "@/data/site-content";
 
 export const metadata: Metadata = {
@@ -14,27 +14,13 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Reveal className="relative mx-auto max-w-6xl px-6 pt-10 md:pt-14">
-        <div className="relative aspect-[21/9] w-full overflow-hidden bg-[color:var(--surface-strong)] md:aspect-[2.4/1]">
-          <Image
-            src={about.imageSrc}
-            alt={about.imageAlt}
-            fill
-            className="object-cover"
-            sizes="(max-width: 1024px) 100vw, 1152px"
-            priority
-          />
-        </div>
-      </Reveal>
-
-      <section className="site-container section-space">
-        <Reveal>
-          <p className="label-ui text-[11px] text-muted-foreground">{about.eyebrow}</p>
-          <h1 className="font-display mt-4 max-w-4xl text-4xl tracking-tight text-[color:var(--charcoal)] md:text-6xl">
-            {about.title}
-          </h1>
-        </Reveal>
-      </section>
+      <SiteHero
+        imageSrc={about.imageSrc}
+        imageAlt={about.imageAlt}
+        eyebrow={about.eyebrow}
+        title={about.title}
+        intro={about.intro}
+      />
 
       <section className="bg-[color:var(--surface)]">
         <div className="relative left-1/2 w-screen max-w-[100vw] -translate-x-1/2">

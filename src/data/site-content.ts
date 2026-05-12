@@ -42,11 +42,17 @@ type CollectionsPageContent = {
   };
 };
 
+type FinishPageTrait = { label: string; value: string };
+
 type FinishPageItem = {
   name: string;
+  tagline?: string;
   description: string;
   imageSrc: string;
   imageAlt: string;
+  /** Lucide icon key resolved in the finishes page */
+  icon?: string;
+  traits?: FinishPageTrait[];
 };
 
 type HomeFinishShort = {
@@ -117,6 +123,12 @@ type SiteContent = {
     heroImageSrc: string;
     heroImageAlt: string;
     ctaLabel: string;
+    primaryCta?: LinkItem;
+    secondaryCta?: LinkItem;
+    sectionEyebrow?: string;
+    sectionTitle?: string;
+    sectionIntro?: string;
+    sampleNote?: string;
     items: FinishPageItem[];
   };
   projectsPage: {
@@ -147,19 +159,16 @@ type SiteContent = {
       eyebrow: string;
       title: string;
       body: string;
+      highlights?: Array<{ label: string; body: string }>;
       imageSrc: string;
       imageAlt: string;
       cta: LinkItem;
     };
     collectionsHeading: string;
     collectionsIntro: string;
-    finishesHeading: string;
-    finishesIntro: string;
     finishesShort: HomeFinishShort[];
     builtForHeading: string;
     builtForTiles: BuiltForTile[];
-    processTitle: string;
-    processSupporting: string;
     metrics: Array<{ label: string; value: string }>;
     inquiryHeadline: string;
     inquirySub: string;

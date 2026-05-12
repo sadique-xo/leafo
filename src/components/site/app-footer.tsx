@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import { footer } from "@/data/site-content";
 import { cn } from "@/lib/utils";
 
@@ -15,6 +16,9 @@ function FooterNavLink({ href, children }: { href: string; children: React.React
         {children}
       </a>
     );
+  }
+  if (href === "/contact") {
+    return <InquiryTrigger className={className}>{children}</InquiryTrigger>;
   }
   return (
     <Link href={href} className={className}>

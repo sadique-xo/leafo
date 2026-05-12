@@ -6,6 +6,7 @@ import { useEffect, useLayoutEffect, useRef } from "react";
 import { gsap } from "@/lib/gsap";
 import { motionAllowed } from "@/lib/motion";
 import { cn } from "@/lib/utils";
+import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import type { HeroSlideNavTone } from "./hero-overlay-context";
 import { useHeroOverlay } from "./hero-overlay-context";
 
@@ -155,17 +156,30 @@ export function HomeHero({
             >
               {primaryCta.label}
             </Link>
-            <Link
-              href={secondaryCta.href}
-              className={cn(
-                "label-ui inline-flex h-11 shrink-0 items-center px-8 text-[11px] transition-all duration-300 active:scale-[0.98]",
-                foregroundLight
-                  ? "border border-white/85 bg-white/[0.08] text-white hover:bg-white hover:text-[color:var(--charcoal)]"
-                  : "border border-[color:var(--primary-ink)] bg-[color:var(--surface-alt)]/85 text-[color:var(--primary-ink)] backdrop-blur-[2px] hover:bg-[color:var(--primary-ink)] hover:text-white",
-              )}
-            >
-              {secondaryCta.label}
-            </Link>
+            {secondaryCta.href === "/contact" ? (
+              <InquiryTrigger
+                className={cn(
+                  "label-ui inline-flex h-11 shrink-0 items-center px-8 text-[11px] transition-all duration-300 active:scale-[0.98]",
+                  foregroundLight
+                    ? "border border-white/85 bg-white/[0.08] text-white hover:bg-white hover:text-[color:var(--charcoal)]"
+                    : "border border-[color:var(--primary-ink)] bg-[color:var(--surface-alt)]/85 text-[color:var(--primary-ink)] backdrop-blur-[2px] hover:bg-[color:var(--primary-ink)] hover:text-white",
+                )}
+              >
+                {secondaryCta.label}
+              </InquiryTrigger>
+            ) : (
+              <Link
+                href={secondaryCta.href}
+                className={cn(
+                  "label-ui inline-flex h-11 shrink-0 items-center px-8 text-[11px] transition-all duration-300 active:scale-[0.98]",
+                  foregroundLight
+                    ? "border border-white/85 bg-white/[0.08] text-white hover:bg-white hover:text-[color:var(--charcoal)]"
+                    : "border border-[color:var(--primary-ink)] bg-[color:var(--surface-alt)]/85 text-[color:var(--primary-ink)] backdrop-blur-[2px] hover:bg-[color:var(--primary-ink)] hover:text-white",
+                )}
+              >
+                {secondaryCta.label}
+              </Link>
+            )}
           </div>
         </div>
       </div>

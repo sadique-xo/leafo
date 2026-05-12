@@ -34,7 +34,13 @@ export function HomeWeAre({ slides, closingCopy }: HomeWeAreProps) {
     if (!pinSection || !imageStack || !eyebrow || images.length === 0 || lines.length === 0) return;
 
     const ctx = gsap.context(() => {
-      const lineOffsets = lines.map((line) => line.offsetTop - lines[0].offsetTop);
+      const isMdUp =
+        typeof window !== "undefined" && window.matchMedia("(min-width: 768px)").matches;
+      const baselineIdx = isMdUp ? 0 : 1;
+      const baselineLine = lines[baselineIdx];
+      if (!baselineLine) return;
+
+      const lineOffsets = lines.map((line) => line.offsetTop - baselineLine.offsetTop);
       const transitionPoints = [0, 0.32, 0.64];
       const fadeDuration = 0.045;
       gsap.set(imageStack, { scale: 1 });
@@ -42,7 +48,12 @@ export function HomeWeAre({ slides, closingCopy }: HomeWeAreProps) {
       gsap.set(images, { opacity: 0 });
       gsap.set(images[0], { opacity: 1 });
       gsap.set(lines, { opacity: 0.4 });
-      gsap.set(lines[0], { opacity: 1 });
+      if (isMdUp) {
+        gsap.set(lines[0], { opacity: 1 });
+      } else {
+        gsap.set(lines[0], { autoAlpha: 0 });
+        if (lines[1]) gsap.set(lines[1], { opacity: 1 });
+      }
 
       if (!motionAllowed()) return;
 
@@ -80,6 +91,7 @@ export function HomeWeAre({ slides, closingCopy }: HomeWeAreProps) {
         tl.to(images[index], { opacity: 1, duration: fadeDuration, ease: "none" }, position);
         tl.to(eyebrow, { y: lineOffsets[index], duration: fadeDuration, ease: "none" }, position);
         tl.to(lines, { opacity: 0.4, duration: fadeDuration, ease: "none" }, position);
+        if (!isMdUp) tl.set(lines[0], { autoAlpha: 0 });
         tl.to(lines[index], { opacity: 1, duration: fadeDuration, ease: "none" }, position);
       });
     }, pinSection);
@@ -88,7 +100,7 @@ export function HomeWeAre({ slides, closingCopy }: HomeWeAreProps) {
   }, [slides]);
 
   return (
-    <section ref={pinSectionRef} className="relative h-[300vh] md:h-[300vh]">
+    <section ref={pinSectionRef} className="relative hidden md:block md:h-[300vh]">
       <div className="sticky top-0 h-[100vh] overflow-hidden bg-background">
         <div ref={imageStackRef} className="absolute inset-0 origin-center will-change-transform">
           {slides.map((slide, i) => (
@@ -126,7 +138,12 @@ export function HomeWeAre({ slides, closingCopy }: HomeWeAreProps) {
                     ref={(el) => {
                       lineRefs.current[i] = el;
                     }}
-                    className={cn("we-are-line", i === 0 ? "opacity-100" : "opacity-40")}
+                    className={cn(
+                      "we-are-line",
+                      i === 0 && "hidden md:block md:opacity-100",
+                      i === 1 && "opacity-100 md:opacity-40",
+                      i === 2 && "opacity-40",
+                    )}
                   >
                     {slide.line.line}
                   </p>

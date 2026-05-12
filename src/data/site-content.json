@@ -2,7 +2,6 @@
   "navigation": [
     { "href": "/collections", "label": "Collections" },
     { "href": "/finishes", "label": "Finishes" },
-    { "href": "/projects", "label": "Projects" },
     { "href": "/about", "label": "About" }
   ],
   "footer": {
@@ -14,7 +13,7 @@
     "exploreLinks": [
       { "href": "/collections", "label": "Collections" },
       { "href": "/finishes", "label": "Finishes" },
-      { "href": "/projects", "label": "Projects" },
+      { "href": "/faq", "label": "FAQ" },
       { "href": "/about", "label": "About" }
     ],
     "connectLinks": [
@@ -51,38 +50,79 @@
   },
   "finishesPage": {
     "title": "Finishes",
-    "intro": "Every LEAFO planter is finished by hand. Five surface treatments, each engineered for a different light, climate, and visual register. Specified at order, applied in our Anand workshop.",
+    "intro": "Five hand-applied surface treatments for LEAFO planters, from quiet matte to mineral texture. Choose by light, setting, and how much character the planter should carry.",
     "heroImageSrc": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
     "heroImageAlt": "Calm architectural interior with tactile surfaces and light",
-    "ctaLabel": "Inquire about a finish",
+    "primaryCta": { "href": "/collections", "label": "Browse collections" },
+    "secondaryCta": { "href": "/contact", "label": "Request samples" },
+    "ctaLabel": "Discuss a finish for your project",
+    "sectionEyebrow": "Finish palette",
+    "sectionTitle": "Five surfaces. One material system.",
+    "sectionIntro": "All five finishes are available across LEAFO collections. Shortlist the surface by context: glossy and sharp, matte and quiet, rustic and hand-worked, stone-like, or subtly textured.",
+    "sampleNote": "Screen colour is indicative. For project orders, request a physical sample before bulk production.",
     "items": [
       {
         "name": "Gloss",
-        "description": "High-sheen automotive paint. Holds colour under direct sun and rain, reads as enamel. Best for interiors and shaded outdoor spaces where reflection is part of the design.",
+        "icon": "sparkles",
+        "tagline": "Enamel-like depth with a deliberate shine.",
+        "description": "High-sheen automotive paint with a polished enamel read. Best for interiors, porte-cocheres, and shaded outdoor moments where reflection is deliberate.",
+        "traits": [
+          { "label": "Reflectivity", "value": "High" },
+          { "label": "Where it excels", "value": "Lobbies, galleries, shaded terraces" },
+          { "label": "Care", "value": "Soft cloth; avoid abrasive scrubbing" }
+        ],
         "imageSrc": "https://images.unsplash.com/photo-1609061801093-1b7a8a574c69?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
         "imageAlt": "Glossy dark surface reflecting soft light"
       },
       {
         "name": "Matte",
-        "description": "A flat, non-reflective finish. Sits quietly in a room. Pairs well with raw materials: stone, wood, linen, brushed metal.",
+        "icon": "blend",
+        "tagline": "A quiet plane that lets planting lead.",
+        "description": "A flat, non-reflective film that sits behind foliage and furniture. Pairs easily with stone, wood, linen, and brushed metals.",
+        "traits": [
+          { "label": "Reflectivity", "value": "Low" },
+          { "label": "Where it excels", "value": "Residences, calm hospitality, workstations" },
+          { "label": "Care", "value": "Dust or rinse; marks lift with gentle detergent" }
+        ],
         "imageSrc": "https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
         "imageAlt": "Muted matte interior with plant and natural materials"
       },
       {
         "name": "Rustic",
-        "description": "A hand-worked surface with tonal depth and visible texture. No two pieces are identical. Reads as ceramic, weighs a fraction of it.",
+        "icon": "layers",
+        "tagline": "Hand-trowelled: ceramic soul, fraction of the weight.",
+        "description": "A worked surface with tonal depth and visible tool movement. No two pieces are identical, which gives larger runs a more natural rhythm.",
+        "traits": [
+          { "label": "Texture", "value": "Pronounced" },
+          { "label": "Where it excels", "value": "Warm interiors, narrative-driven brands" },
+          { "label": "Care", "value": "Brush wash; reseal per project notes if exterior" }
+        ],
         "imageSrc": "https://images.unsplash.com/photo-1589523795613-c3fce27eea23?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
         "imageAlt": "Textured ceramic-like vessel surface"
       },
       {
         "name": "Stone",
-        "description": "A mineral finish that imitates carved stone. Suited to landscape, entry courtyards, and hospitality projects where the planter should disappear into the architecture.",
+        "icon": "mountain",
+        "tagline": "Mineral read without dead weight.",
+        "description": "A mineral treatment that suggests carved or pitched stone. Strong for landscapes, entry courts, and roof decks where the vessel should feel architectural.",
+        "traits": [
+          { "label": "Read", "value": "Earthy / architectural" },
+          { "label": "Where it excels", "value": "Courtyards, axes, hotel arrivals" },
+          { "label": "Care", "value": "Pressure rinse ok; inspect drainage seasonally" }
+        ],
         "imageSrc": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
         "imageAlt": "Rough stone architecture and courtyard"
       },
       {
         "name": "Orange Peel",
-        "description": "A subtle dimpled texture, named for its surface pattern. Catches light without reflecting it. Best at human scale, where the surface can be touched.",
+        "icon": "grip",
+        "tagline": "Micro-dimples that drink grazing light.",
+        "description": "A tight dimple pattern inspired by citrus skin under raking light. Breaks glare without going flat matte and works well at hand height.",
+        "traits": [
+          { "label": "Texture", "value": "Fine, even" },
+          { "label": "Where it excels", "value": "Lounges, suites, corridor planters" },
+          { "label": "Care", "value": "Wipe or hose; texture hides light dust" }
+        ],
         "imageSrc": "https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
         "imageAlt": "Soft dappled light on a tactile surface"
       }
@@ -163,15 +203,18 @@
     "featuredProject": {
       "eyebrow": "Featured work",
       "title": "India's largest FRP planter",
-      "body": "We executed India's largest FRP planter - manufactured by LEAFO and installed on site. Here is a snapshot of the completed project.",
+      "body": "We executed India's largest FRP planter - manufactured by LEAFO and installed on site for a high-impact interior landscape. The piece was engineered for scale, stability, and a refined architectural finish, then delivered as a complete custom planter ready for mature planting.",
+      "highlights": [
+        { "label": "Custom scale", "body": "Built beyond catalogue dimensions for a statement installation." },
+        { "label": "Engineered FRP", "body": "Lightweight structure with strength suited to large-format planting." },
+        { "label": "Site ready", "body": "Manufactured, finished, and installed with project coordination." }
+      ],
       "imageSrc": "/manufactured-by-leafo.jpeg",
       "imageAlt": "Large custom FRP planter with tree and underplanting in a bright corporate lobby",
       "cta": { "href": "/contact", "label": "Discuss custom scale" }
     },
     "collectionsHeading": "Collections",
     "collectionsIntro": "Twelve series. Each shaped for a different room, terrace, or lobby.",
-    "finishesHeading": "Finishes",
-    "finishesIntro": "Five surface treatments. Specified per project.",
     "finishesShort": [
       {
         "name": "Gloss",
@@ -231,8 +274,6 @@
         "imageAlt": "Roof garden with walkways and greenery"
       }
     ],
-    "processTitle": "Made in Anand. Shipped across India.",
-    "processSupporting": "Fiber-reinforced plastic. Hand-laid, hand-finished, painted with weather-grade automotive coatings. Built to last outdoors.",
     "metrics": [
       { "label": "Collections", "value": "12" },
       { "label": "Finishes", "value": "5" },

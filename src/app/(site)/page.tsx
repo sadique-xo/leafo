@@ -14,8 +14,7 @@ import { ImageGallery } from "@/components/ui/image-gallery";
 import { getPublishedCollections } from "@/lib/cms/get-collections";
 import { faqPage, homeFaqItems } from "@/data/faq-content";
 import { about, getHomeHeroSlides, home, type HomeHeroSlideContent } from "@/data/site-content";
-
-const ogHero = getHomeHeroSlides()[0];
+import { pageAlternates } from "@/lib/site-metadata";
 
 function getWeAreImageSlides(
   heroSlides: HomeHeroSlideContent[],
@@ -35,22 +34,10 @@ function getWeAreImageSlides(
 }
 
 export const metadata: Metadata = {
-  title: "LEAFO - FRP planters, fiber pots & modular systems",
+  title: "LEAFO - India's most diverse range of FRP planters and Fiber pots",
   description:
-    "Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Anand, Gujarat.",
-  openGraph: {
-    title: "LEAFO - Planters, quietly considered.",
-    description:
-      "A diverse range of FRP planters for homes, hotels, offices, and landscapes. Made in Anand, Gujarat.",
-    images: [{ url: ogHero.src, width: 1200, height: 800, alt: ogHero.alt }],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "LEAFO - Planters, quietly considered.",
-    description:
-      "A diverse range of FRP planters for homes, hotels, offices, and landscapes. Made in Anand, Gujarat.",
-    images: [ogHero.src],
-  },
+    "Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Gandhidham, Gujarat.",
+  ...pageAlternates("/"),
 };
 
 export default async function HomePage() {

@@ -168,6 +168,7 @@ export function LeafoGuideBot() {
         </button>
       ) : (
         <div
+          data-lenis-prevent
           className="pointer-events-auto flex max-h-[min(32rem,78dvh)] w-[min(100vw-1.25rem,24rem)] overflow-hidden border border-[color:var(--primary-ink)]/25 bg-[color:var(--surface-container-lowest)] shadow-[6px_6px_0_0_rgba(31,93,58,0.18)]"
           role="dialog"
           aria-modal="false"
@@ -196,6 +197,7 @@ export function LeafoGuideBot() {
 
             <div
               ref={scrollRef}
+              data-lenis-prevent
               className="flex flex-1 flex-col gap-3 overflow-y-auto px-3 py-3"
             >
               {STEPS.slice(0, stepIndex).map((s, i) => (

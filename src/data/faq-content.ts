@@ -30,7 +30,7 @@ export const faqSections: FaqSection[] = [
       {
         question: "What are LEAFO planters made of?",
         answer:
-          "Fiber-reinforced plastic, hand-finished in our Anand workshop. FRP is light, weather-stable, and strong enough to live indoors or outdoors for years. Each planter is built layer by layer, then finished by hand.",
+          "Fiber-reinforced plastic, hand-finished in our Gandhidham workshop. FRP is light, weather-stable, and strong enough to live indoors or outdoors for years. Each planter is built layer by layer, then finished by hand.",
       },
       {
         question: "Why FRP, and not terracotta, concrete, or ceramic?",
@@ -55,12 +55,12 @@ export const faqSections: FaqSection[] = [
       {
         question: "What finishes do you offer?",
         answer:
-          "Gloss, Matte, Rustic, Stone, and Orange Peel - each finish belongs to certain series. The collection page for each series shows which finishes are available.",
+          "Matt, Glossy, Texture, and Wooden. All four are available across LEAFO collections unless noted on a specific series page.",
       },
       {
-        question: "What's the difference between Rustic and Orange Peel?",
+        question: "What's the difference between Texture and Wooden?",
         answer:
-          "Rustic carries a softer, weathered surface, closer to aged stone. Orange Peel is more defined, with a tight dimpled grain you can read with your fingers. Both are hand-applied; no two are identical.",
+          "Texture is a hand-worked surface with mineral or rustic reads - depth you can see and feel. Wooden is a grain-forward finish that reads as timber at a glance. Both are hand-applied; variation between pieces is normal.",
       },
       {
         question: "What paint do you use? Will it fade?",

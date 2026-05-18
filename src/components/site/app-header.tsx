@@ -35,8 +35,8 @@ function navLinkClass(active: boolean, heroLight: boolean) {
   );
 }
 
-const LOGO_GREEN_SRC = "/Leafo_Logo_Green.png";
-const LOGO_WHITE_SRC = "/Leafo_Logo_White.png";
+const LOGO_GREEN_SRC = "/Leafo_Logo_Green.webp";
+const LOGO_WHITE_SRC = "/Leafo_Logo_White.webp";
 
 export function AppHeader() {
   const pathname = usePathname();
@@ -99,7 +99,6 @@ export function AppHeader() {
             width={280}
             height={72}
             className="h-8 w-auto object-contain object-left md:h-10"
-            priority
             sizes="(max-width: 768px) 140px, 180px"
           />
         </Link>
@@ -166,6 +165,7 @@ export function AppHeader() {
             </SheetTrigger>
             <SheetContent
               side="right"
+              data-lenis-prevent
               className="!inset-0 !h-[100dvh] !w-screen !max-w-none gap-0 border-0 bg-[color:var(--background)] p-0 text-[color:var(--charcoal)] data-[side=right]:!inset-0 data-[side=right]:!h-[100dvh] data-[side=right]:!w-screen sm:!max-w-none"
             >
               <div className="relative flex min-h-[100dvh] flex-col overflow-hidden">
@@ -232,8 +232,8 @@ export function AppHeader() {
 
                 <SheetFooter className="relative z-10 border-t border-[color:var(--border)]/70 px-6 py-5 md:px-10">
                   <p className="max-w-lg text-sm leading-relaxed text-muted-foreground">
-                    FRP planters, finishes, and modular systems for homes, hotels, offices,
-                    and landscapes.
+                    India&apos;s most diverse range of FRP planters and fiber pots for
+                    homes, hotels, offices, and landscapes.
                   </p>
                 </SheetFooter>
               </div>
@@ -245,6 +245,7 @@ export function AppHeader() {
           <SheetContent
             side="right"
             showCloseButton
+            data-lenis-prevent
             className="flex h-full w-[min(100vw-1.5rem,26rem)] flex-col gap-0 border-l border-border/80 bg-[color:var(--surface)] p-0 sm:max-w-md"
           >
             <SheetHeader className="px-5 py-5 pb-4 text-left">
@@ -258,7 +259,10 @@ export function AppHeader() {
                 <span>{contact.drawerIntro}</span>
               </SheetDescription>
             </SheetHeader>
-            <div className="flex flex-1 flex-col overflow-y-auto px-5 pb-6 pt-2">
+            <div
+              data-lenis-prevent
+              className="flex flex-1 flex-col overflow-y-auto px-5 pb-6 pt-2"
+            >
               <ContactInquiryForm
                 key={inquiryFormKey}
                 variant="drawer"

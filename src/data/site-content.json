@@ -5,11 +5,15 @@
     { "href": "/about", "label": "About" }
   ],
   "footer": {
-    "tagline": "Fiber pots, planters, and modular fiber systems. Made in India.",
-    "location": "Anand, Gujarat, India",
+    "tagline": "India's most diverse range of FRP planters and fiber pots. Made in India.",
+    "location": "Gandhidham, Gujarat, India",
     "email": "leafoindia@gmail.com",
     "phone": "+91 95948 97176",
     "note": "© 2026 LEAFO®. All rights reserved.",
+    "legalLinks": [
+      { "href": "/terms", "label": "Terms & Conditions" },
+      { "href": "/privacy", "label": "Privacy Policy" }
+    ],
     "exploreLinks": [
       { "href": "/collections", "label": "Collections" },
       { "href": "/finishes", "label": "Finishes" },
@@ -19,13 +23,10 @@
     "connectLinks": [
       { "href": "/contact", "label": "Inquire" },
       { "href": "https://wa.me/919594897176", "label": "WhatsApp" },
-      { "href": "https://www.instagram.com/", "label": "Instagram" },
-      { "href": "https://www.linkedin.com/", "label": "LinkedIn" },
-      { "href": "https://www.facebook.com/", "label": "Facebook" }
-    ],
-    "creditLabel": "Designed and built by",
-    "creditName": "sadique.co",
-    "creditHref": "https://sadique.co"
+      { "href": "https://www.instagram.com/leafoplanters", "label": "Instagram" },
+      { "href": "https://www.linkedin.com/company/leafo-planters/", "label": "LinkedIn" },
+      { "href": "https://www.facebook.com/people/Leafo/61567999620833/", "label": "Facebook" }
+    ]
   },
   "collectionsPage": {
     "title": "Collections",
@@ -40,7 +41,7 @@
       },
       "finish": {
         "label": "By finish",
-        "options": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"]
+        "options": ["Matt", "Glossy", "Texture", "Wooden"]
       },
       "size": {
         "label": "By size",
@@ -50,32 +51,19 @@
   },
   "finishesPage": {
     "title": "Finishes",
-    "intro": "Five hand-applied surface treatments for LEAFO planters, from quiet matte to mineral texture. Choose by light, setting, and how much character the planter should carry.",
+    "intro": "Four hand-applied surface treatments for LEAFO planters: matt, glossy, texture, and wooden. Choose by light, setting, and how much character the planter should carry.",
     "heroImageSrc": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
     "heroImageAlt": "Calm architectural interior with tactile surfaces and light",
     "primaryCta": { "href": "/collections", "label": "Browse collections" },
     "secondaryCta": { "href": "/contact", "label": "Request samples" },
     "ctaLabel": "Discuss a finish for your project",
     "sectionEyebrow": "Finish palette",
-    "sectionTitle": "Five surfaces. One material system.",
-    "sectionIntro": "All five finishes are available across LEAFO collections. Shortlist the surface by context: glossy and sharp, matte and quiet, rustic and hand-worked, stone-like, or subtly textured.",
+    "sectionTitle": "Four surfaces. One material system.",
+    "sectionIntro": "All four finishes are available across LEAFO collections. Shortlist by context: glossy and sharp, matt and quiet, hand-worked texture, or wood-grain warmth.",
     "sampleNote": "Screen colour is indicative. For project orders, request a physical sample before bulk production.",
     "items": [
       {
-        "name": "Gloss",
-        "icon": "sparkles",
-        "tagline": "Enamel-like depth with a deliberate shine.",
-        "description": "High-sheen automotive paint with a polished enamel read. Best for interiors, porte-cocheres, and shaded outdoor moments where reflection is deliberate.",
-        "traits": [
-          { "label": "Reflectivity", "value": "High" },
-          { "label": "Where it excels", "value": "Lobbies, galleries, shaded terraces" },
-          { "label": "Care", "value": "Soft cloth; avoid abrasive scrubbing" }
-        ],
-        "imageSrc": "https://images.unsplash.com/photo-1609061801093-1b7a8a574c69?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Glossy dark surface reflecting soft light"
-      },
-      {
-        "name": "Matte",
+        "name": "Matt",
         "icon": "blend",
         "tagline": "A quiet plane that lets planting lead.",
         "description": "A flat, non-reflective film that sits behind foliage and furniture. Pairs easily with stone, wood, linen, and brushed metals.",
@@ -84,47 +72,47 @@
           { "label": "Where it excels", "value": "Residences, calm hospitality, workstations" },
           { "label": "Care", "value": "Dust or rinse; marks lift with gentle detergent" }
         ],
-        "imageSrc": "https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Muted matte interior with plant and natural materials"
+        "imageSrc": "/hero/finishes/Matt.webp",
+        "imageAlt": "LEAFO planter in matt finish with plant in a calm interior"
       },
       {
-        "name": "Rustic",
+        "name": "Glossy",
+        "icon": "sparkles",
+        "tagline": "Enamel-like depth with a deliberate shine.",
+        "description": "High-sheen automotive paint with a polished enamel read. Best for interiors, porte-cocheres, and shaded outdoor moments where reflection is deliberate.",
+        "traits": [
+          { "label": "Reflectivity", "value": "High" },
+          { "label": "Where it excels", "value": "Lobbies, galleries, shaded terraces" },
+          { "label": "Care", "value": "Soft cloth; avoid abrasive scrubbing" }
+        ],
+        "imageSrc": "/hero/finishes/Glossy.webp",
+        "imageAlt": "LEAFO planter in glossy finish with plant in a refined lobby setting"
+      },
+      {
+        "name": "Texture",
         "icon": "layers",
-        "tagline": "Hand-trowelled: ceramic soul, fraction of the weight.",
-        "description": "A worked surface with tonal depth and visible tool movement. No two pieces are identical, which gives larger runs a more natural rhythm.",
+        "tagline": "Hand-worked surface with depth and character.",
+        "description": "A worked treatment with tonal variation and visible grain - mineral, rustic, or dimpled reads depending on the series. No two pieces are identical, which gives larger runs a more natural rhythm.",
         "traits": [
-          { "label": "Texture", "value": "Pronounced" },
-          { "label": "Where it excels", "value": "Warm interiors, narrative-driven brands" },
-          { "label": "Care", "value": "Brush wash; reseal per project notes if exterior" }
+          { "label": "Texture", "value": "Pronounced to fine" },
+          { "label": "Where it excels", "value": "Landscapes, courtyards, narrative interiors" },
+          { "label": "Care", "value": "Brush wash or hose; reseal per project notes if exterior" }
         ],
-        "imageSrc": "https://images.unsplash.com/photo-1589523795613-c3fce27eea23?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Textured ceramic-like vessel surface"
+        "imageSrc": "/hero/finishes/texture.webp",
+        "imageAlt": "LEAFO planter in textured mineral finish with plant in a courtyard"
       },
       {
-        "name": "Stone",
-        "icon": "mountain",
-        "tagline": "Mineral read without dead weight.",
-        "description": "A mineral treatment that suggests carved or pitched stone. Strong for landscapes, entry courts, and roof decks where the vessel should feel architectural.",
+        "name": "Wooden",
+        "icon": "trees",
+        "tagline": "Wood-grain warmth without the weight of timber.",
+        "description": "A grain-forward finish that reads as timber at a glance - suited to warm interiors, hospitality, and terraces where planters should feel natural beside wood decking and furniture.",
         "traits": [
-          { "label": "Read", "value": "Earthy / architectural" },
-          { "label": "Where it excels", "value": "Courtyards, axes, hotel arrivals" },
-          { "label": "Care", "value": "Pressure rinse ok; inspect drainage seasonally" }
+          { "label": "Read", "value": "Warm / organic" },
+          { "label": "Where it excels", "value": "Lounges, suites, wood-heavy interiors" },
+          { "label": "Care", "value": "Wipe or rinse; avoid prolonged standing water on grain" }
         ],
-        "imageSrc": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Rough stone architecture and courtyard"
-      },
-      {
-        "name": "Orange Peel",
-        "icon": "grip",
-        "tagline": "Micro-dimples that drink grazing light.",
-        "description": "A tight dimple pattern inspired by citrus skin under raking light. Breaks glare without going flat matte and works well at hand height.",
-        "traits": [
-          { "label": "Texture", "value": "Fine, even" },
-          { "label": "Where it excels", "value": "Lounges, suites, corridor planters" },
-          { "label": "Care", "value": "Wipe or hose; texture hides light dust" }
-        ],
-        "imageSrc": "https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?auto=format&fit=crop&w=1400&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Soft dappled light on a tactile surface"
+        "imageSrc": "/hero/finishes/Wooden.webp",
+        "imageAlt": "LEAFO planter in wood-grain finish with plant on a timber terrace"
       }
     ]
   },
@@ -142,7 +130,7 @@
     "intro": "A diverse range of fiber-reinforced planters for homes, hotels, offices, and landscapes across India and beyond.",
     "primaryCta": { "href": "/collections", "label": "Explore Collections" },
     "secondaryCta": { "href": "/contact", "label": "Inquire" },
-    "heroImageSrc": "/hero/hero-slide-1.png",
+    "heroImageSrc": "/hero/hero-slide-1.webp",
     "heroImageAlt": "Outdoor row of planters with varied foliage against a pale tiled wall in sunlight",
     "weAre": {
       "lines": [
@@ -157,7 +145,7 @@
       { "label": "Range", "body": "12 collections · 60+ size variants" },
       {
         "label": "Finishes",
-        "body": "Gloss, matte, rustic, stone, orange peel - applied by hand"
+        "body": "Matt, glossy, texture, wooden - applied by hand"
       },
       {
         "label": "Material",
@@ -166,40 +154,40 @@
     ],
     "heroSlides": [
       {
-        "src": "/hero/hero-slide-1.png",
+        "src": "/hero/hero-slide-1.webp",
         "alt": "Geometric planters on a terrace with lush greenery",
         "navTone": "light"
       },
       {
-        "src": "/hero/hero-slide-2.png",
+        "src": "/hero/hero-slide-2.webp",
         "alt": "Architectural courtyard with symmetrical planters",
         "navTone": "light"
       },
       {
-        "src": "/hero/hero-slide-3.png",
+        "src": "/hero/hero-slide-3.webp",
         "alt": "Minimal exterior with modular planters",
         "navTone": "light"
       },
       {
-        "src": "/hero/hero-slide-4.png",
+        "src": "/hero/hero-slide-4.webp",
         "alt": "Landscape planters in soft daylight",
         "navTone": "light"
       },
       {
-        "src": "/hero/hero-slide-5.png",
+        "src": "/hero/hero-slide-5.webp",
         "alt": "Hospitality entrance with fiber planters",
         "navTone": "light"
       },
       {
-        "src": "/hero/hero-slide-6.png",
+        "src": "/hero/hero-slide-6.webp",
         "alt": "Residential podium garden with planters",
         "navTone": "light"
       }
     ],
-    "brandStatementLead": "LEAFO designs and manufactures fiber pots, planters, and modular fiber systems from Anand, Gujarat.",
+    "brandStatementLead": "LEAFO designs and manufactures fiber pots and planters from Gandhidham, Gujarat.",
     "brandStatement": "Sizes from desktop to architectural scale - finished for weather, built to last. Meant to hold a plant for a decade and stay easy on the eye.",
     "brandStatementAsideEyebrow": "Made in India",
-    "brandStatementAside": "Hand-laid FRP in Anand, Gujarat - specified nationwide for homes, hospitality, workplaces, and landscape.",
+    "brandStatementAside": "Hand-laid FRP in Gandhidham, Gujarat - specified nationwide for homes, hospitality, workplaces, and landscape.",
     "featuredProject": {
       "eyebrow": "Featured work",
       "title": "India's largest FRP planter",
@@ -217,34 +205,28 @@
     "collectionsIntro": "Twelve series. Each shaped for a different room, terrace, or lobby.",
     "finishesShort": [
       {
-        "name": "Gloss",
-        "blurb": "High-sheen automotive paint. Reflects light, holds colour.",
-        "imageSrc": "https://images.unsplash.com/photo-1609061801093-1b7a8a574c69?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Reflective gloss surface"
-      },
-      {
-        "name": "Matte",
+        "name": "Matt",
         "blurb": "Soft, non-reflective surface. Recedes into a space.",
-        "imageSrc": "https://images.unsplash.com/photo-1599580546605-a86af98dbdb0?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Calm matte interior with greenery"
+        "imageSrc": "/hero/finishes/Matt.webp",
+        "imageAlt": "LEAFO planter in matt finish with plant in a calm interior"
       },
       {
-        "name": "Rustic",
-        "blurb": "Hand-worked texture with depth and tonal variation.",
-        "imageSrc": "https://images.unsplash.com/photo-1589523795613-c3fce27eea23?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Rustic textured planter surface"
+        "name": "Glossy",
+        "blurb": "High-sheen automotive paint. Reflects light, holds colour.",
+        "imageSrc": "/hero/finishes/Glossy.webp",
+        "imageAlt": "LEAFO planter in glossy finish with plant in a refined lobby setting"
       },
       {
-        "name": "Stone",
-        "blurb": "Mineral surface that reads as carved stone.",
-        "imageSrc": "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Stone and architecture"
+        "name": "Texture",
+        "blurb": "Hand-worked surface with depth and tonal variation.",
+        "imageSrc": "/hero/finishes/texture.webp",
+        "imageAlt": "LEAFO planter in textured mineral finish with plant in a courtyard"
       },
       {
-        "name": "Orange Peel",
-        "blurb": "Subtle dimpled finish. Tactile under direct light.",
-        "imageSrc": "https://images.unsplash.com/photo-1463947628408-f8581a2f4aca?auto=format&fit=crop&w=900&q=80&ixlib=rb-4.1.0",
-        "imageAlt": "Dappled light on texture"
+        "name": "Wooden",
+        "blurb": "Wood-grain finish. Warm beside timber and natural materials.",
+        "imageSrc": "/hero/finishes/Wooden.webp",
+        "imageAlt": "LEAFO planter in wood-grain finish with plant on a timber terrace"
       }
     ],
     "builtForHeading": "Built for spaces.",
@@ -276,7 +258,7 @@
     ],
     "metrics": [
       { "label": "Collections", "value": "12" },
-      { "label": "Finishes", "value": "5" },
+      { "label": "Finishes", "value": "4" },
       { "label": "Size variants", "value": "60+" }
     ],
     "inquiryHeadline": "Designing a space?",
@@ -291,7 +273,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 19.5 × 30 cm", "B - 15.5 × 24 cm", "C - 11.5 × 18 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Wide at the base, narrowing cleanly upward. Reads as sculptural without competing with the plant.",
       "story": [
@@ -302,17 +284,17 @@
       "imageSrc": "https://images.unsplash.com/photo-1609062111394-0427aa22d6c1?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Sculptural cone-shaped ceramic planter on neutral background",
       "shapes": ["Round", "Tall"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium"]
     },
     {
       "slug": "corsa",
       "name": "Corsa",
-      "subtitle": "Tall and tapered. Four sizes, gloss to matte.",
+      "subtitle": "Tall and tapered. Four sizes, glossy to matt.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 22 × 40 cm", "B - 17 × 32 cm", "C - 13 × 25 cm", "D - 10 × 18 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Four heights of the same gentle silhouette. Pairs with palms, ficus, and large-leaf indoor plants.",
       "story": [
@@ -323,7 +305,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1466781783364-36c955e42a7f?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Tall green indoor plants in a bright interior",
       "shapes": ["Tall", "Round"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
     },
     {
@@ -333,7 +315,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 16 × 40 cm", "B - 13 × 33 cm", "C - 11 × 28 cm", "D - 8 × 21 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "A narrow column with quiet shoulders. Designed for tight spaces where height matters more than footprint.",
       "story": [
@@ -344,7 +326,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Minimal succulent in a tall narrow planter",
       "shapes": ["Tall", "Round"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
     },
     {
@@ -354,7 +336,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 27.5 × 32.5 cm", "B - 23.5 × 28.5 cm", "C - 20.5 × 24.5 cm", "D - 17 × 20.5 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "A rounded base that opens slightly outward. Comfortable in residential and hospitality settings.",
       "story": [
@@ -365,7 +347,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Bell-shaped planter with sculptural succulent",
       "shapes": ["Round", "Bowl"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Small", "Medium", "Large"]
     },
     {
@@ -385,7 +367,7 @@
         "H - 12 × 12 cm",
         "I - 12 × 9 cm"
       ],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "From desktop to floor-standing. Pomo is the working horse of the catalogue, configured for spaces of any scale.",
       "story": [
@@ -396,7 +378,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Round planters with cacti and succulents",
       "shapes": ["Round", "Bowl"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium", "Large", "Architectural"]
     },
     {
@@ -406,7 +388,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 36 × 26 cm", "B - 31 × 22 cm", "C - 25 × 18 cm", "D - 19 × 14 cm", "E - 14 × 10 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Low and broad. Designed for shallow plantings, stone arrangements, and centrepiece installations.",
       "story": [
@@ -417,7 +399,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1563419837758-e48ef1b731dd?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Wide bowl planters with lush greenery",
       "shapes": ["Bowl", "Round"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
     },
     {
@@ -427,7 +409,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 16 × 30 cm", "B - 14 × 22 cm", "C - 14 × 14 cm", "D - 12 × 16 cm", "E - 10 × 11 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "A rounded vertical with a soft top. Sits well alongside furniture in residential and office floors.",
       "story": [
@@ -438,7 +420,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1588440691140-09155c1be58a?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Garden terrace with planters and greenery",
       "shapes": ["Round", "Tall"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium"]
     },
     {
@@ -448,7 +430,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 18 × 26 cm", "More sizes in development"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Hard-edged surfaces in a controlled silhouette. Reads as architectural object before planter.",
       "story": [
@@ -459,7 +441,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1528475563668-e15742001b92?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Geometric faceted vessel with branches",
       "shapes": ["Faceted", "Round"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium"]
     },
     {
@@ -469,7 +451,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 11 × 14.5 cm", "More sizes in development"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "One form, considered. For spaces that need a planter without a statement.",
       "story": [
@@ -480,7 +462,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1680677780993-75e140b4f06f?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Minimal interior with small plant on table",
       "shapes": ["Round"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small"]
     },
     {
@@ -490,7 +472,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 9 × 8 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "A dimensional pattern across the body, kept small to suit shelves, consoles, and tabletops.",
       "story": [
@@ -501,7 +483,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Small potted plant on shelf in soft light",
       "shapes": ["Round", "Faceted"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop"]
     },
     {
@@ -518,18 +500,18 @@
         "E - 35.4 × 19.7 × 19.7 cm",
         "F - 34 × 34 × 25 cm"
       ],
-      "finish": "Matte emphasised across linear formats; full palette on request",
+      "finish": "Matt emphasised across linear formats; full palette on request",
       "priceNote": "",
-      "summary": "Linear planters for terraces, balconies, and zoning open spaces. Available in matte across the range.",
+      "summary": "Linear planters for terraces, balconies, and zoning open spaces. Available in matt across the range.",
       "story": [
-        "Linear planters for terraces, balconies, and zoning open spaces. Available in matte across the range.",
+        "Linear planters for terraces, balconies, and zoning open spaces. Available in matt across the range.",
         "Six formats for hedges, dividers, and continuous runs along architecture."
       ],
       "features": ["Indoor · Outdoor · Both", "Runs that align to façade and railing rhythm"],
       "imageSrc": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Succulents in rectangular planter trough",
       "shapes": ["Rectangle"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Small", "Medium", "Large", "Architectural"]
     },
     {
@@ -539,7 +521,7 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": ["A - 10.5 × 29 cm", "B - 12 × 18 cm", "C - 10 × 14 cm"],
-      "finish": "Gloss · Matte · Rustic · Stone · Orange Peel",
+      "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "A traditional silhouette with a contemporary surface. Suited to entryways, courtyards, and quieter corners.",
       "story": [
@@ -550,7 +532,7 @@
       "imageSrc": "https://images.unsplash.com/photo-1510520745063-ceaa7314a820?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
       "imageAlt": "Classic urn-shaped vessel with plant",
       "shapes": ["Round", "Tall"],
-      "finishes": ["Gloss", "Matte", "Rustic", "Stone", "Orange Peel"],
+      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
       "scaleTags": ["Tabletop", "Small", "Medium"]
     }
   ],
@@ -562,7 +544,7 @@
       {
         "title": "Origin",
         "paragraphs": [
-          "LEAFO is a planter manufacturer based in Anand, Gujarat. We make fiber pots, full-size planters, and modular fiber systems for homes, commercial spaces, and landscape projects.",
+          "LEAFO is a planter manufacturer based in Gandhidham, Gujarat. We make fiber pots and full-size planters for homes, commercial spaces, and landscape projects.",
           "The company started with a simple observation: India had hundreds of pot manufacturers, but very few thinking about planters as designed objects. Most catalogues offered shape, but not silhouette. Colour, but not finish. We started LEAFO to close that gap."
         ]
       },
@@ -576,7 +558,7 @@
     "whatWeMakeTitle": "What we make",
     "whatWeMake": [
       "12 collections, 60+ size variants",
-      "5 finishes: gloss, matte, rustic, stone, orange peel",
+      "4 finishes: matt, glossy, texture, wooden",
       "Material: fiber-reinforced plastic (FRP)",
       "Built for indoor and outdoor use",
       "Shipped across India, exported on request"
@@ -600,9 +582,9 @@
     "hours": "Monday to Saturday, 10am – 6pm IST",
     "followTitle": "Follow",
     "followLinks": [
-      { "href": "https://www.instagram.com/", "label": "Instagram" },
-      { "href": "https://www.linkedin.com/", "label": "LinkedIn" },
-      { "href": "https://www.facebook.com/", "label": "Facebook" }
+      { "href": "https://www.instagram.com/leafoplanters", "label": "Instagram" },
+      { "href": "https://www.linkedin.com/company/leafo-planters/", "label": "LinkedIn" },
+      { "href": "https://www.facebook.com/people/Leafo/61567999620833/", "label": "Facebook" }
     ],
     "drawerTitle": "Inquire",
     "drawerIntro": "A quick note about your project is all we need, we'll write back within two business days.",

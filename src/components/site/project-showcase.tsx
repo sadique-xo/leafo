@@ -14,7 +14,8 @@ function deriveTags(summary: string, body: string | null): string[] {
   if (/custom|bespoke|architectural|largest|scale/i.test(text)) add("Custom scale");
   if (/hotel|hospitality|resort/i.test(text)) add("Hospitality");
   if (/landscape|terrace|outdoor|courtyard/i.test(text)) add("Outdoor");
-  if (/stone|finish|textured/i.test(text)) add("Stone finish");
+  if (/texture|textured/i.test(text)) add("Texture finish");
+  if (/wooden|wood/i.test(text)) add("Wooden finish");
   if (/india|indian/i.test(text)) add("India");
   if (!tags.length) add("Installation");
   return tags;

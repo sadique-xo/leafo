@@ -3,11 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Blend,
-  Grip,
   HelpCircle,
   Layers,
-  Mountain,
   Sparkles,
+  Trees,
   type LucideIcon,
 } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
@@ -20,8 +19,7 @@ const FINISH_ICONS: Record<string, LucideIcon> = {
   sparkles: Sparkles,
   blend: Blend,
   layers: Layers,
-  mountain: Mountain,
-  grip: Grip,
+  trees: Trees,
 };
 
 function IconFor({
@@ -40,7 +38,7 @@ function IconFor({
 export const metadata: Metadata = {
   title: "Finishes - LEAFO planters",
   description:
-    "Five hand-applied FRP planter finishes: gloss, matte, rustic, stone, and orange peel. Samples and project guidance on request.",
+    "Four hand-applied FRP planter finishes: matt, glossy, texture, and wooden. Samples and project guidance on request.",
 };
 
 export default function FinishesPage() {

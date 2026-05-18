@@ -2,23 +2,24 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { Feather, HeartHandshake, Recycle, Sparkles, Sun } from "lucide-react";
+import { Feather, HeartHandshake, Sparkles, Sun } from "lucide-react";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
+import { CollectionJsonLd } from "@/components/site/collection-json-ld";
 import {
   getCollectionBySlugFromCms,
   getCollectionSlugsFromCms,
   getFallbackCollectionSlugs,
   getPublishedCollections,
 } from "@/lib/cms/get-collections";
+import { pageAlternates } from "@/lib/site-metadata";
 
 type CollectionPageProps = {
   params: Promise<{ slug: string }>;
 };
 
 const productHighlights = [
-  { label: "100% Recyclable", icon: Recycle },
   { label: "UV Resistant", icon: Sun },
   { label: "Moulded with Love", icon: HeartHandshake },
   { label: "Light Weight", icon: Feather },
@@ -47,7 +48,8 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
 
   return {
     title: `${collection.name} - LEAFO FRP planter collection`,
-    description: `${collection.summary} Available in five finishes and multiple sizes. Made in Anand, Gujarat.`,
+    description: `${collection.summary} Available in four finishes and multiple sizes. Made in Gandhidham, Gujarat.`,
+    ...pageAlternates(`/collections/${slug}`),
   };
 }
 
@@ -69,6 +71,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
 
   return (
     <>
+      <CollectionJsonLd collection={collection} />
       <section className="site-container pb-14 pt-28 md:pb-18 md:pt-32 lg:pb-20">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(23rem,0.82fr)] lg:gap-14 xl:gap-18">
           <Reveal className="min-w-0" start="top 85%" y={24}>
@@ -166,7 +169,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
               </div>
             </div>
 
-            <div className="mt-8 grid grid-cols-5 gap-3">
+            <div className="mt-8 grid grid-cols-4 gap-3">
               {productHighlights.map(({ label, icon: Icon }) => (
                 <div key={label} className="flex flex-col items-center gap-2 text-center">
                   <Icon className="size-8 text-[color:var(--primary-ink)] md:size-10" strokeWidth={1.7} />

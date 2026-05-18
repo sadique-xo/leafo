@@ -8,7 +8,7 @@ import { about } from "@/data/site-content";
 export const metadata: Metadata = {
   title: "About LEAFO - design-led planter manufacturer in India",
   description:
-    "LEAFO is a fiber-reinforced planter manufacturer based in Anand, Gujarat. Designed for the way people actually live.",
+    "LEAFO is a fiber-reinforced planter manufacturer based in Gandhidham, Gujarat. Designed for the way people actually live.",
 };
 
 export default function AboutPage() {

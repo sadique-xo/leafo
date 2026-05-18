@@ -24,7 +24,7 @@
 > View all collections →
 
 **Footer tagline (under logo):**
-> Fiber pots, planters, and modular fiber systems. Made in India.
+> India's most diverse range of FRP planters and fiber pots. Made in India.
 
 **Footer columns:**
 
@@ -37,7 +37,7 @@ Inquire · WhatsApp · Instagram · LinkedIn · Facebook
 *Reach*
 +91 95948 97176
 leafoindia@gmail.com
-Anand, Gujarat, India
+Gandhidham, Gujarat, India
 
 **Footer fine print:**
 © 2026 LEAFO®. All rights reserved.
@@ -61,7 +61,7 @@ Anand, Gujarat, India
 ---
 
 ### Brand statement (below hero, short editorial block)
-> LEAFO designs and manufactures fiber pots, planters, and modular fiber systems from Anand, Gujarat. Twelve collections. Five finishes. Sizes from desktop to architectural scale. Built to hold a plant for a decade and look good doing it.
+> LEAFO designs and manufactures fiber pots and planters from Gandhidham, Gujarat. Twelve collections. Five finishes. Sizes from desktop to architectural scale. Built to hold a plant for a decade and look good doing it.
 
 ---
 
@@ -125,7 +125,7 @@ Anand, Gujarat, India
 
 ### Process strip (numbers + factory imagery)
 
-**Section title:** Made in Anand. Shipped across India.
+**Section title:** Made in Gandhidham. Shipped across India.
 
 **Three numbers (placeholders, confirm with shradha):**
 - 12 collections
@@ -273,7 +273,7 @@ Anand, Gujarat, India
 **Page title:** Finishes
 
 **Intro:**
-> Every LEAFO planter is finished by hand. Five surface treatments, each engineered for a different light, climate, and visual register. Specified at order, applied in our Anand workshop.
+> Every LEAFO planter is finished by hand. Five surface treatments, each engineered for a different light, climate, and visual register. Specified at order, applied in our Gandhidham workshop.
 
 ### Gloss
 High-sheen automotive paint. Holds colour under direct sun and rain, reads as enamel. Best for interiors and shaded outdoor spaces where reflection is part of the design.
@@ -319,7 +319,7 @@ A subtle dimpled texture, named for its surface pattern. Catches light without r
 ### Story (two short blocks)
 
 **Block 1 - Origin**
-> LEAFO is a planter manufacturer based in Anand, Gujarat. We make fiber pots, full-size planters, and modular fiber systems for homes, commercial spaces, and landscape projects.
+> LEAFO is a planter manufacturer based in Gandhidham, Gujarat. We make fiber pots and full-size planters for homes, commercial spaces, and landscape projects.
 
 > The company started with a simple observation: India had hundreds of pot manufacturers, but very few thinking about planters as designed objects. Most catalogues offered shape, but not silhouette. Colour, but not finish. We started LEAFO to close that gap.
 
@@ -375,7 +375,7 @@ Send inquiry
 leafoindia@gmail.com
 
 **Visit**
-Anand, Gujarat, India
+Gandhidham, Gujarat, India
 
 **Hours**
 Monday to Saturday, 10am – 6pm IST
@@ -400,8 +400,8 @@ Instagram · LinkedIn · Facebook
 *(Use these on respective pages. Keep titles under 60 characters, descriptions under 155.)*
 
 ### Homepage
-- **Title:** LEAFO - FRP planters, fiber pots & modular systems
-- **Description:** Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Anand, Gujarat.
+- **Title:** LEAFO - India's most diverse range of FRP planters and Fiber pots
+- **Description:** Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Gandhidham, Gujarat.
 
 ### Collections listing
 - **Title:** Collections - LEAFO planters
@@ -421,15 +421,15 @@ Instagram · LinkedIn · Facebook
 
 ### About
 - **Title:** About LEAFO - design-led planter manufacturer in India
-- **Description:** LEAFO is a fiber-reinforced planter manufacturer based in Anand, Gujarat. Designed for the way people actually live.
+- **Description:** LEAFO is a fiber-reinforced planter manufacturer based in Gandhidham, Gujarat. Designed for the way people actually live.
 
 ### Contact
 - **Title:** Inquire - LEAFO
 - **Description:** Tell us about your project. We respond within two business days with options, sizing, and a quote.
 
 ### Open Graph / social
-- **OG Title:** LEAFO - Planters, quietly considered.
-- **OG Description:** A diverse range of FRP planters for homes, hotels, offices, and landscapes. Made in Anand, Gujarat.
+- **OG Title:** LEAFO - India's most diverse range of FRP planters and fiber pots
+- **OG Description:** India's most diverse range of FRP planters and fiber pots. Made in India.
 - **OG Image:** [hero shot, 1200 × 630, single planter on bone background, centred]
 - **Twitter Card:** summary_large_image
 

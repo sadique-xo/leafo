@@ -29,7 +29,7 @@ async function fetchPublishedCollections(): Promise<CollectionItem[]> {
 
 export const getPublishedCollections = unstable_cache(
   fetchPublishedCollections,
-  ["published-collections"],
+  ["published-collections", "finishes-v2"],
   { tags: ["collections"] },
 );
 

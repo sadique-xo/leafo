@@ -7,7 +7,9 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { Reveal } from "@/components/motion/reveal";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import type { CollectionItem } from "@/data/site-content";
+import { saveCollectionListScroll } from "@/lib/collection-list-scroll";
 import { cn } from "@/lib/utils";
+import { useLenis } from "@/components/motion/lenis-context";
 
 type HomeCollectionsRailProps = {
   collections: CollectionItem[];
@@ -20,6 +22,7 @@ export function HomeCollectionsRail({
   title,
   intro,
 }: HomeCollectionsRailProps) {
+  const lenis = useLenis();
   const railRef = useRef<HTMLDivElement>(null);
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(collections.length > 1);
@@ -41,19 +44,61 @@ export function HomeCollectionsRail({
     rail.addEventListener("scroll", updateControls, { passive: true });
     window.addEventListener("resize", updateControls, { passive: true });
 
+    // Horizontal trackpad swipes scroll the rail; vertical wheel must reach Lenis.
+    const onWheel = (event: WheelEvent) => {
+      const absX = Math.abs(event.deltaX);
+      const absY = Math.abs(event.deltaY);
+      if (absX <= absY || absX === 0) return;
+
+      const maxLeft = rail.scrollWidth - rail.clientWidth;
+      if (maxLeft <= 0) return;
+
+      const nextLeft = rail.scrollLeft + event.deltaX;
+      if (nextLeft < 0 || nextLeft > maxLeft) return;
+
+      event.preventDefault();
+      rail.scrollLeft = nextLeft;
+    };
+
+    rail.addEventListener("wheel", onWheel, { passive: false });
+
     return () => {
       window.cancelAnimationFrame(frame);
       rail.removeEventListener("scroll", updateControls);
+      rail.removeEventListener("wheel", onWheel);
       window.removeEventListener("resize", updateControls);
     };
   }, [updateControls]);
+
+  const saveRailScroll = useCallback(
+    (slug: string) => {
+      saveCollectionListScroll({
+        returnPath: "/",
+        slug,
+        pageScrollY: lenis?.scroll ?? window.scrollY,
+        railScrollLeft: railRef.current?.scrollLeft,
+      });
+    },
+    [lenis],
+  );
 
   const scrollByPage = (direction: "prev" | "next") => {
     const rail = railRef.current;
     if (!rail) return;
 
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+    let scrollAmount: number;
+
+    if (isDesktop) {
+      const firstCard = rail.firstElementChild as HTMLElement | null;
+      const gap = parseFloat(getComputedStyle(rail).gap) || 0;
+      scrollAmount = firstCard ? firstCard.offsetWidth + gap : rail.clientWidth * 0.86;
+    } else {
+      scrollAmount = rail.clientWidth * 0.86;
+    }
+
     rail.scrollBy({
-      left: rail.clientWidth * 0.86 * (direction === "next" ? 1 : -1),
+      left: scrollAmount * (direction === "next" ? 1 : -1),
       behavior: "smooth",
     });
   };
@@ -111,12 +156,15 @@ export function HomeCollectionsRail({
         <div className="mt-10 overflow-hidden md:mt-12">
           <div
             ref={railRef}
+            data-collections-rail
             className="flex snap-x snap-mandatory gap-5 overflow-x-auto pb-2 scroll-smooth [scrollbar-width:none] sm:gap-6 [&::-webkit-scrollbar]:hidden"
           >
-            {collections.map((item, index) => (
+            {collections.map((item) => (
               <Link
                 key={item.slug}
                 href={`/collections/${item.slug}`}
+                data-collection-slug={item.slug}
+                onClick={() => saveRailScroll(item.slug)}
                 className="group w-[min(76vw,21rem)] shrink-0 snap-start sm:w-[19rem] lg:w-[21rem]"
               >
                 <div className="relative aspect-[3/4] overflow-hidden bg-[color:var(--surface-strong)]">
@@ -126,7 +174,7 @@ export function HomeCollectionsRail({
                     fill
                     className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                     sizes="(max-width: 640px) 76vw, 21rem"
-                    priority={index < 2}
+                    loading="lazy"
                   />
                   <div
                     className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100"

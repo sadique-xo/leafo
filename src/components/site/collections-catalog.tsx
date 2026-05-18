@@ -3,17 +3,31 @@
 import Image from "next/image";
 import Link from "next/link";
 import { SlidersHorizontal, X } from "lucide-react";
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
+import { useLenis } from "@/components/motion/lenis-context";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { SiteHero } from "@/components/site/site-hero";
 import type { CollectionItem } from "@/data/site-content";
 import { collectionsPage } from "@/data/site-content";
+import { saveCollectionListScroll } from "@/lib/collection-list-scroll";
 import { cn } from "@/lib/utils";
 
-function CollectionCard({ item }: { item: CollectionItem }) {
+function CollectionCard({
+  item,
+  onNavigate,
+}: {
+  item: CollectionItem;
+  onNavigate: (slug: string) => void;
+}) {
   return (
-    <Link href={`/collections/${item.slug}`} className="group block" data-stagger-item>
+    <Link
+      href={`/collections/${item.slug}`}
+      data-collection-card={item.slug}
+      onClick={() => onNavigate(item.slug)}
+      className="group block"
+      data-stagger-item
+    >
       <div className="relative aspect-[3/4] w-full overflow-hidden bg-[color:var(--surface-strong)]">
         <Image
           src={item.imageSrc}
@@ -34,9 +48,21 @@ function CollectionCard({ item }: { item: CollectionItem }) {
 type FilterKind = "shape" | "finish" | "size";
 
 export function CollectionsCatalog({ collections: allCollections }: { collections: CollectionItem[] }) {
+  const lenis = useLenis();
   const [shape, setShape] = useState<string | null>(null);
   const [finish, setFinish] = useState<string | null>(null);
   const [size, setSize] = useState<string | null>(null);
+
+  const saveCatalogScroll = useCallback(
+    (slug: string) => {
+      saveCollectionListScroll({
+        returnPath: "/collections",
+        slug,
+        pageScrollY: lenis?.scroll ?? window.scrollY,
+      });
+    },
+    [lenis],
+  );
 
   const activeFilters = [
     shape ? { kind: "shape" as const, label: `Shape: ${shape}`, value: shape } : null,
@@ -276,7 +302,7 @@ export function CollectionsCatalog({ collections: allCollections }: { collection
             className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-4"
           >
             {filtered.map((item) => (
-              <CollectionCard key={item.slug} item={item} />
+              <CollectionCard key={item.slug} item={item} onNavigate={saveCatalogScroll} />
             ))}
           </RevealStagger>
         )}

@@ -110,11 +110,9 @@ type SiteContent = {
     email: string;
     phone: string;
     note: string;
+    legalLinks: LinkItem[];
     exploreLinks: LinkItem[];
     connectLinks: LinkItem[];
-    creditLabel: string;
-    creditName: string;
-    creditHref: string;
   };
   collectionsPage: CollectionsPageContent;
   finishesPage: {

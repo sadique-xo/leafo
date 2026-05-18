@@ -101,7 +101,7 @@ export function HomeWeAre({ slides, closingCopy }: HomeWeAreProps) {
 
   return (
     <section ref={pinSectionRef} className="relative hidden md:block md:h-[300vh]">
-      <div className="sticky top-0 h-[100vh] overflow-hidden bg-background">
+      <div className="sticky top-0 h-[100dvh] overflow-hidden bg-background">
         <div ref={imageStackRef} className="absolute inset-0 origin-center will-change-transform">
           {slides.map((slide, i) => (
             <div

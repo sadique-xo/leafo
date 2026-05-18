@@ -52,17 +52,13 @@ export function AppFooter() {
             </div>
             <div className="mt-10 flex flex-col gap-3 text-xs leading-relaxed text-muted-foreground md:mt-auto md:gap-4 md:pt-6 lg:pt-8 xl:pt-10">
               <p className="max-w-prose text-balance">{footer.note}</p>
-              <p className="text-balance">
-                {footer.creditLabel}{" "}
-                <a
-                  href={footer.creditHref}
-                  className="text-[color:var(--charcoal)] underline underline-offset-[3px] transition-opacity hover:opacity-80"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {footer.creditName}
-                </a>
-              </p>
+              <nav aria-label="Legal" className="flex flex-wrap gap-x-4 gap-y-2">
+                {footer.legalLinks.map((item) => (
+                  <FooterNavLink key={item.href} href={item.href}>
+                    {item.label}
+                  </FooterNavLink>
+                ))}
+              </nav>
             </div>
           </div>
 

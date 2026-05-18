@@ -63,6 +63,7 @@ export function ImageGallery({ eyebrow, title, intro, items }: ImageGalleryProps
                   src={item.imageSrc}
                   alt={item.imageAlt}
                   fill
+                  loading="lazy"
                   className={cn(
                     "object-cover transition-transform duration-700 ease-out",
                     active ? "scale-[1.03]" : "scale-100 lg:grayscale-[0.18]",

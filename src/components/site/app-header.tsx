@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
@@ -34,9 +33,6 @@ function navLinkClass(active: boolean, heroLight: boolean) {
         : "text-muted-foreground hover:text-[color:var(--primary-ink)]",
   );
 }
-
-const LOGO_GREEN_SRC = "/Leafo_Logo_Green.webp";
-const LOGO_WHITE_SRC = "/Leafo_Logo_White.webp";
 
 export function AppHeader() {
   const pathname = usePathname();
@@ -93,14 +89,15 @@ export function AppHeader() {
             compactChrome && "opacity-0 -translate-y-2 pointer-events-none",
           )}
         >
-          <Image
-            src={navToneLight ? LOGO_WHITE_SRC : LOGO_GREEN_SRC}
-            alt="LEAFO®"
-            width={280}
-            height={72}
-            className="h-8 w-auto object-contain object-left md:h-10"
-            sizes="(max-width: 768px) 140px, 180px"
-          />
+          <span
+            className={cn(
+              "font-display text-[1.65rem] leading-none tracking-[-0.05em] md:text-[1.875rem]",
+              navToneLight ? "text-white" : "text-[color:var(--primary-ink)]",
+            )}
+          >
+            LEAFO
+            <sup className="ml-0.5 text-[0.42em] align-super">®</sup>
+          </span>
         </Link>
 
         <nav

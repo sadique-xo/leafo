@@ -24,7 +24,6 @@ export function SiteJsonLd() {
     name: "LEAFO",
     legalName: "LEAFO®",
     url: siteUrl,
-    logo: absoluteUrl("/Leafo_Logo_Green.webp"),
     email: footer.email,
     telephone: footer.phone,
     address: {

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CornerFrame } from "@/components/site/corner-frame";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import { SiteLogo } from "@/components/site/site-logo";
 import { footer } from "@/data/site-content";
@@ -36,13 +37,14 @@ function FooterSectionTitle({ children }: { children: React.ReactNode }) {
 
 export function AppFooter() {
   return (
-    <footer className="mt-auto mt-16 w-full shrink-0 rule-section-h bg-[color:var(--surface)]/85">
+    <footer className="mt-auto mt-16 w-full shrink-0 bg-[color:var(--surface)]/85">
       <div className="site-container py-14 md:py-16">
-        <div
-          className={cn(
-            "grid grid-cols-1 gap-12 md:grid-cols-3 md:grid-rows-1 md:items-stretch md:gap-x-10 md:gap-y-0 lg:gap-x-14 xl:gap-x-[4.25rem]",
-          )}
-        >
+        <CornerFrame innerClassName="p-6 md:p-8 lg:p-10">
+          <div
+            className={cn(
+              "grid grid-cols-1 gap-12 md:grid-cols-3 md:grid-rows-1 md:items-stretch md:gap-x-10 md:gap-y-0 lg:gap-x-14 xl:gap-x-[4.25rem]",
+            )}
+          >
           {/* Column 1 - brand + legal (fills height; legal sits at bottom) */}
           <div className="flex min-h-0 flex-col md:min-h-full">
             <div>
@@ -103,7 +105,8 @@ export function AppFooter() {
               <p className="text-pretty text-muted-foreground">{footer.location}</p>
             </div>
           </div>
-        </div>
+          </div>
+        </CornerFrame>
       </div>
     </footer>
   );

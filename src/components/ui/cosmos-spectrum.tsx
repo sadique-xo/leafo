@@ -144,7 +144,7 @@ export function CosmicSpectrum({ color = "original", blur = false }: CosmicSpect
 
   return (
     <div ref={containerRef} className="relative bg-[color:var(--background)]">
-      <div className="animation-section rule-section-h relative min-h-[200svh] border-t border-foreground/[0.06]">
+      <div className="animation-section relative min-h-[200svh]">
         <aside className="cosmic-deep-note pointer-events-none fixed inset-x-0 bottom-[min(42svh,24rem)] z-40 mx-auto flex max-w-2xl flex-col items-center px-6 text-center text-white">
           <p className="font-cosmic-script text-balance text-3xl leading-[1.35] md:text-4xl lg:text-[clamp(2rem,4.5vw,2.625rem)]">
             You scrolled like someone who secretly roots for the planet, welcome to moss-level curiosity.

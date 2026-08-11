@@ -121,9 +121,22 @@ export function LeafoGuideBot() {
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   const done = stepIndex >= STEPS.length;
   const mood: Mood = done ? "party" : stepIndex === 1 ? "think" : "neutral";
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      if (panelRef.current?.contains(event.target as Node)) return;
+      setOpen(false);
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => document.removeEventListener("pointerdown", handlePointerDown);
+  }, [open]);
 
   useEffect(() => {
     if (!open || !scrollRef.current) return;
@@ -153,21 +166,16 @@ export function LeafoGuideBot() {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="pointer-events-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-0 bg-[color:var(--primary)] text-white transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.98] md:h-auto md:w-auto md:gap-2 md:rounded-none md:border-2 md:border-[color:var(--primary-ink)] md:bg-[color:var(--surface-container-lowest)] md:pl-3 md:pr-4 md:text-[color:var(--charcoal)] md:shadow-[4px_4px_0_0_var(--primary)] md:hover:-translate-y-0.5 md:active:translate-x-0.5 md:active:translate-y-0.5 md:active:scale-100 md:active:shadow-none"
+          className="pointer-events-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-0 bg-[color:var(--primary)] text-white transition-transform duration-200 hover:-translate-y-0.5 active:scale-[0.98]"
           aria-expanded={false}
           aria-haspopup="dialog"
           aria-label="Chat with Leafy"
         >
-          <MessageCircle className="size-5 text-white md:hidden" aria-hidden />
-          <span className="hidden h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[color:var(--primary)] text-white md:flex">
-            <MessageCircle className="size-5 text-white" aria-hidden />
-          </span>
-          <span className="label-ui hidden max-w-[7rem] text-left text-[9px] leading-snug tracking-[0.12em] text-[color:var(--primary-ink)] md:block">
-            CHAT WITH LEAFY
-          </span>
+          <MessageCircle className="size-5" aria-hidden />
         </button>
       ) : (
         <div
+          ref={panelRef}
           data-lenis-prevent
           className="pointer-events-auto flex max-h-[min(32rem,78dvh)] w-[min(100vw-1.25rem,24rem)] overflow-hidden border border-[color:var(--primary-ink)]/25 bg-[color:var(--surface-container-lowest)] shadow-[6px_6px_0_0_rgba(31,93,58,0.18)]"
           role="dialog"

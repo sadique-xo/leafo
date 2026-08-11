@@ -73,6 +73,8 @@
   /* Editorial rules - weight + motion tokens */
   --rule-width: 1.5px;
   --rule-width-strong: 2px;
+  --frame-border-width: 1px;
+  --frame-corner-size: 8px;
   --rule-color: var(--outline-variant);
   --rule-accent: var(--primary-ink);
   --ease-editorial: cubic-bezier(0.33, 1, 0.68, 1);
@@ -270,6 +272,19 @@ body {
 
 .rule-panel-border {
   border: var(--rule-width) solid var(--border);
+}
+
+.corner-frame {
+  border: var(--frame-border-width) solid var(--border);
+}
+
+.corner-frame-mark {
+  pointer-events: none;
+  position: absolute;
+  z-index: 1;
+  width: var(--frame-corner-size);
+  height: var(--frame-corner-size);
+  background: var(--primary-ink);
 }
 
 /* Site header bar - bottom edge (position comes from Tailwind `sticky`; do not set relative here - it overrides sticky) */

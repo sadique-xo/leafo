@@ -26,6 +26,11 @@
 # raw product photography master files; web copies are built into public/products/
 /for-co-work/
 
+# local dev/debug screenshots (keep out of repo root)
+/docs/dev-screenshots/
+/*-check*.png
+/*-layout*.png
+
 # misc
 .DS_Store
 *.pem

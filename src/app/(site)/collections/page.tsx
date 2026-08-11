@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Collections - LEAFO planters",
   description:
     "Nineteen designs of FRP planters. Filter by shape, finish, and size. Inquire for project quotes.",
+  keywords: ["planters", "FRP planters", "fiberglass planters", "planter pots", "garden planters", "modern planters"],
 };
 
 export default async function CollectionsPage() {

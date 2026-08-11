@@ -10,6 +10,11 @@ type StaticSitemapRoute = {
 export const PUBLIC_STATIC_ROUTES: StaticSitemapRoute[] = [
   { path: "/", changeFrequency: "weekly", priority: 1 },
   { path: "/collections", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/frp-planters", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/fibreglass-planters", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/outdoor-planters", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/indoor-planters", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/large-planters", changeFrequency: "weekly", priority: 0.8 },
   { path: "/finishes", changeFrequency: "monthly", priority: 0.8 },
   { path: "/about", changeFrequency: "monthly", priority: 0.7 },
   { path: "/faq", changeFrequency: "monthly", priority: 0.6 },

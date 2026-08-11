@@ -74,6 +74,7 @@ export async function generateMetadata({ params }: CollectionPageProps): Promise
   return {
     title: `${collection.name} - LEAFO FRP planter collection`,
     description: `${collection.summary} Available in four finishes and multiple sizes. Made in Gandhidham, Gujarat.`,
+    keywords: ["FRP planter", "fibreglass planter", "fiber pots", collection.name, ...collection.shapes, ...collection.finishes],
     ...pageAlternates(`/collections/${slug}`),
   };
 }

@@ -67,7 +67,13 @@ function CollectionCard({
   );
 }
 
-export function CollectionsCatalog({ collections: allCollections }: { collections: CollectionItem[] }) {
+export function CollectionsCatalog({
+  collections: allCollections,
+  heroOverride,
+}: {
+  collections: CollectionItem[];
+  heroOverride?: { title: string; intro: string; eyebrow: string };
+}) {
   const lenis = useLenis();
   const [shape, setShape] = useState<string | null>(null);
   const [finish, setFinish] = useState<string | null>(null);
@@ -147,9 +153,9 @@ export function CollectionsCatalog({ collections: allCollections }: { collection
       <SiteHero
         imageSrc={collectionsPage.heroImageSrc}
         imageAlt={collectionsPage.heroImageAlt}
-        eyebrow="Catalog"
-        title={collectionsPage.title}
-        intro={collectionsPage.intro}
+        eyebrow={heroOverride?.eyebrow ?? "Catalog"}
+        title={heroOverride?.title ?? collectionsPage.title}
+        intro={heroOverride?.intro ?? collectionsPage.intro}
       />
 
       <CollectionsFilterBar

@@ -12,23 +12,26 @@
 }
 
 :root {
-  /* Architectural Craft - surface scale */
-  --surface: #fbf9f8;
-  --surface-dim: #dcd9d9;
-  --surface-bright: #fbf9f8;
+  /* Architectural Craft - surface scale.
+     Every page and section background is pure white; structure comes from the
+     rules and hairlines rather than from tonal bands. The deeper container
+     steps stay tinted for the few components that need a filled surface. */
+  --surface: #ffffff;
+  --surface-dim: #ded8cd;
+  --surface-bright: #ffffff;
   --surface-container-lowest: #ffffff;
-  --surface-container-low: #f6f3f2;
-  --surface-container: #f0eded;
-  --surface-container-high: #eae8e7;
-  --surface-container-highest: #e4e2e1;
-  --surface-variant: #e4e2e1;
-  --surface-strong: #f0eded;
-  /* Alternating homepage bands - slightly grey-white vs warm --surface */
-  --surface-alt: #eceae8;
+  --surface-container-low: #ffffff;
+  --surface-container: #f2ece1;
+  --surface-container-high: #ebe5da;
+  --surface-container-highest: #e5ded2;
+  --surface-variant: #e5ded2;
+  --surface-strong: #ffffff;
+  /* Alternating homepage bands */
+  --surface-alt: #ffffff;
   --surface-inverse: #303030;
   --inverse-on-surface: #f3f0f0;
 
-  --background: #fbf9f8;
+  --background: #ffffff;
   --foreground: #1b1c1c;
   --charcoal: #1b1c1c;
   --sand: #c2b49a;

@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     template: "%s | LEAFO",
   },
   description:
-    "Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Gandhidham, Gujarat.",
+    "Nineteen designs of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Gandhidham, Gujarat.",
   applicationName: "LEAFO",
   robots: isIndexableSite()
     ? { index: true, follow: true, googleBot: { index: true, follow: true } }

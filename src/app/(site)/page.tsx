@@ -36,7 +36,7 @@ function getWeAreImageSlides(
 export const metadata: Metadata = {
   title: "LEAFO - India's most diverse range of FRP planters and Fiber pots",
   description:
-    "Twelve collections of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Gandhidham, Gujarat.",
+    "Nineteen designs of fiber-reinforced planters for homes, hotels, and landscapes. Designed and made in Gandhidham, Gujarat.",
   ...pageAlternates("/"),
 };
 

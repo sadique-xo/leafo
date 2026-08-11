@@ -167,18 +167,15 @@ export function HomeCollectionsRail({
                 onClick={() => saveRailScroll(item.slug)}
                 className="group w-[min(76vw,21rem)] shrink-0 snap-start sm:w-[19rem] lg:w-[21rem]"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-[color:var(--surface-strong)]">
+                {/* White card holding a fitted photo, matching the catalog grid. */}
+                <div className="relative aspect-square overflow-hidden bg-white ring-[0.5px] ring-black/[0.07] transition-shadow duration-300 group-hover:shadow-[0_10px_30px_-14px_rgb(0_0_0/0.25)]">
                   <Image
-                    src={item.imageSrc}
+                    src={item.images?.[0]?.src ?? item.imageSrc}
                     alt={item.imageAlt}
                     fill
-                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
+                    className="object-contain p-5 md:p-6"
                     sizes="(max-width: 640px) 76vw, 21rem"
                     loading="lazy"
-                  />
-                  <div
-                    className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/45 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-100"
-                    aria-hidden
                   />
                 </div>
                 <div className="mt-4 flex items-start justify-between gap-5">

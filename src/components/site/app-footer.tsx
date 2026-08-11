@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
+import { SiteLogo } from "@/components/site/site-logo";
 import { footer } from "@/data/site-content";
 import { cn } from "@/lib/utils";
 
@@ -45,7 +46,7 @@ export function AppFooter() {
           {/* Column 1 - brand + legal (fills height; legal sits at bottom) */}
           <div className="flex min-h-0 flex-col md:min-h-full">
             <div>
-              <FooterSectionTitle>LEAFO®</FooterSectionTitle>
+              <SiteLogo tone="ink" className="mb-4 h-7 w-auto md:h-8" />
               <p className="font-display max-w-[22rem] text-pretty text-2xl leading-[1.28] text-[color:var(--charcoal)] sm:max-w-[26rem] md:max-w-none md:text-[1.625rem] md:leading-[1.3] lg:text-[1.75rem] lg:leading-snug xl:text-[1.875rem]">
                 {footer.tagline}
               </p>

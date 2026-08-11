@@ -16,6 +16,7 @@ import {
   SidebarRail,
   SidebarSeparator,
 } from "@/components/ui/sidebar";
+import { SiteLogo } from "@/components/site/site-logo";
 import { AdminSignOut } from "./admin-sign-out";
 import { ExternalLink, FolderKanban, LayoutDashboard, Layers, Mail } from "lucide-react";
 
@@ -29,7 +30,10 @@ export function AdminSidebar() {
           href="/admin"
           className="flex min-h-0 min-w-0 flex-1 flex-col justify-center gap-0 leading-none outline-none ring-sidebar-ring focus-visible:ring-2 group-data-[collapsible=icon]:items-center group-data-[collapsible=icon]:p-0"
         >
-          <span className="truncate text-sm font-semibold tracking-tight">LEAFO</span>
+          <SiteLogo
+            tone="current"
+            className="h-5 w-auto max-w-full text-sidebar-foreground group-data-[collapsible=icon]:h-4"
+          />
           <span className="truncate text-[10px] leading-snug text-sidebar-foreground/70 group-data-[collapsible=icon]:sr-only">
             Content admin
           </span>

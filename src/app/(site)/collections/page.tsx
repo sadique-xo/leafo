@@ -5,7 +5,7 @@ import { getPublishedCollections } from "@/lib/cms/get-collections";
 export const metadata: Metadata = {
   title: "Collections - LEAFO planters",
   description:
-    "Twelve series of FRP planters. Filter by shape, finish, and size. Inquire for project quotes.",
+    "Nineteen designs of FRP planters. Filter by shape, finish, and size. Inquire for project quotes.",
 };
 
 export default async function CollectionsPage() {

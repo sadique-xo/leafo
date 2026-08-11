@@ -7,6 +7,8 @@ import { Reveal } from "@/components/motion/reveal";
 import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import { CollectionJsonLd } from "@/components/site/collection-json-ld";
+import { ProductGallery } from "@/components/site/product-gallery";
+import type { CollectionItem } from "@/data/site-content";
 import {
   getCollectionBySlugFromCms,
   getCollectionSlugsFromCms,
@@ -25,6 +27,29 @@ const productHighlights = [
   { label: "Light Weight", icon: Feather },
   { label: "Fade Resistant", icon: Sparkles },
 ];
+
+/**
+ * Ranks the catalog by how much taxonomy it shares with the current design, so
+ * a product without curated companions still gets a meaningful row instead of
+ * whichever four collections happen to come first. Shape is weighted hardest
+ * because it is the most visible kinship, then finish, then scale. Sort is
+ * stable, so equal scores keep catalog order.
+ */
+function byRelatedness(target: CollectionItem, all: CollectionItem[]) {
+  const shared = (a: string[], b: string[]) => a.filter((value) => b.includes(value)).length;
+
+  return all
+    .filter((candidate) => candidate.slug !== target.slug)
+    .map((candidate) => ({
+      candidate,
+      score:
+        shared(candidate.shapes, target.shapes) * 3 +
+        shared(candidate.finishes, target.finishes) * 2 +
+        shared(candidate.scaleTags, target.scaleTags),
+    }))
+    .sort((a, b) => b.score - a.score)
+    .map((entry) => entry.candidate);
+}
 
 export async function generateStaticParams() {
   try {
@@ -62,7 +87,14 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
   }
 
   const all = await getPublishedCollections();
-  const related = all.filter((c) => c.slug !== slug).slice(0, 4);
+  const companions = collection.relatedSlugs
+    ?.map((companionSlug) => all.find((c) => c.slug === companionSlug))
+    .filter((c): c is NonNullable<typeof c> => Boolean(c));
+  const related = (companions?.length ? companions : byRelatedness(collection, all)).slice(0, 4);
+  const galleryImages = collection.images?.length
+    ? collection.images
+    : [{ src: collection.imageSrc, alt: collection.imageAlt }];
+  const sizeVariants = collection.sizeVariants ?? [];
   const showPrice = collection.priceNote.trim().length > 0;
   const finishOptions =
     collection.finishes.length > 0
@@ -74,35 +106,8 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
       <CollectionJsonLd collection={collection} />
       <section className="site-container pb-14 pt-28 md:pb-18 md:pt-32 lg:pb-20">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(23rem,0.82fr)] lg:gap-14 xl:gap-18">
-          <Reveal className="min-w-0" start="top 85%" y={24}>
-            <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--surface-strong)] md:aspect-[5/6]">
-              <Image
-                src={collection.imageSrc}
-                alt={collection.imageAlt}
-                fill
-                priority
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 55vw"
-              />
-            </div>
-            <div className="mt-4 grid grid-cols-4 gap-3">
-              {[collection.imageSrc, ...related.slice(0, 3).map((item) => item.imageSrc)].map(
-                (src, index) => (
-                  <div
-                    key={`${src}-${index}`}
-                    className="relative aspect-square overflow-hidden border border-[color:var(--border)] bg-[color:var(--surface-strong)]"
-                  >
-                    <Image
-                      src={src}
-                      alt={index === 0 ? collection.imageAlt : related[index - 1]?.imageAlt ?? ""}
-                      fill
-                      className="object-cover"
-                      sizes="8rem"
-                    />
-                  </div>
-                ),
-              )}
-            </div>
+          <Reveal className="min-w-0 lg:sticky lg:top-28 lg:self-start" start="top 85%" y={24}>
+            <ProductGallery name={collection.name} images={galleryImages} />
           </Reveal>
 
           <Reveal className="min-w-0 lg:sticky lg:top-28 lg:self-start" start="top 85%" y={24}>
@@ -130,16 +135,51 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
                   Ask for sizing help
                 </InquiryTrigger>
               </div>
-              <div className="mt-3 flex flex-wrap gap-2">
-                {collection.sizes.map((size) => (
-                  <span
-                    key={size}
-                    className="border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2 text-xs text-[color:var(--charcoal)]"
-                  >
-                    {size}
-                  </span>
-                ))}
-              </div>
+              {sizeVariants.length > 0 ? (
+                <div className="mt-3 overflow-hidden border border-[color:var(--border)]">
+                  <table className="w-full border-collapse text-left text-xs">
+                    <thead>
+                      <tr className="bg-[color:var(--surface-strong)]/60">
+                        <th scope="col" className="label-ui px-3 py-2 text-[10px] font-normal text-muted-foreground">
+                          Size
+                        </th>
+                        <th scope="col" className="label-ui px-3 py-2 text-[10px] font-normal text-muted-foreground">
+                          Dia × H
+                        </th>
+                        <th scope="col" className="label-ui px-3 py-2 text-right text-[10px] font-normal text-muted-foreground">
+                          SKU
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {sizeVariants.map((size) => (
+                        <tr key={size.sku} className="border-t border-[color:var(--border)]">
+                          <td className="px-3 py-2 text-[color:var(--charcoal)]">{size.variant}</td>
+                          <td className="px-3 py-2 text-[color:var(--charcoal)]">
+                            {size.diameter && size.height
+                              ? `${size.diameter} × ${size.height} cm`
+                              : "On request"}
+                          </td>
+                          <td className="px-3 py-2 text-right font-mono text-[11px] text-muted-foreground">
+                            {size.sku}
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {collection.sizes.map((size) => (
+                    <span
+                      key={size}
+                      className="border border-[color:var(--border)] bg-[color:var(--surface)] px-3 py-2 text-xs text-[color:var(--charcoal)]"
+                    >
+                      {size}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="mt-8">
@@ -231,7 +271,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
           <div className="site-container section-space">
             <Reveal>
               <h2 className="font-display text-2xl text-[color:var(--charcoal)] md:text-3xl">
-                Related collections
+                {companions?.length ? "Goes with" : "Related collections"}
               </h2>
             </Reveal>
             <RevealStagger
@@ -245,16 +285,19 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
                   className="group block"
                   data-stagger-item
                 >
-                  <div className="relative aspect-[4/5] overflow-hidden bg-[color:var(--surface-strong)]">
+                  {/* White card holding a fitted photo, matching the catalog grid. */}
+                  <div className="relative aspect-square overflow-hidden bg-white ring-[0.5px] ring-black/[0.07] transition-shadow duration-300 group-hover:shadow-[0_10px_30px_-14px_rgb(0_0_0/0.25)]">
                     <Image
-                      src={item.imageSrc}
+                      src={item.images?.[0]?.src ?? item.imageSrc}
                       alt={item.imageAlt}
                       fill
-                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                      className="object-contain p-5 md:p-6"
                       sizes="(max-width: 768px) 100vw, 25vw"
                     />
                   </div>
-                  <p className="label-ui mt-4 text-[11px] text-[color:var(--charcoal)]">{item.name}</p>
+                  <p className="label-ui mt-4 text-[11px] text-[color:var(--charcoal)] transition-opacity duration-300 group-hover:opacity-65">
+                    {item.name}
+                  </p>
                   <p className="mt-1 text-sm text-muted-foreground">{item.subtitle}</p>
                 </Link>
               ))}

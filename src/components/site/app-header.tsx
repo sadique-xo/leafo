@@ -10,6 +10,7 @@ import { useHeroOverlay } from "@/components/site/hero-overlay-context";
 import { useInquiryDrawer } from "@/components/site/inquiry-drawer-context";
 import { useMobileNavSheet } from "@/components/site/mobile-nav-sheet-context";
 import { ContactInquiryForm } from "@/components/site/contact-inquiry-form";
+import { SiteLogo } from "@/components/site/site-logo";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -89,15 +90,10 @@ export function AppHeader() {
             compactChrome && "opacity-0 -translate-y-2 pointer-events-none",
           )}
         >
-          <span
-            className={cn(
-              "font-display text-[1.65rem] leading-none tracking-[-0.05em] md:text-[1.875rem]",
-              navToneLight ? "text-white" : "text-[color:var(--primary-ink)]",
-            )}
-          >
-            LEAFO
-            <sup className="ml-0.5 text-[0.42em] align-super">®</sup>
-          </span>
+          <SiteLogo
+            tone={navToneLight ? "light" : "ink"}
+            className="h-7 w-auto transition-[background-color] duration-300 md:h-8"
+          />
         </Link>
 
         <nav

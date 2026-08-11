@@ -1,0 +1,548 @@
+{
+  "hero": [
+    {
+      "src": "/hero/leafo-hero-01.webp",
+      "card": "/hero/leafo-hero-01-card.e79a9592.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/hero/leafo-hero-02.webp",
+      "card": "/hero/leafo-hero-02-card.526b51ec.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/hero/leafo-hero-03.webp",
+      "card": "/hero/leafo-hero-03-card.087fc564.webp",
+      "width": 1800,
+      "height": 1200
+    }
+  ],
+  "aqua": [
+    {
+      "src": "/products/aqua/aqua-01.webp",
+      "card": "/products/aqua/aqua-01-card.8f996b57.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/aqua/aqua-02.webp",
+      "card": "/products/aqua/aqua-02-card.fa2b7555.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/aqua/aqua-03.webp",
+      "card": "/products/aqua/aqua-03-card.ad2b9dcc.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/aqua/aqua-04.webp",
+      "card": "/products/aqua/aqua-04-card.3e7de43d.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "alta": [
+    {
+      "src": "/products/alta/alta-01.webp",
+      "card": "/products/alta/alta-01-card.60da1c9b.webp",
+      "width": 1402,
+      "height": 1800
+    },
+    {
+      "src": "/products/alta/alta-02.webp",
+      "card": "/products/alta/alta-02-card.95a4c5e6.webp",
+      "width": 1402,
+      "height": 1800
+    },
+    {
+      "src": "/products/alta/alta-03.webp",
+      "card": "/products/alta/alta-03-card.f49cb3d8.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/alta/alta-04.webp",
+      "card": "/products/alta/alta-04-card.75ca2c34.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/alta/alta-05.webp",
+      "card": "/products/alta/alta-05-card.345a3709.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "pino": [
+    {
+      "src": "/products/pino/pino-01.webp",
+      "card": "/products/pino/pino-01-card.71127776.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/pino/pino-02.webp",
+      "card": "/products/pino/pino-02-card.cef09d70.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/pino/pino-03.webp",
+      "card": "/products/pino/pino-03-card.106a2cdd.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/pino/pino-04.webp",
+      "card": "/products/pino/pino-04-card.c27adf3c.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/pino/pino-05.webp",
+      "card": "/products/pino/pino-05-card.b76d41ed.webp",
+      "width": 1198,
+      "height": 1800
+    },
+    {
+      "src": "/products/pino/pino-06.webp",
+      "card": "/products/pino/pino-06-card.f11be871.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/pino/pino-07.webp",
+      "card": "/products/pino/pino-07-card.60a01167.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "fiora": [
+    {
+      "src": "/products/fiora/fiora-01.webp",
+      "card": "/products/fiora/fiora-01-card.6d3db5d7.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/fiora/fiora-02.webp",
+      "card": "/products/fiora/fiora-02-card.d7c786df.webp",
+      "width": 1800,
+      "height": 1302
+    },
+    {
+      "src": "/products/fiora/fiora-03.webp",
+      "card": "/products/fiora/fiora-03-card.8b677266.webp",
+      "width": 1800,
+      "height": 1302
+    },
+    {
+      "src": "/products/fiora/fiora-04.webp",
+      "card": "/products/fiora/fiora-04-card.fc302a6e.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/fiora/fiora-05.webp",
+      "card": "/products/fiora/fiora-05-card.021e7a29.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/fiora/fiora-06.webp",
+      "card": "/products/fiora/fiora-06-card.473b83c1.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/fiora/fiora-07.webp",
+      "card": "/products/fiora/fiora-07-card.bd855a34.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "barril": [
+    {
+      "src": "/products/barril/barril-01.webp",
+      "card": "/products/barril/barril-01-card.a2b8353e.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/barril/barril-02.webp",
+      "card": "/products/barril/barril-02-card.ebedc952.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/barril/barril-03.webp",
+      "card": "/products/barril/barril-03-card.b8f75253.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/barril/barril-04.webp",
+      "card": "/products/barril/barril-04-card.cacfff1a.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/barril/barril-05.webp",
+      "card": "/products/barril/barril-05-card.3067457c.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/barril/barril-06.webp",
+      "card": "/products/barril/barril-06-card.350b5c19.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/barril/barril-07.webp",
+      "card": "/products/barril/barril-07-card.52cd6ed0.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/barril/barril-08.webp",
+      "card": "/products/barril/barril-08-card.30d5afe8.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/barril/barril-09.webp",
+      "card": "/products/barril/barril-09-card.d7eb5386.webp",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "domo": [
+    {
+      "src": "/products/domo/domo-01.webp",
+      "card": "/products/domo/domo-01-card.ef68e36f.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/domo/domo-02.webp",
+      "card": "/products/domo/domo-02-card.acd262ea.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/domo/domo-03.webp",
+      "card": "/products/domo/domo-03-card.761b7aac.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/domo/domo-04.webp",
+      "card": "/products/domo/domo-04-card.03e8e95d.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "flute": [
+    {
+      "src": "/products/flute/flute-01.webp",
+      "card": "/products/flute/flute-01-card.50f33e24.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/flute/flute-02.webp",
+      "card": "/products/flute/flute-02-card.a00a8632.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/flute/flute-03.webp",
+      "card": "/products/flute/flute-03-card.a58ac595.webp",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "honeycomb": [
+    {
+      "src": "/products/honeycomb/honeycomb-01.webp",
+      "card": "/products/honeycomb/honeycomb-01-card.b982990e.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/honeycomb/honeycomb-02.webp",
+      "card": "/products/honeycomb/honeycomb-02-card.8cb8869e.webp",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "oliv": [
+    {
+      "src": "/products/oliv/oliv-01.webp",
+      "card": "/products/oliv/oliv-01-card.de6b656c.webp",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "quilt": [
+    {
+      "src": "/products/quilt/quilt-01.webp",
+      "card": "/products/quilt/quilt-01-card.40e10035.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/quilt/quilt-02.webp",
+      "card": "/products/quilt/quilt-02-card.9eaa8cde.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/quilt/quilt-03.webp",
+      "card": "/products/quilt/quilt-03-card.e5f8497e.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "balcora": [
+    {
+      "src": "/products/balcora/balcora-01.webp",
+      "card": "/products/balcora/balcora-01-card.57650b6d.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/balcora/balcora-02.webp",
+      "card": "/products/balcora/balcora-02-card.696f1684.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/balcora/balcora-03.webp",
+      "card": "/products/balcora/balcora-03-card.f1c887b9.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/balcora/balcora-04.webp",
+      "card": "/products/balcora/balcora-04-card.ffb72080.webp",
+      "width": 1800,
+      "height": 1200
+    }
+  ],
+  "laguna": [
+    {
+      "src": "/products/laguna/laguna-01.webp",
+      "card": "/products/laguna/laguna-01-card.b246a8b6.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/laguna/laguna-02.webp",
+      "card": "/products/laguna/laguna-02-card.774ccbbd.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/laguna/laguna-03.webp",
+      "card": "/products/laguna/laguna-03-card.d322f3a9.webp",
+      "width": 1800,
+      "height": 1198
+    }
+  ],
+  "amphora": [
+    {
+      "src": "/products/amphora/amphora-01.webp",
+      "card": "/products/amphora/amphora-01-card.a9b63ca2.webp",
+      "width": 1198,
+      "height": 1800
+    }
+  ],
+  "antique-trio": [
+    {
+      "src": "/products/antique-trio/antique-trio-01.webp",
+      "card": "/products/antique-trio/antique-trio-01-card.297215a5.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/antique-trio/antique-trio-02.webp",
+      "card": "/products/antique-trio/antique-trio-02-card.3b3c4586.webp",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "olla": [
+    {
+      "src": "/products/olla/olla-01.webp",
+      "card": "/products/olla/olla-01-card.e3c77efa.webp",
+      "width": 1198,
+      "height": 1800
+    },
+    {
+      "src": "/products/olla/olla-02.webp",
+      "card": "/products/olla/olla-02-card.d8acffb4.webp",
+      "width": 1198,
+      "height": 1800
+    }
+  ],
+  "tinaja": [
+    {
+      "src": "/products/tinaja/tinaja-01.webp",
+      "card": "/products/tinaja/tinaja-01-card.e8d1b923.webp",
+      "width": 1198,
+      "height": 1800
+    }
+  ],
+  "bead": [
+    {
+      "src": "/products/bead/bead-01.webp",
+      "card": "/products/bead/bead-01-card.c01222d2.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/bead/bead-02.webp",
+      "card": "/products/bead/bead-02-card.ca45e30b.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/bead/bead-03.webp",
+      "card": "/products/bead/bead-03-card.2c01ecd9.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/bead/bead-04.webp",
+      "card": "/products/bead/bead-04-card.6147320b.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/bead/bead-05.webp",
+      "card": "/products/bead/bead-05-card.fed2ad7b.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/bead/bead-06.webp",
+      "card": "/products/bead/bead-06-card.c710e151.webp",
+      "width": 1200,
+      "height": 1800
+    }
+  ],
+  "pops": [
+    {
+      "src": "/products/pops/pops-01.webp",
+      "card": "/products/pops/pops-01-card.a1e4fcf8.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/pops/pops-02.webp",
+      "card": "/products/pops/pops-02-card.e42f889a.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/pops/pops-03.webp",
+      "card": "/products/pops/pops-03-card.4ecc43aa.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/pops/pops-04.webp",
+      "card": "/products/pops/pops-04-card.639672bd.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/pops/pops-05.webp",
+      "card": "/products/pops/pops-05-card.9f4a2f40.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/pops/pops-06.webp",
+      "card": "/products/pops/pops-06-card.591656a2.webp",
+      "width": 1200,
+      "height": 1800
+    },
+    {
+      "src": "/products/pops/pops-07.webp",
+      "card": "/products/pops/pops-07-card.de152aa7.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/pops/pops-08.webp",
+      "card": "/products/pops/pops-08-card.71271a32.webp",
+      "width": 1800,
+      "height": 1200
+    }
+  ],
+  "madera": [
+    {
+      "src": "/products/madera/madera-01.webp",
+      "card": "/products/madera/madera-01-card.012be7e7.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/madera/madera-02.webp",
+      "card": "/products/madera/madera-02-card.64f124ff.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/madera/madera-03.webp",
+      "card": "/products/madera/madera-03-card.8698f495.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/madera/madera-04.webp",
+      "card": "/products/madera/madera-04-card.f8a45f25.webp",
+      "width": 1800,
+      "height": 1200
+    }
+  ],
+  "cova": [
+    {
+      "src": "/products/cova/cova-01.webp",
+      "card": "/products/cova/cova-01-card.386e5cc2.webp",
+      "width": 1800,
+      "height": 1198
+    },
+    {
+      "src": "/products/cova/cova-02.webp",
+      "card": "/products/cova/cova-02-card.d22fa931.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/cova/cova-03.webp",
+      "card": "/products/cova/cova-03-card.95551ee0.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/cova/cova-04.webp",
+      "card": "/products/cova/cova-04-card.2f7f9a02.webp",
+      "width": 1800,
+      "height": 1200
+    },
+    {
+      "src": "/products/cova/cova-05.webp",
+      "card": "/products/cova/cova-05-card.bc06fb82.webp",
+      "width": 1800,
+      "height": 1200
+    }
+  ]
+}

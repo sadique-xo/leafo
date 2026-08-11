@@ -23,6 +23,9 @@
 # large local assets (scroll sequence frames; app uses planters.jpg)
 /public/frames/
 
+# raw product photography master files; web copies are built into public/products/
+/for-co-work/
+
 # misc
 .DS_Store
 *.pem

@@ -5,6 +5,28 @@ type LinkItem = {
   label: string;
 };
 
+export type CollectionImage = {
+  /** Full uncropped frame, used in the lightbox. */
+  src: string;
+  /** Square padded tile, used wherever a uniform grid cell is needed. */
+  card?: string;
+  alt: string;
+};
+
+/** One orderable size of a collection, as listed in the LEAFO size chart. */
+export type SizeVariant = {
+  /** Chart letter, e.g. "A" */
+  variant: string;
+  /** e.g. "AQUA-A" */
+  sku: string;
+  /** Diameter in cm, or "L×W" for rectangular formats, e.g. "19.5" | "24x12" */
+  diameter: string;
+  /** Height in cm */
+  height: string;
+  /** Prebuilt display string, e.g. "A - 19.5 × 30 cm" */
+  label: string;
+};
+
 export type CollectionItem = {
   slug: string;
   name: string;
@@ -22,6 +44,13 @@ export type CollectionItem = {
   shapes: string[];
   finishes: string[];
   scaleTags: string[];
+  /** Full photo set. Absent for CMS rows, which carry a single image. */
+  images?: CollectionImage[];
+  sizeVariants?: SizeVariant[];
+  /** Pre-rename catalogue name, kept for internal traceability. */
+  oldName?: string;
+  /** Slugs shown as a companion set, e.g. the jars in the Antique Trio. */
+  relatedSlugs?: string[];
 };
 
 type FilterGroup = {

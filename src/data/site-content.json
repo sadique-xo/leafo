@@ -1,8 +1,17 @@
 {
   "navigation": [
-    { "href": "/collections", "label": "Collections" },
-    { "href": "/finishes", "label": "Finishes" },
-    { "href": "/about", "label": "About" }
+    {
+      "href": "/collections",
+      "label": "Collections"
+    },
+    {
+      "href": "/finishes",
+      "label": "Finishes"
+    },
+    {
+      "href": "/about",
+      "label": "About"
+    }
   ],
   "footer": {
     "tagline": "India's most diverse range of FRP planters and fiber pots. Made in India.",
@@ -11,41 +20,93 @@
     "phone": "+91 95948 97176",
     "note": "© 2026 LEAFO®. All rights reserved.",
     "legalLinks": [
-      { "href": "/terms", "label": "Terms & Conditions" },
-      { "href": "/privacy", "label": "Privacy Policy" }
+      {
+        "href": "/terms",
+        "label": "Terms & Conditions"
+      },
+      {
+        "href": "/privacy",
+        "label": "Privacy Policy"
+      }
     ],
     "exploreLinks": [
-      { "href": "/collections", "label": "Collections" },
-      { "href": "/finishes", "label": "Finishes" },
-      { "href": "/faq", "label": "FAQ" },
-      { "href": "/about", "label": "About" }
+      {
+        "href": "/collections",
+        "label": "Collections"
+      },
+      {
+        "href": "/finishes",
+        "label": "Finishes"
+      },
+      {
+        "href": "/faq",
+        "label": "FAQ"
+      },
+      {
+        "href": "/about",
+        "label": "About"
+      }
     ],
     "connectLinks": [
-      { "href": "/contact", "label": "Inquire" },
-      { "href": "https://wa.me/919594897176", "label": "WhatsApp" },
-      { "href": "https://www.instagram.com/leafoplanters", "label": "Instagram" },
-      { "href": "https://www.linkedin.com/company/leafo-planters/", "label": "LinkedIn" },
-      { "href": "https://www.facebook.com/people/Leafo/61567999620833/", "label": "Facebook" }
+      {
+        "href": "/contact",
+        "label": "Inquire"
+      },
+      {
+        "href": "https://wa.me/919594897176",
+        "label": "WhatsApp"
+      },
+      {
+        "href": "https://www.instagram.com/leafoplanters",
+        "label": "Instagram"
+      },
+      {
+        "href": "https://www.linkedin.com/company/leafo-planters/",
+        "label": "LinkedIn"
+      },
+      {
+        "href": "https://www.facebook.com/people/Leafo/61567999620833/",
+        "label": "Facebook"
+      }
     ]
   },
   "collectionsPage": {
     "title": "Collections",
-    "intro": "Twelve series, each designed around a single idea. Filter by shape, finish, or scale. Every collection is available across our finish palette and ships nationwide.",
-    "heroImageSrc": "/collections.jpg",
-    "heroImageAlt": "LEAFO showroom with planters of many shapes and sizes on turf and shelving, city skyline through windows",
-    "emptyFilter": "No collections match those filters yet. Reset filters or browse all twelve.",
+    "intro": "Nineteen designs, each built around a single idea. Filter by shape, finish, or scale. Every collection is available across our finish palette and ships nationwide.",
+    "heroImageSrc": "/hero/collections-hero.webp",
+    "heroImageAlt": "Row of houseplants in ceramic planters on a light wood sideboard against a pale wall",
+    "emptyFilter": "No collections match those filters yet. Reset filters or browse the full range.",
     "filters": {
       "shape": {
         "label": "By shape",
-        "options": ["Round", "Tall", "Bowl", "Rectangle", "Faceted"]
+        "options": [
+          "Round",
+          "Tall",
+          "Bowl",
+          "Jar",
+          "Faceted",
+          "Sphere",
+          "Rectangle",
+          "Organic"
+        ]
       },
       "finish": {
         "label": "By finish",
-        "options": ["Matt", "Glossy", "Texture", "Wooden"]
+        "options": [
+          "Matt",
+          "Glossy",
+          "Texture",
+          "Wooden"
+        ]
       },
       "size": {
         "label": "By size",
-        "options": ["Tabletop", "Small", "Medium", "Large", "Architectural"]
+        "options": [
+          "Tabletop",
+          "Small",
+          "Medium",
+          "Large"
+        ]
       }
     }
   },
@@ -54,8 +115,14 @@
     "intro": "Four hand-applied surface treatments for LEAFO planters: matt, glossy, texture, and wooden. Choose by light, setting, and how much character the planter should carry.",
     "heroImageSrc": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1800&q=80&ixlib=rb-4.1.0",
     "heroImageAlt": "Calm architectural interior with tactile surfaces and light",
-    "primaryCta": { "href": "/collections", "label": "Browse collections" },
-    "secondaryCta": { "href": "/contact", "label": "Request samples" },
+    "primaryCta": {
+      "href": "/collections",
+      "label": "Browse collections"
+    },
+    "secondaryCta": {
+      "href": "/contact",
+      "label": "Request samples"
+    },
     "ctaLabel": "Discuss a finish for your project",
     "sectionEyebrow": "Finish palette",
     "sectionTitle": "Four surfaces. One material system.",
@@ -68,9 +135,18 @@
         "tagline": "A quiet plane that lets planting lead.",
         "description": "A flat, non-reflective film that sits behind foliage and furniture. Pairs easily with stone, wood, linen, and brushed metals.",
         "traits": [
-          { "label": "Reflectivity", "value": "Low" },
-          { "label": "Where it excels", "value": "Residences, calm hospitality, workstations" },
-          { "label": "Care", "value": "Dust or rinse; marks lift with gentle detergent" }
+          {
+            "label": "Reflectivity",
+            "value": "Low"
+          },
+          {
+            "label": "Where it excels",
+            "value": "Residences, calm hospitality, workstations"
+          },
+          {
+            "label": "Care",
+            "value": "Dust or rinse; marks lift with gentle detergent"
+          }
         ],
         "imageSrc": "/hero/finishes/Matt.webp",
         "imageAlt": "LEAFO planter in matt finish with plant in a calm interior"
@@ -81,9 +157,18 @@
         "tagline": "Enamel-like depth with a deliberate shine.",
         "description": "High-sheen automotive paint with a polished enamel read. Best for interiors, porte-cocheres, and shaded outdoor moments where reflection is deliberate.",
         "traits": [
-          { "label": "Reflectivity", "value": "High" },
-          { "label": "Where it excels", "value": "Lobbies, galleries, shaded terraces" },
-          { "label": "Care", "value": "Soft cloth; avoid abrasive scrubbing" }
+          {
+            "label": "Reflectivity",
+            "value": "High"
+          },
+          {
+            "label": "Where it excels",
+            "value": "Lobbies, galleries, shaded terraces"
+          },
+          {
+            "label": "Care",
+            "value": "Soft cloth; avoid abrasive scrubbing"
+          }
         ],
         "imageSrc": "/hero/finishes/Glossy.webp",
         "imageAlt": "LEAFO planter in glossy finish with plant in a refined lobby setting"
@@ -94,9 +179,18 @@
         "tagline": "Hand-worked surface with depth and character.",
         "description": "A worked treatment with tonal variation and visible grain - mineral, rustic, or dimpled reads depending on the series. No two pieces are identical, which gives larger runs a more natural rhythm.",
         "traits": [
-          { "label": "Texture", "value": "Pronounced to fine" },
-          { "label": "Where it excels", "value": "Landscapes, courtyards, narrative interiors" },
-          { "label": "Care", "value": "Brush wash or hose; reseal per project notes if exterior" }
+          {
+            "label": "Texture",
+            "value": "Pronounced to fine"
+          },
+          {
+            "label": "Where it excels",
+            "value": "Landscapes, courtyards, narrative interiors"
+          },
+          {
+            "label": "Care",
+            "value": "Brush wash or hose; reseal per project notes if exterior"
+          }
         ],
         "imageSrc": "/hero/finishes/texture.webp",
         "imageAlt": "LEAFO planter in textured mineral finish with plant in a courtyard"
@@ -107,9 +201,18 @@
         "tagline": "Wood-grain warmth without the weight of timber.",
         "description": "A grain-forward finish that reads as timber at a glance - suited to warm interiors, hospitality, and terraces where planters should feel natural beside wood decking and furniture.",
         "traits": [
-          { "label": "Read", "value": "Warm / organic" },
-          { "label": "Where it excels", "value": "Lounges, suites, wood-heavy interiors" },
-          { "label": "Care", "value": "Wipe or rinse; avoid prolonged standing water on grain" }
+          {
+            "label": "Read",
+            "value": "Warm / organic"
+          },
+          {
+            "label": "Where it excels",
+            "value": "Lounges, suites, wood-heavy interiors"
+          },
+          {
+            "label": "Care",
+            "value": "Wipe or rinse; avoid prolonged standing water on grain"
+          }
         ],
         "imageSrc": "/hero/finishes/Wooden.webp",
         "imageAlt": "LEAFO planter in wood-grain finish with plant on a timber terrace"
@@ -128,21 +231,36 @@
     "eyebrow": "FRP planters · Made in India",
     "title": "Planters, quietly considered.",
     "intro": "A diverse range of fiber-reinforced planters for homes, hotels, offices, and landscapes across India and beyond.",
-    "primaryCta": { "href": "/collections", "label": "Explore Collections" },
-    "secondaryCta": { "href": "/contact", "label": "Inquire" },
+    "primaryCta": {
+      "href": "/collections",
+      "label": "Explore Collections"
+    },
+    "secondaryCta": {
+      "href": "/contact",
+      "label": "Inquire"
+    },
     "heroImageSrc": "/hero/hero-slide-1.webp",
     "heroImageAlt": "Outdoor row of planters with varied foliage against a pale tiled wall in sunlight",
     "weAre": {
       "lines": [
-        { "line": "makers crafting planters for your space." },
-        { "line": "creators combining form & finish." },
-        { "line": "partners growing with your vision." }
+        {
+          "line": "makers crafting planters for your space."
+        },
+        {
+          "line": "creators combining form & finish."
+        },
+        {
+          "line": "partners growing with your vision."
+        }
       ],
       "closingCopy": "Great planters shouldn't be complicated. Clear finish. Honest form. Built to last."
     },
     "heroFactsEyebrow": "At a glance",
     "heroFacts": [
-      { "label": "Range", "body": "12 collections · 60+ size variants" },
+      {
+        "label": "Range",
+        "body": "19 designs · 56 size variants"
+      },
       {
         "label": "Finishes",
         "body": "Matt, glossy, texture, wooden - applied by hand"
@@ -193,16 +311,28 @@
       "title": "India's largest FRP planter",
       "body": "We executed India's largest FRP planter - manufactured by LEAFO and installed on site for a high-impact interior landscape. The piece was engineered for scale, stability, and a refined architectural finish, then delivered as a complete custom planter ready for mature planting.",
       "highlights": [
-        { "label": "Custom scale", "body": "Built beyond catalogue dimensions for a statement installation." },
-        { "label": "Engineered FRP", "body": "Lightweight structure with strength suited to large-format planting." },
-        { "label": "Site ready", "body": "Manufactured, finished, and installed with project coordination." }
+        {
+          "label": "Custom scale",
+          "body": "Built beyond catalogue dimensions for a statement installation."
+        },
+        {
+          "label": "Engineered FRP",
+          "body": "Lightweight structure with strength suited to large-format planting."
+        },
+        {
+          "label": "Site ready",
+          "body": "Manufactured, finished, and installed with project coordination."
+        }
       ],
       "imageSrc": "/manufactured-by-leafo.jpeg",
       "imageAlt": "Large custom FRP planter with tree and underplanting in a bright corporate lobby",
-      "cta": { "href": "/contact", "label": "Discuss custom scale" }
+      "cta": {
+        "href": "/contact",
+        "label": "Discuss custom scale"
+      }
     },
     "collectionsHeading": "Collections",
-    "collectionsIntro": "Twelve series. Each shaped for a different room, terrace, or lobby.",
+    "collectionsIntro": "Nineteen designs. Each shaped for a different room, terrace, or lobby.",
     "finishesShort": [
       {
         "name": "Matt",
@@ -257,103 +387,436 @@
       }
     ],
     "metrics": [
-      { "label": "Collections", "value": "12" },
-      { "label": "Finishes", "value": "4" },
-      { "label": "Size variants", "value": "60+" }
+      {
+        "label": "Designs",
+        "value": "19"
+      },
+      {
+        "label": "Finishes",
+        "value": "4"
+      },
+      {
+        "label": "Size variants",
+        "value": "56"
+      }
     ],
     "inquiryHeadline": "Designing a space?",
     "inquirySub": "Tell us what you're working on. We'll come back with options, sizes, and lead times.",
-    "inquiryCta": { "href": "/contact", "label": "Start an inquiry" }
+    "inquiryCta": {
+      "href": "/contact",
+      "label": "Start an inquiry"
+    }
   },
   "collections": [
     {
-      "slug": "corso",
-      "name": "Corso",
-      "subtitle": "A confident cone. Three sizes.",
+      "slug": "aqua",
+      "name": "AQUA",
+      "subtitle": "Cascading edge detail. Three sizes.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 19.5 × 30 cm", "B - 15.5 × 24 cm", "C - 11.5 × 18 cm"],
+      "sizes": [
+        "A - 19.5 × 30 cm",
+        "B - 15.5 × 24 cm",
+        "C - 11.5 × 18 cm"
+      ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
-      "summary": "Wide at the base, narrowing cleanly upward. Reads as sculptural without competing with the plant.",
+      "summary": "An ode to flowing water trickling down; AQUA embodies the subliminal elegance of a cascading stream. The edge details invoke the imagery of a droplet formulating itself against gravity.",
       "story": [
-        "Wide at the base, narrowing cleanly upward. Reads as sculptural without competing with the plant.",
-        "A confident cone in three sizes for tabletops, consoles, and compact floors."
+        "An ode to flowing water trickling down; AQUA embodies the subliminal elegance of a cascading stream. The edge details invoke the imagery of a droplet formulating itself against gravity.",
+        "Three sizes step down in proportion, so a single planter reads as a quiet accent and a grouped set reads as a run of water."
       ],
-      "features": ["Indoor · Outdoor · Both", "Specified in any finish across our palette"],
-      "imageSrc": "https://images.unsplash.com/photo-1609062111394-0427aa22d6c1?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Sculptural cone-shaped ceramic planter on neutral background",
-      "shapes": ["Round", "Tall"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium"]
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Edge detailing catches light along the rim",
+        "Groups well in threes along a corridor or sill"
+      ],
+      "imageSrc": "/products/aqua/aqua-01-card.8f996b57.webp",
+      "imageAlt": "AQUA FRP planter with a cascading edge detail",
+      "shapes": [
+        "Round",
+        "Tall"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small",
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/aqua/aqua-01.webp",
+          "card": "/products/aqua/aqua-01-card.8f996b57.webp",
+          "alt": "AQUA FRP planter with a cascading edge detail"
+        },
+        {
+          "src": "/products/aqua/aqua-02.webp",
+          "card": "/products/aqua/aqua-02-card.fa2b7555.webp",
+          "alt": "AQUA FRP planter with a cascading edge detail — view 2"
+        },
+        {
+          "src": "/products/aqua/aqua-03.webp",
+          "card": "/products/aqua/aqua-03-card.ad2b9dcc.webp",
+          "alt": "AQUA FRP planter with a cascading edge detail — view 3"
+        },
+        {
+          "src": "/products/aqua/aqua-04.webp",
+          "card": "/products/aqua/aqua-04-card.3e7de43d.webp",
+          "alt": "AQUA FRP planter with a cascading edge detail — view 4"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "AQUA-A",
+          "diameter": "19.5",
+          "height": "30",
+          "label": "A - 19.5 × 30 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "AQUA-B",
+          "diameter": "15.5",
+          "height": "24",
+          "label": "B - 15.5 × 24 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "AQUA-C",
+          "diameter": "11.5",
+          "height": "18",
+          "label": "C - 11.5 × 18 cm"
+        }
+      ],
+      "oldName": "Aqua"
     },
     {
-      "slug": "corsa",
-      "name": "Corsa",
-      "subtitle": "Tall and tapered. Four sizes, glossy to matt.",
+      "slug": "alta",
+      "name": "ALTA",
+      "subtitle": "A curved cone, tall and tapered. Four sizes.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 22 × 40 cm", "B - 17 × 32 cm", "C - 13 × 25 cm", "D - 10 × 18 cm"],
+      "sizes": [
+        "A - 22 × 40 cm",
+        "B - 17 × 32 cm",
+        "C - 13 × 25 cm",
+        "D - 10 × 18 cm"
+      ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
-      "summary": "Four heights of the same gentle silhouette. Pairs with palms, ficus, and large-leaf indoor plants.",
+      "summary": "Exploring the geometrical marriage of a circle & a triangle, ALTA elevates the co-relation into a fresh form that one doesn't expect. The emergence is a curved conical surface softening the gaze of the onlooker.",
       "story": [
-        "Four heights of the same gentle silhouette. Pairs with palms, ficus, and large-leaf indoor plants.",
-        "Tall and tapered, scaled from desktop to floor-standing focal points."
+        "Exploring the geometrical marriage of a circle & a triangle, ALTA elevates the co-relation into a fresh form that one doesn't expect. The emergence is a curved conical surface softening the gaze of the onlooker.",
+        "Four heights of the same silhouette, from a 40 cm floor piece down to an 18 cm tabletop. Pairs with palms, ficus, and other upright planting."
       ],
-      "features": ["Indoor · Outdoor · Both", "Ideal for height without a wide footprint"],
-      "imageSrc": "https://images.unsplash.com/photo-1466781783364-36c955e42a7f?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Tall green indoor plants in a bright interior",
-      "shapes": ["Tall", "Round"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Height without a wide footprint",
+        "Curved cone softens hard architectural lines"
+      ],
+      "imageSrc": "/products/alta/alta-01-card.60da1c9b.webp",
+      "imageAlt": "ALTA tapered conical FRP planter",
+      "shapes": [
+        "Round",
+        "Tall"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "images": [
+        {
+          "src": "/products/alta/alta-01.webp",
+          "card": "/products/alta/alta-01-card.60da1c9b.webp",
+          "alt": "ALTA tapered conical FRP planter"
+        },
+        {
+          "src": "/products/alta/alta-02.webp",
+          "card": "/products/alta/alta-02-card.95a4c5e6.webp",
+          "alt": "ALTA tapered conical FRP planter — view 2"
+        },
+        {
+          "src": "/products/alta/alta-03.webp",
+          "card": "/products/alta/alta-03-card.f49cb3d8.webp",
+          "alt": "ALTA tapered conical FRP planter — view 3"
+        },
+        {
+          "src": "/products/alta/alta-04.webp",
+          "card": "/products/alta/alta-04-card.75ca2c34.webp",
+          "alt": "ALTA tapered conical FRP planter — view 4"
+        },
+        {
+          "src": "/products/alta/alta-05.webp",
+          "card": "/products/alta/alta-05-card.345a3709.webp",
+          "alt": "ALTA tapered conical FRP planter — view 5"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "ALTA-A",
+          "diameter": "22",
+          "height": "40",
+          "label": "A - 22 × 40 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "ALTA-B",
+          "diameter": "17",
+          "height": "32",
+          "label": "B - 17 × 32 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "ALTA-C",
+          "diameter": "13",
+          "height": "25",
+          "label": "C - 13 × 25 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "ALTA-D",
+          "diameter": "10",
+          "height": "18",
+          "label": "D - 10 × 18 cm"
+        }
+      ],
+      "oldName": "Conica"
     },
     {
-      "slug": "felio",
-      "name": "Felio",
-      "subtitle": "Slim, vertical, architectural. Four sizes.",
+      "slug": "pino",
+      "name": "PINO",
+      "subtitle": "An elongated bud that swells at the base. Four sizes.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 16 × 40 cm", "B - 13 × 33 cm", "C - 11 × 28 cm", "D - 8 × 21 cm"],
+      "sizes": [
+        "A - 16 × 40 cm",
+        "B - 13 × 33 cm",
+        "C - 11 × 28 cm",
+        "D - 8 × 21 cm"
+      ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
-      "summary": "A narrow column with quiet shoulders. Designed for tight spaces where height matters more than footprint.",
+      "summary": "An elongated profile that swells as it reaches the ground, budding with possibilities of holding life within; PINO invokes a sense of newness and continuity. It almost appears as if it has emerged out of the earth, bearing a fruit of surprise.",
       "story": [
-        "A narrow column with quiet shoulders. Designed for tight spaces where height matters more than footprint.",
-        "Slim, vertical, and quietly architectural beside doorways and glazing."
+        "An elongated profile that swells as it reaches the ground, budding with possibilities of holding life within; PINO invokes a sense of newness and continuity. It almost appears as if it has emerged out of the earth, bearing a fruit of surprise.",
+        "The narrowest profile in the range at its scale, which makes it useful beside doorways, glazing, and in circulation space where floor area is tight."
       ],
-      "features": ["Indoor · Outdoor · Both", "Pairs with narrow corridors and terraces"],
-      "imageSrc": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Minimal succulent in a tall narrow planter",
-      "shapes": ["Tall", "Round"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Slim footprint for tight plan positions",
+        "Reads as sculpture when left unplanted"
+      ],
+      "imageSrc": "/products/pino/pino-01-card.71127776.webp",
+      "imageAlt": "PINO elongated bud-shaped FRP planter",
+      "shapes": [
+        "Round",
+        "Tall"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "images": [
+        {
+          "src": "/products/pino/pino-01.webp",
+          "card": "/products/pino/pino-01-card.71127776.webp",
+          "alt": "PINO elongated bud-shaped FRP planter"
+        },
+        {
+          "src": "/products/pino/pino-02.webp",
+          "card": "/products/pino/pino-02-card.cef09d70.webp",
+          "alt": "PINO elongated bud-shaped FRP planter — view 2"
+        },
+        {
+          "src": "/products/pino/pino-03.webp",
+          "card": "/products/pino/pino-03-card.106a2cdd.webp",
+          "alt": "PINO elongated bud-shaped FRP planter — view 3"
+        },
+        {
+          "src": "/products/pino/pino-04.webp",
+          "card": "/products/pino/pino-04-card.c27adf3c.webp",
+          "alt": "PINO elongated bud-shaped FRP planter — view 4"
+        },
+        {
+          "src": "/products/pino/pino-05.webp",
+          "card": "/products/pino/pino-05-card.b76d41ed.webp",
+          "alt": "PINO elongated bud-shaped FRP planter — view 5"
+        },
+        {
+          "src": "/products/pino/pino-06.webp",
+          "card": "/products/pino/pino-06-card.f11be871.webp",
+          "alt": "PINO elongated bud-shaped FRP planter — view 6"
+        },
+        {
+          "src": "/products/pino/pino-07.webp",
+          "card": "/products/pino/pino-07-card.60a01167.webp",
+          "alt": "PINO elongated bud-shaped FRP planter — view 7"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "PINO-A",
+          "diameter": "16",
+          "height": "40",
+          "label": "A - 16 × 40 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "PINO-B",
+          "diameter": "13",
+          "height": "33",
+          "label": "B - 13 × 33 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "PINO-C",
+          "diameter": "11",
+          "height": "28",
+          "label": "C - 11 × 28 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "PINO-D",
+          "diameter": "8",
+          "height": "21",
+          "label": "D - 8 × 21 cm"
+        }
+      ],
+      "oldName": "Budd"
     },
     {
-      "slug": "queen",
-      "name": "Queen",
-      "subtitle": "Bell-shaped, soft-shouldered. Four sizes.",
+      "slug": "fiora",
+      "name": "FIORA",
+      "subtitle": "Two forms married into one. Four sizes.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 27.5 × 32.5 cm", "B - 23.5 × 28.5 cm", "C - 20.5 × 24.5 cm", "D - 17 × 20.5 cm"],
+      "sizes": [
+        "A - 27.5 × 32.5 cm",
+        "B - 23.5 × 28.5 cm",
+        "C - 20.5 × 24.5 cm",
+        "D - 17 × 20.5 cm"
+      ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
-      "summary": "A rounded base that opens slightly outward. Comfortable in residential and hospitality settings.",
+      "summary": "Juggling upon the idea of balance & amalgamation, FIORA takes on its characteristics from two forms and marries them together with effortless grace.",
       "story": [
-        "A rounded base that opens slightly outward. Comfortable in residential and hospitality settings.",
-        "Bell-shaped and soft-shouldered, with four sizes across the range."
+        "Juggling upon the idea of balance & amalgamation, FIORA takes on its characteristics from two forms and marries them together with effortless grace.",
+        "Nearly as wide as it is tall, which suits broad-canopy planting and softens the corner of a room or terrace."
       ],
-      "features": ["Indoor · Outdoor · Both", "Suited to lobbies and living rooms alike"],
-      "imageSrc": "https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Bell-shaped planter with sculptural succulent",
-      "shapes": ["Round", "Bowl"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Small", "Medium", "Large"]
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Generous mouth for broad-canopy planting",
+        "Balanced proportions for lobbies and living rooms"
+      ],
+      "imageSrc": "/products/fiora/fiora-01-card.6d3db5d7.webp",
+      "imageAlt": "FIORA rounded FRP planter with a soft shoulder",
+      "shapes": [
+        "Round",
+        "Bowl"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small",
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/fiora/fiora-01.webp",
+          "card": "/products/fiora/fiora-01-card.6d3db5d7.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder"
+        },
+        {
+          "src": "/products/fiora/fiora-02.webp",
+          "card": "/products/fiora/fiora-02-card.d7c786df.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder — view 2"
+        },
+        {
+          "src": "/products/fiora/fiora-03.webp",
+          "card": "/products/fiora/fiora-03-card.8b677266.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder — view 3"
+        },
+        {
+          "src": "/products/fiora/fiora-04.webp",
+          "card": "/products/fiora/fiora-04-card.fc302a6e.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder — view 4"
+        },
+        {
+          "src": "/products/fiora/fiora-05.webp",
+          "card": "/products/fiora/fiora-05-card.021e7a29.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder — view 5"
+        },
+        {
+          "src": "/products/fiora/fiora-06.webp",
+          "card": "/products/fiora/fiora-06-card.473b83c1.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder — view 6"
+        },
+        {
+          "src": "/products/fiora/fiora-07.webp",
+          "card": "/products/fiora/fiora-07-card.bd855a34.webp",
+          "alt": "FIORA rounded FRP planter with a soft shoulder — view 7"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "FIORA-A",
+          "diameter": "27.5",
+          "height": "32.5",
+          "label": "A - 27.5 × 32.5 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "FIORA-B",
+          "diameter": "23.5",
+          "height": "28.5",
+          "label": "B - 23.5 × 28.5 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "FIORA-C",
+          "diameter": "20.5",
+          "height": "24.5",
+          "label": "C - 20.5 × 24.5 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "FIORA-D",
+          "diameter": "17",
+          "height": "20.5",
+          "label": "D - 17 × 20.5 cm"
+        }
+      ],
+      "oldName": "Fiora"
     },
     {
-      "slug": "pomo",
-      "name": "Pomo",
-      "subtitle": "The full range. Nine sizes from desktop to floor.",
+      "slug": "barril",
+      "name": "BARRIL",
+      "subtitle": "Cylinder on a curved base. Nine sizes.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
@@ -369,171 +832,1282 @@
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
-      "summary": "From desktop to floor-standing. Pomo is the working horse of the catalogue, configured for spaces of any scale.",
+      "summary": "Understated elegance of a cylinder takes flight with a loudly expressed curvature base. BARRIL feels familiar to the eyes while still offering the novelty of grace.",
       "story": [
-        "From desktop to floor-standing. Pomo is the working horse of the catalogue, configured for spaces of any scale.",
-        "Nine sizes cover tabletop accents through architectural-scale planting."
+        "Understated elegance of a cylinder takes flight with a loudly expressed curvature base. BARRIL feels familiar to the eyes while still offering the novelty of grace.",
+        "Nine sizes make this the workhorse of the catalogue, covering everything from a 9 cm desk piece to a 36 cm floor-standing planter."
       ],
-      "features": ["Indoor · Outdoor · Both", "The broadest footprint in the LEAFO range"],
-      "imageSrc": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Round planters with cacti and succulents",
-      "shapes": ["Round", "Bowl"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium", "Large", "Architectural"]
+      "features": [
+        "Indoor · Outdoor · Both",
+        "The widest size range in the LEAFO catalogue",
+        "Specify one form across an entire project at different scales"
+      ],
+      "imageSrc": "/products/barril/barril-01-card.a2b8353e.webp",
+      "imageAlt": "BARRIL cylindrical FRP planter with a curved base",
+      "shapes": [
+        "Round"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop",
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "images": [
+        {
+          "src": "/products/barril/barril-01.webp",
+          "card": "/products/barril/barril-01-card.a2b8353e.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base"
+        },
+        {
+          "src": "/products/barril/barril-02.webp",
+          "card": "/products/barril/barril-02-card.ebedc952.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 2"
+        },
+        {
+          "src": "/products/barril/barril-03.webp",
+          "card": "/products/barril/barril-03-card.b8f75253.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 3"
+        },
+        {
+          "src": "/products/barril/barril-04.webp",
+          "card": "/products/barril/barril-04-card.cacfff1a.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 4"
+        },
+        {
+          "src": "/products/barril/barril-05.webp",
+          "card": "/products/barril/barril-05-card.3067457c.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 5"
+        },
+        {
+          "src": "/products/barril/barril-06.webp",
+          "card": "/products/barril/barril-06-card.350b5c19.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 6"
+        },
+        {
+          "src": "/products/barril/barril-07.webp",
+          "card": "/products/barril/barril-07-card.52cd6ed0.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 7"
+        },
+        {
+          "src": "/products/barril/barril-08.webp",
+          "card": "/products/barril/barril-08-card.30d5afe8.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 8"
+        },
+        {
+          "src": "/products/barril/barril-09.webp",
+          "card": "/products/barril/barril-09-card.d7eb5386.webp",
+          "alt": "BARRIL cylindrical FRP planter with a curved base — view 9"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "BARRIL-A",
+          "diameter": "36",
+          "height": "36",
+          "label": "A - 36 × 36 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "BARRIL-B",
+          "diameter": "30",
+          "height": "30",
+          "label": "B - 30 × 30 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "BARRIL-C",
+          "diameter": "24",
+          "height": "24",
+          "label": "C - 24 × 24 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "BARRIL-D",
+          "diameter": "22",
+          "height": "18",
+          "label": "D - 22 × 18 cm"
+        },
+        {
+          "variant": "E",
+          "sku": "BARRIL-E",
+          "diameter": "18",
+          "height": "18",
+          "label": "E - 18 × 18 cm"
+        },
+        {
+          "variant": "F",
+          "sku": "BARRIL-F",
+          "diameter": "18",
+          "height": "14",
+          "label": "F - 18 × 14 cm"
+        },
+        {
+          "variant": "G",
+          "sku": "BARRIL-G",
+          "diameter": "15",
+          "height": "15",
+          "label": "G - 15 × 15 cm"
+        },
+        {
+          "variant": "H",
+          "sku": "BARRIL-H",
+          "diameter": "12",
+          "height": "12",
+          "label": "H - 12 × 12 cm"
+        },
+        {
+          "variant": "I",
+          "sku": "BARRIL-I",
+          "diameter": "12",
+          "height": "9",
+          "label": "I - 12 × 9 cm"
+        }
+      ],
+      "oldName": "Barril"
     },
     {
-      "slug": "potros",
-      "name": "Potros",
-      "subtitle": "Wide-mouthed bowls. Five sizes.",
-      "category": "Collection",
-      "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 36 × 26 cm", "B - 31 × 22 cm", "C - 25 × 18 cm", "D - 19 × 14 cm", "E - 14 × 10 cm"],
-      "finish": "Matt · Glossy · Texture · Wooden",
-      "priceNote": "",
-      "summary": "Low and broad. Designed for shallow plantings, stone arrangements, and centrepiece installations.",
-      "story": [
-        "Low and broad. Designed for shallow plantings, stone arrangements, and centrepiece installations.",
-        "Wide-mouthed bowls that sit comfortably on tables, plinths, and paving."
-      ],
-      "features": ["Indoor · Outdoor · Both", "Layered compositions at a low sight line"],
-      "imageSrc": "https://images.unsplash.com/photo-1563419837758-e48ef1b731dd?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Wide bowl planters with lush greenery",
-      "shapes": ["Bowl", "Round"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium", "Large"]
-    },
-    {
-      "slug": "leppo",
-      "name": "Leppo",
-      "subtitle": "Capsule form, generous body. Five sizes.",
-      "category": "Collection",
-      "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 16 × 30 cm", "B - 14 × 22 cm", "C - 14 × 14 cm", "D - 12 × 16 cm", "E - 10 × 11 cm"],
-      "finish": "Matt · Glossy · Texture · Wooden",
-      "priceNote": "",
-      "summary": "A rounded vertical with a soft top. Sits well alongside furniture in residential and office floors.",
-      "story": [
-        "A rounded vertical with a soft top. Sits well alongside furniture in residential and office floors.",
-        "Capsule form with a generous body in five practical sizes."
-      ],
-      "features": ["Indoor · Outdoor · Both", "Soft silhouette beside seating groups"],
-      "imageSrc": "https://images.unsplash.com/photo-1588440691140-09155c1be58a?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Garden terrace with planters and greenery",
-      "shapes": ["Round", "Tall"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium"]
-    },
-    {
-      "slug": "marles",
-      "name": "Marles",
-      "subtitle": "Faceted, geometric.",
-      "category": "Collection",
-      "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 18 × 26 cm", "More sizes in development"],
-      "finish": "Matt · Glossy · Texture · Wooden",
-      "priceNote": "",
-      "summary": "Hard-edged surfaces in a controlled silhouette. Reads as architectural object before planter.",
-      "story": [
-        "Hard-edged surfaces in a controlled silhouette. Reads as architectural object before planter.",
-        "Faceted geometry for contemporary interiors and crisp landscape lines."
-      ],
-      "features": ["Indoor · Outdoor · Both", "Additional sizes rolling out with the line"],
-      "imageSrc": "https://images.unsplash.com/photo-1528475563668-e15742001b92?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Geometric faceted vessel with branches",
-      "shapes": ["Faceted", "Round"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium"]
-    },
-    {
-      "slug": "sabin",
-      "name": "Sabin",
-      "subtitle": "A single, quiet silhouette.",
-      "category": "Collection",
-      "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 11 × 14.5 cm", "More sizes in development"],
-      "finish": "Matt · Glossy · Texture · Wooden",
-      "priceNote": "",
-      "summary": "One form, considered. For spaces that need a planter without a statement.",
-      "story": [
-        "One form, considered. For spaces that need a planter without a statement.",
-        "A single, quiet silhouette that slips into shelves and consoles."
-      ],
-      "features": ["Indoor · Outdoor · Both", "Compact footprint for edited interiors"],
-      "imageSrc": "https://images.unsplash.com/photo-1680677780993-75e140b4f06f?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Minimal interior with small plant on table",
-      "shapes": ["Round"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small"]
-    },
-    {
-      "slug": "diamond",
-      "name": "Diamond",
-      "subtitle": "Textured surface, compact form.",
-      "category": "Collection",
-      "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 9 × 8 cm"],
-      "finish": "Matt · Glossy · Texture · Wooden",
-      "priceNote": "",
-      "summary": "A dimensional pattern across the body, kept small to suit shelves, consoles, and tabletops.",
-      "story": [
-        "A dimensional pattern across the body, kept small to suit shelves, consoles, and tabletops.",
-        "Textured surface and compact form for foreground planting."
-      ],
-      "features": ["Indoor · Outdoor · Both", "Best at intimate viewing distances"],
-      "imageSrc": "https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Small potted plant on shelf in soft light",
-      "shapes": ["Round", "Faceted"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop"]
-    },
-    {
-      "slug": "rectangle",
-      "name": "Rectangle",
-      "subtitle": "Six rectangular formats for hedges and dividers.",
+      "slug": "domo",
+      "name": "DOMO",
+      "subtitle": "Wide, grounded, dome-shouldered. Five sizes.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 24 × 12 × 12 cm",
-        "B - 36 × 12 × 12 cm",
-        "C - 24 × 16 × 12 cm",
-        "D - 36 × 16 × 12 cm",
-        "E - 35.4 × 19.7 × 19.7 cm",
-        "F - 34 × 34 × 25 cm"
+        "A - 36 × 26 cm",
+        "B - 31 × 22 cm",
+        "C - 25 × 18 cm",
+        "D - 19 × 14 cm",
+        "E - 14 × 10 cm"
       ],
-      "finish": "Matt emphasised across linear formats; full palette on request",
-      "priceNote": "",
-      "summary": "Linear planters for terraces, balconies, and zoning open spaces. Available in matt across the range.",
-      "story": [
-        "Linear planters for terraces, balconies, and zoning open spaces. Available in matt across the range.",
-        "Six formats for hedges, dividers, and continuous runs along architecture."
-      ],
-      "features": ["Indoor · Outdoor · Both", "Runs that align to façade and railing rhythm"],
-      "imageSrc": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Succulents in rectangular planter trough",
-      "shapes": ["Rectangle"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Small", "Medium", "Large", "Architectural"]
-    },
-    {
-      "slug": "bueno",
-      "name": "Bueno",
-      "subtitle": "Urn-shaped, hand-finished. Three sizes.",
-      "category": "Collection",
-      "material": "Fiber-reinforced plastic (FRP)",
-      "sizes": ["A - 10.5 × 29 cm", "B - 12 × 18 cm", "C - 10 × 14 cm"],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
-      "summary": "A traditional silhouette with a contemporary surface. Suited to entryways, courtyards, and quieter corners.",
+      "summary": "A perfect imagination of grounded presence; DOMO dominates with its presence. The planter is hard to ignore as it doesn't shy away from taking space, weaving a tale of stability & confidence.",
       "story": [
-        "A traditional silhouette with a contemporary surface. Suited to entryways, courtyards, and quieter corners.",
-        "Urn-shaped, hand-finished, in three balanced sizes."
+        "A perfect imagination of grounded presence; DOMO dominates with its presence. The planter is hard to ignore as it doesn't shy away from taking space, weaving a tale of stability & confidence.",
+        "Wider than it is tall at every size, so it holds a floor plane without adding height. Effective either side of an entrance or under low glazing."
       ],
-      "features": ["Indoor · Outdoor · Both", "Soft form language at doorways and garden paths"],
-      "imageSrc": "https://images.unsplash.com/photo-1510520745063-ceaa7314a820?auto=format&fit=crop&w=1200&q=80&ixlib=rb-4.1.0",
-      "imageAlt": "Classic urn-shaped vessel with plant",
-      "shapes": ["Round", "Tall"],
-      "finishes": ["Matt", "Glossy", "Texture", "Wooden"],
-      "scaleTags": ["Tabletop", "Small", "Medium"]
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Low centre of gravity suits exposed terraces",
+        "Wide mouth for multi-plant arrangements"
+      ],
+      "imageSrc": "/products/domo/domo-01-card.ef68e36f.webp",
+      "imageAlt": "DOMO wide dome-shaped FRP planter",
+      "shapes": [
+        "Round",
+        "Bowl"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop",
+        "Small",
+        "Medium",
+        "Large"
+      ],
+      "images": [
+        {
+          "src": "/products/domo/domo-01.webp",
+          "card": "/products/domo/domo-01-card.ef68e36f.webp",
+          "alt": "DOMO wide dome-shaped FRP planter"
+        },
+        {
+          "src": "/products/domo/domo-02.webp",
+          "card": "/products/domo/domo-02-card.acd262ea.webp",
+          "alt": "DOMO wide dome-shaped FRP planter — view 2"
+        },
+        {
+          "src": "/products/domo/domo-03.webp",
+          "card": "/products/domo/domo-03-card.761b7aac.webp",
+          "alt": "DOMO wide dome-shaped FRP planter — view 3"
+        },
+        {
+          "src": "/products/domo/domo-04.webp",
+          "card": "/products/domo/domo-04-card.03e8e95d.webp",
+          "alt": "DOMO wide dome-shaped FRP planter — view 4"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "DOMO-A",
+          "diameter": "36",
+          "height": "26",
+          "label": "A - 36 × 26 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "DOMO-B",
+          "diameter": "31",
+          "height": "22",
+          "label": "B - 31 × 22 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "DOMO-C",
+          "diameter": "25",
+          "height": "18",
+          "label": "C - 25 × 18 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "DOMO-D",
+          "diameter": "19",
+          "height": "14",
+          "label": "D - 19 × 14 cm"
+        },
+        {
+          "variant": "E",
+          "sku": "DOMO-E",
+          "diameter": "14",
+          "height": "10",
+          "label": "E - 14 × 10 cm"
+        }
+      ],
+      "oldName": "Domo"
+    },
+    {
+      "slug": "flute",
+      "name": "FLUTE",
+      "subtitle": "An elongated musical profile. Five sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 16 × 30 cm",
+        "B - 14 × 22 cm",
+        "C - 14 × 14 cm",
+        "D - 12 × 16 cm",
+        "E - 10 × 11 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "The sharp yet sweet music of an instrument takes form; the elongated physical attributes find themselves merging with the simplistic euphony of its composition to give shape to FLUTE.",
+      "story": [
+        "The sharp yet sweet music of an instrument takes form; the elongated physical attributes find themselves merging with the simplistic euphony of its composition to give shape to FLUTE.",
+        "Tall rounded-base cups that work as a graduated set. Five sizes let you build a run with rhythm rather than repetition."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Rounded base lifts the form off the floor visually",
+        "Designed to be read as a graduated set"
+      ],
+      "imageSrc": "/products/flute/flute-01-card.50f33e24.webp",
+      "imageAlt": "FLUTE tall rounded-base FRP planter",
+      "shapes": [
+        "Round",
+        "Tall"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop",
+        "Small",
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/flute/flute-01.webp",
+          "card": "/products/flute/flute-01-card.50f33e24.webp",
+          "alt": "FLUTE tall rounded-base FRP planter"
+        },
+        {
+          "src": "/products/flute/flute-02.webp",
+          "card": "/products/flute/flute-02-card.a00a8632.webp",
+          "alt": "FLUTE tall rounded-base FRP planter — view 2"
+        },
+        {
+          "src": "/products/flute/flute-03.webp",
+          "card": "/products/flute/flute-03-card.a58ac595.webp",
+          "alt": "FLUTE tall rounded-base FRP planter — view 3"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "FLUTE-A",
+          "diameter": "16",
+          "height": "30",
+          "label": "A - 16 × 30 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "FLUTE-B",
+          "diameter": "14",
+          "height": "22",
+          "label": "B - 14 × 22 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "FLUTE-C",
+          "diameter": "14",
+          "height": "14",
+          "label": "C - 14 × 14 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "FLUTE-D",
+          "diameter": "12",
+          "height": "16",
+          "label": "D - 12 × 16 cm"
+        },
+        {
+          "variant": "E",
+          "sku": "FLUTE-E",
+          "diameter": "10",
+          "height": "11",
+          "label": "E - 10 × 11 cm"
+        }
+      ],
+      "oldName": "Flute"
+    },
+    {
+      "slug": "honeycomb",
+      "name": "HONEYCOMB",
+      "subtitle": "A hex-faceted module that shifts with the light.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 18 × 26 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "As our imagination crystallizes itself into a hex-faceted module, we observe it take shape as a beautiful form offering depth & illusion. HONEYCOMB offers the excitement of a shape that changes and comes to life in the space as one moves around it.",
+      "story": [
+        "As our imagination crystallizes itself into a hex-faceted module, we observe it take shape as a beautiful form offering depth & illusion. HONEYCOMB offers the excitement of a shape that changes and comes to life in the space as one moves around it.",
+        "A single 18 × 26 cm size. The faceting does the work here, so it is best given room to be walked around."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Hex faceting shifts as you move around it",
+        "Strongest in glossy, where facets catch reflection"
+      ],
+      "imageSrc": "/products/honeycomb/honeycomb-01-card.b982990e.webp",
+      "imageAlt": "HONEYCOMB hex-faceted FRP planter",
+      "shapes": [
+        "Faceted"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/honeycomb/honeycomb-01.webp",
+          "card": "/products/honeycomb/honeycomb-01-card.b982990e.webp",
+          "alt": "HONEYCOMB hex-faceted FRP planter"
+        },
+        {
+          "src": "/products/honeycomb/honeycomb-02.webp",
+          "card": "/products/honeycomb/honeycomb-02-card.8cb8869e.webp",
+          "alt": "HONEYCOMB hex-faceted FRP planter — view 2"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "HONEYCOMB-A",
+          "diameter": "18",
+          "height": "26",
+          "label": "A - 18 × 26 cm"
+        }
+      ],
+      "oldName": "Cryst"
+    },
+    {
+      "slug": "oliv",
+      "name": "OLIV",
+      "subtitle": "An ellipsoid fruit form. One size.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 11 × 14.5 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Shaped like a beloved fruit that surprises with its distinctly flavoured presence, OLIV dances the line between expectation and reality with ease. The slight change in proportions masterfully plays with the idea of appropriation in inspiration, while leaving us with a fresh form to enjoy.",
+      "story": [
+        "Shaped like a beloved fruit that surprises with its distinctly flavoured presence, OLIV dances the line between expectation and reality with ease. The slight change in proportions masterfully plays with the idea of appropriation in inspiration, while leaving us with a fresh form to enjoy.",
+        "A single 11 × 14.5 cm piece, scaled for desks, shelves, and console tables."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Tabletop scale for desks and shelving",
+        "Reads as an object first, a planter second"
+      ],
+      "imageSrc": "/products/oliv/oliv-01-card.de6b656c.webp",
+      "imageAlt": "OLIV ellipsoid FRP planter in olive green",
+      "shapes": [
+        "Sphere"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop"
+      ],
+      "images": [
+        {
+          "src": "/products/oliv/oliv-01.webp",
+          "card": "/products/oliv/oliv-01-card.de6b656c.webp",
+          "alt": "OLIV ellipsoid FRP planter in olive green"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "OLIV-A",
+          "diameter": "11",
+          "height": "14.5",
+          "label": "A - 11 × 14.5 cm"
+        }
+      ],
+      "oldName": "Oliv"
+    },
+    {
+      "slug": "quilt",
+      "name": "QUILT",
+      "subtitle": "An embossed diamond grid. One size.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 9 × 8 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "One of our most detailed designs, with a personality that does not shy away from grabbing eyeballs. QUILT plays with an embossed diamond grid, further enhanced by its gently curved profile, coming alive as light around it changes.",
+      "story": [
+        "One of our most detailed designs, with a personality that does not shy away from grabbing eyeballs. QUILT plays with an embossed diamond grid, further enhanced by its gently curved profile, coming alive as light around it changes.",
+        "The most detailed surface in the catalogue at the smallest scale, at 9 × 8 cm."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Embossed diamond grid across the body",
+        "Detail reads best in raking or directional light"
+      ],
+      "imageSrc": "/products/quilt/quilt-01-card.40e10035.webp",
+      "imageAlt": "QUILT small FRP planter with an embossed diamond grid",
+      "shapes": [
+        "Round"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop"
+      ],
+      "images": [
+        {
+          "src": "/products/quilt/quilt-01.webp",
+          "card": "/products/quilt/quilt-01-card.40e10035.webp",
+          "alt": "QUILT small FRP planter with an embossed diamond grid"
+        },
+        {
+          "src": "/products/quilt/quilt-02.webp",
+          "card": "/products/quilt/quilt-02-card.9eaa8cde.webp",
+          "alt": "QUILT small FRP planter with an embossed diamond grid — view 2"
+        },
+        {
+          "src": "/products/quilt/quilt-03.webp",
+          "card": "/products/quilt/quilt-03-card.e5f8497e.webp",
+          "alt": "QUILT small FRP planter with an embossed diamond grid — view 3"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "QUILT-A",
+          "diameter": "9",
+          "height": "8",
+          "label": "A - 9 × 8 cm"
+        }
+      ],
+      "oldName": "Quilt"
+    },
+    {
+      "slug": "balcora",
+      "name": "BALCORA",
+      "subtitle": "Orthogonal modular boxes. Four formats.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 24x12 × 12 cm",
+        "B - 36x12 × 12 cm",
+        "C - 24x16 × 12 cm",
+        "D - 36x16 × 12 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Imagined in the three standard planes, connecting orthogonally into parallel projections; BALCORA offers infinite possibilities of humble forms not only in creation but also placement in space. The flexibility it offers is unparalleled, pertaining to its modular nature.",
+      "story": [
+        "Imagined in the three standard planes, connecting orthogonally into parallel projections; BALCORA offers infinite possibilities of humble forms not only in creation but also placement in space. The flexibility it offers is unparalleled, pertaining to its modular nature.",
+        "Four rectangular formats between 24 and 36 cm long that line up end to end, which makes them useful as hedges, dividers, and balcony runs."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Modular formats line up into continuous runs",
+        "Built for hedges, dividers, and balcony edges"
+      ],
+      "imageSrc": "/products/balcora/balcora-01-card.57650b6d.webp",
+      "imageAlt": "BALCORA rectangular modular FRP planter box",
+      "shapes": [
+        "Rectangle"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small",
+        "Large"
+      ],
+      "images": [
+        {
+          "src": "/products/balcora/balcora-01.webp",
+          "card": "/products/balcora/balcora-01-card.57650b6d.webp",
+          "alt": "BALCORA rectangular modular FRP planter box"
+        },
+        {
+          "src": "/products/balcora/balcora-02.webp",
+          "card": "/products/balcora/balcora-02-card.696f1684.webp",
+          "alt": "BALCORA rectangular modular FRP planter box — view 2"
+        },
+        {
+          "src": "/products/balcora/balcora-03.webp",
+          "card": "/products/balcora/balcora-03-card.f1c887b9.webp",
+          "alt": "BALCORA rectangular modular FRP planter box — view 3"
+        },
+        {
+          "src": "/products/balcora/balcora-04.webp",
+          "card": "/products/balcora/balcora-04-card.ffb72080.webp",
+          "alt": "BALCORA rectangular modular FRP planter box — view 4"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "BALCORA-A",
+          "diameter": "24x12",
+          "height": "12",
+          "label": "A - 24x12 × 12 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "BALCORA-B",
+          "diameter": "36x12",
+          "height": "12",
+          "label": "B - 36x12 × 12 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "BALCORA-C",
+          "diameter": "24x16",
+          "height": "12",
+          "label": "C - 24x16 × 12 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "BALCORA-D",
+          "diameter": "36x16",
+          "height": "12",
+          "label": "D - 36x16 × 12 cm"
+        }
+      ],
+      "oldName": "Axis"
+    },
+    {
+      "slug": "laguna",
+      "name": "LAGUNA",
+      "subtitle": "A flat, wide bowl for water planting. Two sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 32 × 11 cm",
+        "B - 26 × 9 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Carrying the promise of water, shade and abundance, it carries forward the idea with its flat base design meant to contain water plantation species. LAGUNA is sure to offer joy & relief as one finds it amongst much of earth-based landscape.",
+      "story": [
+        "Carrying the promise of water, shade and abundance, it carries forward the idea with its flat base design meant to contain water plantation species. LAGUNA is sure to offer joy & relief as one finds it amongst much of earth-based landscape.",
+        "The flat base is designed to hold standing water, which makes it the one planter in the range built for lilies and other aquatic species."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Flat base designed for aquatic planting",
+        "Wide, low profile for courtyards and landscape"
+      ],
+      "imageSrc": "/products/laguna/laguna-01-card.b246a8b6.webp",
+      "imageAlt": "LAGUNA wide flat FRP water bowl planter",
+      "shapes": [
+        "Bowl"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/laguna/laguna-01.webp",
+          "card": "/products/laguna/laguna-01-card.b246a8b6.webp",
+          "alt": "LAGUNA wide flat FRP water bowl planter"
+        },
+        {
+          "src": "/products/laguna/laguna-02.webp",
+          "card": "/products/laguna/laguna-02-card.774ccbbd.webp",
+          "alt": "LAGUNA wide flat FRP water bowl planter — view 2"
+        },
+        {
+          "src": "/products/laguna/laguna-03.webp",
+          "card": "/products/laguna/laguna-03-card.d322f3a9.webp",
+          "alt": "LAGUNA wide flat FRP water bowl planter — view 3"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "LAGUNA-A",
+          "diameter": "32",
+          "height": "11",
+          "label": "A - 32 × 11 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "LAGUNA-B",
+          "diameter": "26",
+          "height": "9",
+          "label": "B - 26 × 9 cm"
+        }
+      ],
+      "oldName": "Oasis"
+    },
+    {
+      "slug": "amphora",
+      "name": "AMPHORA",
+      "subtitle": "The tallest of the three antique jars.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 10.5 × 29 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Resembling the ever potent layers of the earth below us, shaped into something so sublime and timeless. AMPHORA connects the process with the concept in the way it's designed.",
+      "story": [
+        "Resembling the ever potent layers of the earth below us, shaped into something so sublime and timeless. AMPHORA connects the process with the concept in the way it's designed.",
+        "The tallest of the three jars, at 10.5 × 29 cm. Shown as a set with OLLA and TINAJA in the Antique Trio."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Tallest of the three antique jar forms",
+        "Designed to be grouped with OLLA and TINAJA"
+      ],
+      "imageSrc": "/products/amphora/amphora-01-card.a9b63ca2.webp",
+      "imageAlt": "AMPHORA tall antique-finish FRP jar planter",
+      "shapes": [
+        "Tall",
+        "Jar"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/amphora/amphora-01.webp",
+          "card": "/products/amphora/amphora-01-card.a9b63ca2.webp",
+          "alt": "AMPHORA tall antique-finish FRP jar planter"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "AMPHORA-A",
+          "diameter": "10.5",
+          "height": "29",
+          "label": "A - 10.5 × 29 cm"
+        }
+      ],
+      "oldName": "Urth",
+      "relatedSlugs": [
+        "olla",
+        "tinaja",
+        "antique-trio"
+      ]
+    },
+    {
+      "slug": "olla",
+      "name": "OLLA",
+      "subtitle": "The soft-bellied middle jar.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "B - 12 × 18 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "The soft curves merging with intentional exaggeration of form prove fruitful when one instantly feels warmth & endearment when looking at it; OLLA plays upon anachronistic wisdom and connects us to something timeless and familiar.",
+      "story": [
+        "The soft curves merging with intentional exaggeration of form prove fruitful when one instantly feels warmth & endearment when looking at it; OLLA plays upon anachronistic wisdom and connects us to something timeless and familiar.",
+        "The middle jar at 12 × 18 cm, and the widest of the three relative to its height."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Widest belly of the three antique jars",
+        "Designed to be grouped with AMPHORA and TINAJA"
+      ],
+      "imageSrc": "/products/olla/olla-01-card.e3c77efa.webp",
+      "imageAlt": "OLLA rounded antique-finish FRP jar planter",
+      "shapes": [
+        "Round",
+        "Jar"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small"
+      ],
+      "images": [
+        {
+          "src": "/products/olla/olla-01.webp",
+          "card": "/products/olla/olla-01-card.e3c77efa.webp",
+          "alt": "OLLA rounded antique-finish FRP jar planter"
+        },
+        {
+          "src": "/products/olla/olla-02.webp",
+          "card": "/products/olla/olla-02-card.d8acffb4.webp",
+          "alt": "OLLA rounded antique-finish FRP jar planter — view 2"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "B",
+          "sku": "OLLA-B",
+          "diameter": "12",
+          "height": "18",
+          "label": "B - 12 × 18 cm"
+        }
+      ],
+      "oldName": "Clay",
+      "relatedSlugs": [
+        "amphora",
+        "tinaja",
+        "antique-trio"
+      ]
+    },
+    {
+      "slug": "tinaja",
+      "name": "TINAJA",
+      "subtitle": "The smallest of the three antique jars.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "C - 10 × 14 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Stylish as it is, the form is inspired from a lump of earth slowly pressed and shaped by human hands. While TINAJA takes inspiration from a universal grounded experience, it yet is presented as a very fashionable form.",
+      "story": [
+        "Stylish as it is, the form is inspired from a lump of earth slowly pressed and shaped by human hands. While TINAJA takes inspiration from a universal grounded experience, it yet is presented as a very fashionable form.",
+        "The smallest jar at 10 × 14 cm, which puts it at tabletop scale alongside its two larger siblings."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Tabletop scale within the antique jar family",
+        "Designed to be grouped with AMPHORA and OLLA"
+      ],
+      "imageSrc": "/products/tinaja/tinaja-01-card.e8d1b923.webp",
+      "imageAlt": "TINAJA small antique-finish FRP jar planter",
+      "shapes": [
+        "Round",
+        "Jar"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop"
+      ],
+      "images": [
+        {
+          "src": "/products/tinaja/tinaja-01.webp",
+          "card": "/products/tinaja/tinaja-01-card.e8d1b923.webp",
+          "alt": "TINAJA small antique-finish FRP jar planter"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "C",
+          "sku": "TINAJA-C",
+          "diameter": "10",
+          "height": "14",
+          "label": "C - 10 × 14 cm"
+        }
+      ],
+      "oldName": "Kao",
+      "relatedSlugs": [
+        "amphora",
+        "olla",
+        "antique-trio"
+      ]
+    },
+    {
+      "slug": "antique-trio",
+      "name": "Antique Trio",
+      "subtitle": "AMPHORA, OLLA and TINAJA as a set of three.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "Set of 3 - AMPHORA · OLLA · TINAJA"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "The three antique jars specified together. AMPHORA, OLLA and TINAJA share a surface and a lineage but not a silhouette, so the set reads as a considered group rather than a repeated form.",
+      "story": [
+        "The three antique jars specified together. AMPHORA, OLLA and TINAJA share a surface and a lineage but not a silhouette, so the set reads as a considered group rather than a repeated form.",
+        "Supplied as a set of three: AMPHORA at 10.5 × 29 cm, OLLA at 12 × 18 cm, and TINAJA at 10 × 14 cm. Each is also available on its own."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Set of three: AMPHORA · OLLA · TINAJA",
+        "Also available as individual pieces"
+      ],
+      "imageSrc": "/products/antique-trio/antique-trio-01-card.297215a5.webp",
+      "imageAlt": "Antique Trio set of three LEAFO jar planters grouped together",
+      "shapes": [
+        "Jar"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop",
+        "Small",
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/antique-trio/antique-trio-01.webp",
+          "card": "/products/antique-trio/antique-trio-01-card.297215a5.webp",
+          "alt": "Antique Trio set of three LEAFO jar planters grouped together"
+        },
+        {
+          "src": "/products/antique-trio/antique-trio-02.webp",
+          "card": "/products/antique-trio/antique-trio-02-card.3b3c4586.webp",
+          "alt": "Antique Trio set of three LEAFO jar planters grouped together — view 2"
+        }
+      ],
+      "sizeVariants": [],
+      "oldName": "Urth / Clay / Kao",
+      "relatedSlugs": [
+        "amphora",
+        "olla",
+        "tinaja"
+      ]
+    },
+    {
+      "slug": "bead",
+      "name": "BEAD",
+      "subtitle": "A 6 cm ellipsoid, alone or in a bunch.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 6 × 6 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Despite being small in size, these ellipsoids have an impactful space presence. BEAD is great as both a stand-alone piece or as a bunch, lending lively amusement to any space no matter the scale.",
+      "story": [
+        "Despite being small in size, these ellipsoids have an impactful space presence. BEAD is great as both a stand-alone piece or as a bunch, lending lively amusement to any space no matter the scale.",
+        "At 6 × 6 cm this is the smallest piece LEAFO makes. Specified in quantity, it behaves more like a surface treatment than a planter."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "The smallest form in the catalogue",
+        "Designed to be specified in quantity"
+      ],
+      "imageSrc": "/products/bead/bead-01-card.c01222d2.webp",
+      "imageAlt": "BEAD small ellipsoid FRP planter",
+      "shapes": [
+        "Sphere"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop"
+      ],
+      "images": [
+        {
+          "src": "/products/bead/bead-01.webp",
+          "card": "/products/bead/bead-01-card.c01222d2.webp",
+          "alt": "BEAD small ellipsoid FRP planter"
+        },
+        {
+          "src": "/products/bead/bead-02.webp",
+          "card": "/products/bead/bead-02-card.ca45e30b.webp",
+          "alt": "BEAD small ellipsoid FRP planter — view 2"
+        },
+        {
+          "src": "/products/bead/bead-03.webp",
+          "card": "/products/bead/bead-03-card.2c01ecd9.webp",
+          "alt": "BEAD small ellipsoid FRP planter — view 3"
+        },
+        {
+          "src": "/products/bead/bead-04.webp",
+          "card": "/products/bead/bead-04-card.6147320b.webp",
+          "alt": "BEAD small ellipsoid FRP planter — view 4"
+        },
+        {
+          "src": "/products/bead/bead-05.webp",
+          "card": "/products/bead/bead-05-card.fed2ad7b.webp",
+          "alt": "BEAD small ellipsoid FRP planter — view 5"
+        },
+        {
+          "src": "/products/bead/bead-06.webp",
+          "card": "/products/bead/bead-06-card.c710e151.webp",
+          "alt": "BEAD small ellipsoid FRP planter — view 6"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "BEAD-A",
+          "diameter": "6",
+          "height": "6",
+          "label": "A - 6 × 6 cm"
+        }
+      ],
+      "oldName": "Bead"
+    },
+    {
+      "slug": "pops",
+      "name": "POPS",
+      "subtitle": "Lightweight landscaping rocks. Three sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - size on request",
+        "B - size on request",
+        "C - size on request"
+      ],
+      "finish": "Matt · Texture",
+      "priceNote": "",
+      "summary": "Coming in numerous shapes and sizes, these lightweight rocks are designed as accessories for a well-thought landscaping experience. POPS takes on nostalgia as we name it after a childhood favourite candy.",
+      "story": [
+        "Coming in numerous shapes and sizes, these lightweight rocks are designed as accessories for a well-thought landscaping experience. POPS takes on nostalgia as we name it after a childhood favourite candy.",
+        "An accessory rather than a planter: lightweight rock forms that fill and finish a landscape scheme. Sizes are confirmed per project."
+      ],
+      "features": [
+        "Outdoor landscaping accessory",
+        "Lightweight enough to reposition by hand",
+        "Sizes and quantities confirmed per project"
+      ],
+      "imageSrc": "/products/pops/pops-01-card.a1e4fcf8.webp",
+      "imageAlt": "POPS lightweight FRP landscaping rocks",
+      "shapes": [
+        "Organic"
+      ],
+      "finishes": [
+        "Matt",
+        "Texture"
+      ],
+      "scaleTags": [
+        "Tabletop",
+        "Small"
+      ],
+      "images": [
+        {
+          "src": "/products/pops/pops-01.webp",
+          "card": "/products/pops/pops-01-card.a1e4fcf8.webp",
+          "alt": "POPS lightweight FRP landscaping rocks"
+        },
+        {
+          "src": "/products/pops/pops-02.webp",
+          "card": "/products/pops/pops-02-card.e42f889a.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 2"
+        },
+        {
+          "src": "/products/pops/pops-03.webp",
+          "card": "/products/pops/pops-03-card.4ecc43aa.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 3"
+        },
+        {
+          "src": "/products/pops/pops-04.webp",
+          "card": "/products/pops/pops-04-card.639672bd.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 4"
+        },
+        {
+          "src": "/products/pops/pops-05.webp",
+          "card": "/products/pops/pops-05-card.9f4a2f40.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 5"
+        },
+        {
+          "src": "/products/pops/pops-06.webp",
+          "card": "/products/pops/pops-06-card.591656a2.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 6"
+        },
+        {
+          "src": "/products/pops/pops-07.webp",
+          "card": "/products/pops/pops-07-card.de152aa7.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 7"
+        },
+        {
+          "src": "/products/pops/pops-08.webp",
+          "card": "/products/pops/pops-08-card.71271a32.webp",
+          "alt": "POPS lightweight FRP landscaping rocks — view 8"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "POPS-A",
+          "diameter": "",
+          "height": "",
+          "label": "A - size on request"
+        },
+        {
+          "variant": "B",
+          "sku": "POPS-B",
+          "diameter": "",
+          "height": "",
+          "label": "B - size on request"
+        },
+        {
+          "variant": "C",
+          "sku": "POPS-C",
+          "diameter": "",
+          "height": "",
+          "label": "C - size on request"
+        }
+      ],
+      "oldName": "Pops"
+    },
+    {
+      "slug": "madera",
+      "name": "MADERA",
+      "subtitle": "A wooden-plank box. One format.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 24x12 × 12 cm"
+      ],
+      "finish": "Wooden",
+      "priceNote": "",
+      "summary": "Taking the legacy of BALCORA further, this one adds more layers of personality; MADERA comes in wooden textures of your choice, put up as planks. Despite its genesis from a rural element, these look sophisticated in all sorts of applications.",
+      "story": [
+        "Taking the legacy of BALCORA further, this one adds more layers of personality; MADERA comes in wooden textures of your choice, put up as planks. Despite its genesis from a rural element, these look sophisticated in all sorts of applications.",
+        "A 24 × 12 × 12 cm box in the wood-grain finish, with the plank line carried across the face. Sits alongside BALCORA in the same modular logic."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Wood-grain finish in your choice of tone",
+        "Shares the modular logic of BALCORA"
+      ],
+      "imageSrc": "/products/madera/madera-01-card.012be7e7.webp",
+      "imageAlt": "MADERA rectangular FRP planter box in a wooden plank finish",
+      "shapes": [
+        "Rectangle"
+      ],
+      "finishes": [
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Small"
+      ],
+      "images": [
+        {
+          "src": "/products/madera/madera-01.webp",
+          "card": "/products/madera/madera-01-card.012be7e7.webp",
+          "alt": "MADERA rectangular FRP planter box in a wooden plank finish"
+        },
+        {
+          "src": "/products/madera/madera-02.webp",
+          "card": "/products/madera/madera-02-card.64f124ff.webp",
+          "alt": "MADERA rectangular FRP planter box in a wooden plank finish — view 2"
+        },
+        {
+          "src": "/products/madera/madera-03.webp",
+          "card": "/products/madera/madera-03-card.8698f495.webp",
+          "alt": "MADERA rectangular FRP planter box in a wooden plank finish — view 3"
+        },
+        {
+          "src": "/products/madera/madera-04.webp",
+          "card": "/products/madera/madera-04-card.f8a45f25.webp",
+          "alt": "MADERA rectangular FRP planter box in a wooden plank finish — view 4"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "MADERA-A",
+          "diameter": "24x12",
+          "height": "12",
+          "label": "A - 24x12 × 12 cm"
+        }
+      ],
+      "oldName": "Barn"
+    },
+    {
+      "slug": "cova",
+      "name": "COVA",
+      "subtitle": "A widened clay cup that opens upward. Five sizes.",
+      "category": "Collection",
+      "material": "Fiber-reinforced plastic (FRP)",
+      "sizes": [
+        "A - 32.5 × 30 cm",
+        "B - 27 × 26 cm",
+        "C - 23 × 22 cm",
+        "D - 19 × 18 cm",
+        "E - 14.5 × 14 cm"
+      ],
+      "finish": "Matt · Glossy · Texture · Wooden",
+      "priceNote": "",
+      "summary": "Taking inspiration from clay cups made on a spinning wheel, as if the centrifugal force is giving it the widened shape; COVA could be called a close kin to PINO in the way its base takes shape. The difference lies in the upper half as it opens up, creating a symbolic step forward in our design archive.",
+      "story": [
+        "Taking inspiration from clay cups made on a spinning wheel, as if the centrifugal force is giving it the widened shape; COVA could be called a close kin to PINO in the way its base takes shape. The difference lies in the upper half as it opens up, creating a symbolic step forward in our design archive.",
+        "Five sizes from 14.5 to 32.5 cm. The open upper half gives planting room to spill over the rim."
+      ],
+      "features": [
+        "Indoor · Outdoor · Both",
+        "Open rim suits trailing and spilling planting",
+        "Close kin to PINO in the way the base is formed"
+      ],
+      "imageSrc": "/products/cova/cova-01-card.386e5cc2.webp",
+      "imageAlt": "COVA rounded FRP planter that widens toward the rim",
+      "shapes": [
+        "Round",
+        "Bowl"
+      ],
+      "finishes": [
+        "Matt",
+        "Glossy",
+        "Texture",
+        "Wooden"
+      ],
+      "scaleTags": [
+        "Tabletop",
+        "Small",
+        "Medium"
+      ],
+      "images": [
+        {
+          "src": "/products/cova/cova-01.webp",
+          "card": "/products/cova/cova-01-card.386e5cc2.webp",
+          "alt": "COVA rounded FRP planter that widens toward the rim"
+        },
+        {
+          "src": "/products/cova/cova-02.webp",
+          "card": "/products/cova/cova-02-card.d22fa931.webp",
+          "alt": "COVA rounded FRP planter that widens toward the rim — view 2"
+        },
+        {
+          "src": "/products/cova/cova-03.webp",
+          "card": "/products/cova/cova-03-card.95551ee0.webp",
+          "alt": "COVA rounded FRP planter that widens toward the rim — view 3"
+        },
+        {
+          "src": "/products/cova/cova-04.webp",
+          "card": "/products/cova/cova-04-card.2f7f9a02.webp",
+          "alt": "COVA rounded FRP planter that widens toward the rim — view 4"
+        },
+        {
+          "src": "/products/cova/cova-05.webp",
+          "card": "/products/cova/cova-05-card.bc06fb82.webp",
+          "alt": "COVA rounded FRP planter that widens toward the rim — view 5"
+        }
+      ],
+      "sizeVariants": [
+        {
+          "variant": "A",
+          "sku": "COVA-A",
+          "diameter": "32.5",
+          "height": "30",
+          "label": "A - 32.5 × 30 cm"
+        },
+        {
+          "variant": "B",
+          "sku": "COVA-B",
+          "diameter": "27",
+          "height": "26",
+          "label": "B - 27 × 26 cm"
+        },
+        {
+          "variant": "C",
+          "sku": "COVA-C",
+          "diameter": "23",
+          "height": "22",
+          "label": "C - 23 × 22 cm"
+        },
+        {
+          "variant": "D",
+          "sku": "COVA-D",
+          "diameter": "19",
+          "height": "18",
+          "label": "D - 19 × 18 cm"
+        },
+        {
+          "variant": "E",
+          "sku": "COVA-E",
+          "diameter": "14.5",
+          "height": "14",
+          "label": "E - 14.5 × 14 cm"
+        }
+      ],
+      "oldName": "Vessel",
+      "relatedSlugs": [
+        "pino"
+      ]
     }
   ],
   "about": {
@@ -557,14 +2131,17 @@
     ],
     "whatWeMakeTitle": "What we make",
     "whatWeMake": [
-      "12 collections, 60+ size variants",
+      "19 designs, 56 size variants",
       "4 finishes: matt, glossy, texture, wooden",
       "Material: fiber-reinforced plastic (FRP)",
       "Built for indoor and outdoor use",
       "Shipped across India, exported on request"
     ],
     "closing": "If you're an architect, designer, hotelier, or homeowner working on a space, we'd like to hear what you're planning.",
-    "cta": { "href": "/contact", "label": "Start an inquiry" },
+    "cta": {
+      "href": "/contact",
+      "label": "Start an inquiry"
+    },
     "imageSrc": "/about.jpg",
     "imageAlt": "Row of LEAFO planters in varied finishes and plants against a sage-green slatted wall"
   },
@@ -582,17 +2159,44 @@
     "hours": "Monday to Saturday, 10am – 6pm IST",
     "followTitle": "Follow",
     "followLinks": [
-      { "href": "https://www.instagram.com/leafoplanters", "label": "Instagram" },
-      { "href": "https://www.linkedin.com/company/leafo-planters/", "label": "LinkedIn" },
-      { "href": "https://www.facebook.com/people/Leafo/61567999620833/", "label": "Facebook" }
+      {
+        "href": "https://www.instagram.com/leafoplanters",
+        "label": "Instagram"
+      },
+      {
+        "href": "https://www.linkedin.com/company/leafo-planters/",
+        "label": "LinkedIn"
+      },
+      {
+        "href": "https://www.facebook.com/people/Leafo/61567999620833/",
+        "label": "Facebook"
+      }
     ],
     "drawerTitle": "Inquire",
     "drawerIntro": "A quick note about your project is all we need, we'll write back within two business days.",
     "drawerMoreLabel": "Hours, location & more",
     "fields": [
-      { "name": "name", "label": "Name", "type": "text", "required": true, "placeholder": "Full name" },
-      { "name": "email", "label": "Email", "type": "email", "required": true, "placeholder": "you@studio.com" },
-      { "name": "phone", "label": "Phone", "type": "tel", "required": true, "placeholder": "With country code" },
+      {
+        "name": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "placeholder": "Full name"
+      },
+      {
+        "name": "email",
+        "label": "Email",
+        "type": "email",
+        "required": true,
+        "placeholder": "you@studio.com"
+      },
+      {
+        "name": "phone",
+        "label": "Phone",
+        "type": "tel",
+        "required": true,
+        "placeholder": "With country code"
+      },
       {
         "name": "message",
         "label": "Project details",

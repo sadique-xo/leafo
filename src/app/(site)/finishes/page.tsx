@@ -12,6 +12,7 @@ import {
 import { Reveal } from "@/components/motion/reveal";
 import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import { SiteHero } from "@/components/site/site-hero";
 import { finishesPage } from "@/data/site-content";
 
@@ -46,6 +47,12 @@ export default function FinishesPage() {
 
   return (
     <>
+      <ImageLicenseJsonLd
+        images={[
+          { url: finishesPage.heroImageSrc },
+          ...finishesPage.items.map((item) => ({ url: item.imageSrc })),
+        ]}
+      />
       <SiteHero
         imageSrc={finishesPage.heroImageSrc}
         imageAlt={finishesPage.heroImageAlt}

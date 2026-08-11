@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import { SiteHero } from "@/components/site/site-hero";
 import { faqPage, faqSections } from "@/data/faq-content";
 
@@ -19,6 +20,7 @@ function sectionId(title: string) {
 export default function FaqPage() {
   return (
     <>
+      <ImageLicenseJsonLd images={[{ url: faqPage.heroImageSrc }]} />
       <SiteHero
         imageSrc={faqPage.heroImageSrc}
         imageAlt={faqPage.heroImageAlt}

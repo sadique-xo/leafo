@@ -11,6 +11,7 @@ import { HomeWeAre } from "@/components/site/home-we-are";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { ImageGallery } from "@/components/ui/image-gallery";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import { getPublishedCollections } from "@/lib/cms/get-collections";
 import { faqPage, homeFaqItems } from "@/data/faq-content";
 import { about, getHomeHeroSlides, home, type HomeHeroSlideContent } from "@/data/site-content";
@@ -52,6 +53,15 @@ export default async function HomePage() {
 
   return (
     <>
+      <ImageLicenseJsonLd
+        images={[
+          { url: heroSlide.src },
+          ...weAreImageSlides.map((slide) => ({ url: slide.src })),
+          ...home.finishesShort.map((f) => ({ url: f.imageSrc })),
+          ...home.builtForTiles.map((t) => ({ url: t.imageSrc })),
+          { url: home.featuredProject.imageSrc },
+        ]}
+      />
       <HomeHero
         slide={heroSlide}
         eyebrow={home.eyebrow}

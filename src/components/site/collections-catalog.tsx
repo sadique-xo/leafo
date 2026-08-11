@@ -9,6 +9,7 @@ import {
   CollectionsFilterBar,
   type FilterKind,
 } from "@/components/site/collections-filter-bar";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import { SiteHero } from "@/components/site/site-hero";
 import type { CollectionItem } from "@/data/site-content";
 import { collectionsPage } from "@/data/site-content";
@@ -150,6 +151,12 @@ export function CollectionsCatalog({
 
   return (
     <div>
+      <ImageLicenseJsonLd
+        images={[
+          { url: collectionsPage.heroImageSrc },
+          ...filtered.map((item) => ({ url: item.images?.[0]?.src ?? item.imageSrc })),
+        ]}
+      />
       <SiteHero
         imageSrc={collectionsPage.heroImageSrc}
         imageAlt={collectionsPage.heroImageAlt}

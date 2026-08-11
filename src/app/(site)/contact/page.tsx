@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import { ContactInquiryForm } from "@/components/site/contact-inquiry-form";
 import { CornerFrame } from "@/components/site/corner-frame";
 import { SiteHero } from "@/components/site/site-hero";
@@ -16,6 +17,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
+      <ImageLicenseJsonLd images={[{ url: contact.heroImageSrc }]} />
       <SiteHero
         imageSrc={contact.heroImageSrc}
         imageAlt={contact.heroImageAlt}

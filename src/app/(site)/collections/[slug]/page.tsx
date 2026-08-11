@@ -8,6 +8,7 @@ import { RevealStagger } from "@/components/motion/reveal-stagger";
 import { InquiryTrigger } from "@/components/site/inquiry-trigger";
 import { CollectionJsonLd } from "@/components/site/collection-json-ld";
 import { ProductGallery } from "@/components/site/product-gallery";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import type { CollectionItem } from "@/data/site-content";
 import {
   getCollectionBySlugFromCms,
@@ -105,6 +106,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
   return (
     <>
       <CollectionJsonLd collection={collection} />
+      <ImageLicenseJsonLd images={galleryImages.map((img) => ({ url: img.src }))} />
       <section className="site-container pb-14 pt-28 md:pb-18 md:pt-32 lg:pb-20">
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(23rem,0.82fr)] lg:gap-14 xl:gap-18">
           <Reveal className="min-w-0 lg:sticky lg:top-28 lg:self-start" start="top 85%" y={24}>

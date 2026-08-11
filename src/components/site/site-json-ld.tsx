@@ -32,6 +32,30 @@ export function SiteJsonLd() {
       addressRegion: "Gujarat",
       addressCountry: "IN",
     },
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/logo/Leafo-final-logo.png"),
+      contentUrl: absoluteUrl("/logo/Leafo-final-logo.png"),
+      license: absoluteUrl("/terms"),
+      acquireLicensePage: absoluteUrl("/contact"),
+      creator: {
+        "@type": "Organization",
+        name: "LEAFO",
+      },
+      copyrightNotice: `© ${new Date().getFullYear()} LEAFO`,
+    },
+    image: {
+      "@type": "ImageObject",
+      url: absoluteUrl("/og.jpg"),
+      contentUrl: absoluteUrl("/og.jpg"),
+      license: absoluteUrl("/terms"),
+      acquireLicensePage: absoluteUrl("/contact"),
+      creator: {
+        "@type": "Organization",
+        name: "LEAFO",
+      },
+      copyrightNotice: `© ${new Date().getFullYear()} LEAFO`,
+    },
     sameAs: externalProfiles,
   };
 

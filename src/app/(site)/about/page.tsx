@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Reveal } from "@/components/motion/reveal";
 import { RevealRuleLine } from "@/components/motion/reveal-rule-line";
+import { ImageLicenseJsonLd } from "@/components/seo/image-license-json-ld";
 import { SiteHero } from "@/components/site/site-hero";
 import { about } from "@/data/site-content";
 
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
+      <ImageLicenseJsonLd images={[{ url: about.imageSrc }]} />
       <SiteHero
         imageSrc={about.imageSrc}
         imageAlt={about.imageAlt}

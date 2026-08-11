@@ -16,7 +16,17 @@ export function CollectionJsonLd({ collection }: CollectionJsonLdProps) {
     "@type": "Product",
     name: collection.name,
     description: collection.summary,
-    image: imageUrl,
+    image: {
+      "@type": "ImageObject",
+      contentUrl: imageUrl,
+      license: absoluteUrl("/terms"),
+      acquireLicensePage: absoluteUrl("/contact"),
+      creator: {
+        "@type": "Organization",
+        name: "LEAFO",
+      },
+      copyrightNotice: `© ${new Date().getFullYear()} LEAFO`,
+    },
     url: pageUrl,
     brand: {
       "@type": "Brand",

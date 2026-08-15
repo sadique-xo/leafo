@@ -5,13 +5,7 @@ import { countInquiriesAdmin } from "@/lib/cms/admin-queries";
 import { cn } from "@/lib/utils";
 import { ExternalLink, HelpCircle, Layers, FolderKanban, Mail } from "lucide-react";
 
-function getSiteUrl() {
-  return process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ?? "http://localhost:3000";
-}
-
 export default async function AdminHomePage() {
-  const callbackUrl = `${getSiteUrl()}/auth/callback`;
-
   let inquiryCount: number | null = null;
   try {
     inquiryCount = await countInquiriesAdmin();
@@ -113,15 +107,14 @@ export default async function AdminHomePage() {
           </div>
           <CardDescription className="space-y-3 text-sm leading-relaxed">
             <p>
-              <span className="font-medium text-foreground">Magic link URL.</span> Add this exact redirect in Supabase →
-              Authentication → URL configuration so emailed links return to the app:
+              <span className="font-medium text-foreground">Admin sign-in</span> uses email and password. Keep{" "}
+              <code className="rounded bg-muted px-1 py-px text-xs">ADMIN_EMAIL</code> and{" "}
+              <code className="rounded bg-muted px-1 py-px text-xs">ADMIN_PASSWORD</code> in sync with the Auth user
+              (<code className="rounded bg-muted px-1 py-px text-xs">npm run setup:admin</code>).
             </p>
-            <code className="block break-all rounded-md border border-border bg-background px-3 py-2 text-xs">
-              {callbackUrl}
-            </code>
             <p>
               Set <code className="rounded bg-muted px-1 py-px text-xs">NEXT_PUBLIC_SITE_URL</code> in production to
-              your public origin so links match your deployment.
+              your public origin.
             </p>
             <p className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-1">
               <Link href="/" className={cn(buttonVariants({ variant: "outline", size: "sm" }), "gap-1.5")}>

@@ -2,13 +2,15 @@ import { AdminSidebar } from "@/app/admin/admin-sidebar";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { requireAdminPage } from "@/lib/auth/admin";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: { template: "%s | LEAFO Admin", default: "Admin" },
 };
 
-export default function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
+export default async function AdminDashboardLayout({ children }: { children: React.ReactNode }) {
+  await requireAdminPage();
   return (
     <TooltipProvider delay={0}>
       <SidebarProvider defaultOpen>

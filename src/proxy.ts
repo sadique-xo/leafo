@@ -3,7 +3,7 @@ import { type NextRequest, NextResponse } from "next/server";
 
 const ADMIN_EMAIL = (process.env.ADMIN_EMAIL ?? "dev.leafo@gmail.com").trim();
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
@@ -16,8 +16,8 @@ export async function middleware(request: NextRequest) {
   let response = NextResponse.next({ request });
 
   const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    process.env.NEXT_PUBLIC_SUPABASE_URL,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     {
       cookies: {
         getAll() {
@@ -42,9 +42,7 @@ export async function middleware(request: NextRequest) {
 
   const isAdminRoute = pathname.startsWith("/admin") && !pathname.startsWith("/admin/login");
 
-  const isAuthCallback = pathname.startsWith("/auth/callback");
-
-  if (isAuthCallback) {
+  if (pathname.startsWith("/auth/callback")) {
     return response;
   }
 
@@ -73,9 +71,5 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/admin",
-    "/admin/:path*",
-    "/auth/callback",
-  ],
+  matcher: ["/admin", "/admin/:path*", "/auth/callback"],
 };

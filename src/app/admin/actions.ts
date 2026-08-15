@@ -2,37 +2,9 @@
 
 import { updateTag } from "next/cache";
 import { redirect } from "next/navigation";
+import { assertAdmin } from "@/lib/auth/admin";
 import { createAdminClient } from "@/lib/supabase/admin";
-import { createClient } from "@/lib/supabase/server";
 import { toStoragePath } from "@/lib/cms/resolve-image-src";
-
-const ADMIN = (process.env.ADMIN_EMAIL ?? "dev.leafo@gmail.com").trim().toLowerCase();
-
-async function assertAdmin() {
-  const supabase = await createClient();
-
-  const {
-    data: { user: verifiedUser },
-  } = await supabase.auth.getUser();
-
-  let email = verifiedUser?.email?.toLowerCase();
-
-  // Server Actions often run with the same cookie jar as the page, but `getUser()` can return
-  // empty here when the access token is between refresh cycles (SSR client uses autoRefreshToken: false).
-  // `getSession()` reads the persisted session from cookies so we can still verify the allowlisted email.
-  if (!email) {
-    const {
-      data: { session },
-    } = await supabase.auth.getSession();
-    email = session?.user?.email?.toLowerCase();
-  }
-
-  if (!email || email !== ADMIN) {
-    throw new Error(
-      "Unauthorized - stay signed in with the same email as ADMIN_EMAIL in .env.local (no extra spaces).",
-    );
-  }
-}
 
 function linesToArray(text: string): string[] {
   return text

@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "seed:cms": "node scripts/seed-cms.mjs",
+    "setup:admin": "node scripts/setup-admin.mjs",
     "optimize:images": "node scripts/optimize-images.mjs",
     "build:product-images": "node scripts/build-product-images.mjs",
     "build:catalog": "node scripts/build-catalog.mjs"

@@ -19,11 +19,11 @@ export type SizeVariant = {
   variant: string;
   /** e.g. "AQUA-A" */
   sku: string;
-  /** Diameter in cm, or "L×W" for rectangular formats, e.g. "19.5" | "24x12" */
+  /** Diameter in inches, or "L×W" for rectangular formats, e.g. "19.5" | "24x12" */
   diameter: string;
-  /** Height in cm */
+  /** Height in inches */
   height: string;
-  /** Prebuilt display string, e.g. "A - 19.5 × 30 cm" */
+  /** Prebuilt display string, e.g. "A - 19.5 × 30 in" */
   label: string;
 };
 

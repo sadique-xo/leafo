@@ -27,7 +27,7 @@ const SHAPE_ORDER = ["Round", "Tall", "Bowl", "Jar", "Faceted", "Sphere", "Recta
 const SCALE_ORDER = ["Tabletop", "Small", "Medium", "Large"];
 
 /**
- * Height/footprint thresholds in cm. A planter is bucketed by its largest
+ * Height/footprint thresholds in inches. A planter is bucketed by its largest
  * dimension, so a wide-but-low dome still reads as Large.
  * @type {[string, number][]}
  */
@@ -88,7 +88,7 @@ const PRODUCTS = [
     description:
       "Exploring the geometrical marriage of a circle & a triangle, ALTA elevates the co-relation into a fresh form that one doesn't expect. The emergence is a curved conical surface softening the gaze of the onlooker.",
     storyExtra:
-      "Four heights of the same silhouette, from a 40 cm floor piece down to an 18 cm tabletop. Pairs with palms, ficus, and other upright planting.",
+      "Four heights of the same silhouette, from a 40 in floor piece down to an 18 in tabletop. Pairs with palms, ficus, and other upright planting.",
     imageAlt: "ALTA tapered conical FRP planter",
     shapes: ["Round", "Tall"],
     features: [
@@ -157,7 +157,7 @@ const PRODUCTS = [
     description:
       "Understated elegance of a cylinder takes flight with a loudly expressed curvature base. BARRIL feels familiar to the eyes while still offering the novelty of grace.",
     storyExtra:
-      "Nine sizes make this the workhorse of the catalogue, covering everything from a 9 cm desk piece to a 36 cm floor-standing planter.",
+      "Nine sizes make this the workhorse of the catalogue, covering everything from a 9 in desk piece to a 36 in floor-standing planter.",
     imageAlt: "BARRIL cylindrical FRP planter with a curved base",
     shapes: ["Round"],
     features: [
@@ -233,7 +233,7 @@ const PRODUCTS = [
     description:
       "As our imagination crystallizes itself into a hex-faceted module, we observe it take shape as a beautiful form offering depth & illusion. HONEYCOMB offers the excitement of a shape that changes and comes to life in the space as one moves around it.",
     storyExtra:
-      "A single 18 × 26 cm size. The faceting does the work here, so it is best given room to be walked around.",
+      "A single 18 × 26 in size. The faceting does the work here, so it is best given room to be walked around.",
     imageAlt: "HONEYCOMB hex-faceted FRP planter",
     shapes: ["Faceted"],
     features: [
@@ -251,7 +251,7 @@ const PRODUCTS = [
     description:
       "Shaped like a beloved fruit that surprises with its distinctly flavoured presence, OLIV dances the line between expectation and reality with ease. The slight change in proportions masterfully plays with the idea of appropriation in inspiration, while leaving us with a fresh form to enjoy.",
     storyExtra:
-      "A single 11 × 14.5 cm piece, scaled for desks, shelves, and console tables.",
+      "A single 11 × 14.5 in piece, scaled for desks, shelves, and console tables.",
     imageAlt: "OLIV ellipsoid FRP planter in olive green",
     shapes: ["Sphere"],
     features: [
@@ -269,7 +269,7 @@ const PRODUCTS = [
     description:
       "One of our most detailed designs, with a personality that does not shy away from grabbing eyeballs. QUILT plays with an embossed diamond grid, further enhanced by its gently curved profile, coming alive as light around it changes.",
     storyExtra:
-      "The most detailed surface in the catalogue at the smallest scale, at 9 × 8 cm.",
+      "The most detailed surface in the catalogue at the smallest scale, at 9 × 8 in.",
     imageAlt: "QUILT small FRP planter with an embossed diamond grid",
     shapes: ["Round"],
     features: [
@@ -287,7 +287,7 @@ const PRODUCTS = [
     description:
       "Imagined in the three standard planes, connecting orthogonally into parallel projections; BALCORA offers infinite possibilities of humble forms not only in creation but also placement in space. The flexibility it offers is unparalleled, pertaining to its modular nature.",
     storyExtra:
-      "Four rectangular formats between 24 and 36 cm long that line up end to end, which makes them useful as hedges, dividers, and balcony runs.",
+      "Four rectangular formats between 24 and 36 in long that line up end to end, which makes them useful as hedges, dividers, and balcony runs.",
     imageAlt: "BALCORA rectangular modular FRP planter box",
     shapes: ["Rectangle"],
     features: [
@@ -331,7 +331,7 @@ const PRODUCTS = [
     description:
       "Resembling the ever potent layers of the earth below us, shaped into something so sublime and timeless. AMPHORA connects the process with the concept in the way it's designed.",
     storyExtra:
-      "The tallest of the three jars, at 10.5 × 29 cm. Shown as a set with OLLA and TINAJA in the Antique Trio.",
+      "The tallest of the three jars, at 10.5 × 29 in. Shown as a set with OLLA and TINAJA in the Antique Trio.",
     imageAlt: "AMPHORA tall antique-finish FRP jar planter",
     shapes: ["Jar", "Tall"],
     features: [
@@ -350,7 +350,7 @@ const PRODUCTS = [
     description:
       "The soft curves merging with intentional exaggeration of form prove fruitful when one instantly feels warmth & endearment when looking at it; OLLA plays upon anachronistic wisdom and connects us to something timeless and familiar.",
     storyExtra:
-      "The middle jar at 12 × 18 cm, and the widest of the three relative to its height.",
+      "The middle jar at 12 × 18 in, and the widest of the three relative to its height.",
     imageAlt: "OLLA rounded antique-finish FRP jar planter",
     shapes: ["Jar", "Round"],
     features: [
@@ -369,7 +369,7 @@ const PRODUCTS = [
     description:
       "Stylish as it is, the form is inspired from a lump of earth slowly pressed and shaped by human hands. While TINAJA takes inspiration from a universal grounded experience, it yet is presented as a very fashionable form.",
     storyExtra:
-      "The smallest jar at 10 × 14 cm, which puts it at tabletop scale alongside its two larger siblings.",
+      "The smallest jar at 10 × 14 in, which puts it at tabletop scale alongside its two larger siblings.",
     imageAlt: "TINAJA small antique-finish FRP jar planter",
     shapes: ["Jar", "Round"],
     features: [
@@ -388,7 +388,7 @@ const PRODUCTS = [
     description:
       "The three antique jars specified together. AMPHORA, OLLA and TINAJA share a surface and a lineage but not a silhouette, so the set reads as a considered group rather than a repeated form.",
     storyExtra:
-      "Supplied as a set of three: AMPHORA at 10.5 × 29 cm, OLLA at 12 × 18 cm, and TINAJA at 10 × 14 cm. Each is also available on its own.",
+      "Supplied as a set of three: AMPHORA at 10.5 × 29 in, OLLA at 12 × 18 in, and TINAJA at 10 × 14 in. Each is also available on its own.",
     imageAlt: "Antique Trio set of three LEAFO jar planters grouped together",
     shapes: ["Jar"],
     features: [
@@ -405,11 +405,11 @@ const PRODUCTS = [
     slug: "bead",
     name: "BEAD",
     oldName: "Bead",
-    subtitle: "A 6 cm ellipsoid, alone or in a bunch.",
+    subtitle: "A 6 in ellipsoid, alone or in a bunch.",
     description:
       "Despite being small in size, these ellipsoids have an impactful space presence. BEAD is great as both a stand-alone piece or as a bunch, lending lively amusement to any space no matter the scale.",
     storyExtra:
-      "At 6 × 6 cm this is the smallest piece LEAFO makes. Specified in quantity, it behaves more like a surface treatment than a planter.",
+      "At 6 × 6 in this is the smallest piece LEAFO makes. Specified in quantity, it behaves more like a surface treatment than a planter.",
     imageAlt: "BEAD small ellipsoid FRP planter",
     shapes: ["Sphere"],
     features: [
@@ -451,7 +451,7 @@ const PRODUCTS = [
     description:
       "Taking the legacy of BALCORA further, this one adds more layers of personality; MADERA comes in wooden textures of your choice, put up as planks. Despite its genesis from a rural element, these look sophisticated in all sorts of applications.",
     storyExtra:
-      "A 24 × 12 × 12 cm box in the wood-grain finish, with the plank line carried across the face. Sits alongside BALCORA in the same modular logic.",
+      "A 24 × 12 × 12 in box in the wood-grain finish, with the plank line carried across the face. Sits alongside BALCORA in the same modular logic.",
     imageAlt: "MADERA rectangular FRP planter box in a wooden plank finish",
     shapes: ["Rectangle"],
     finishes: ["Wooden"],
@@ -470,7 +470,7 @@ const PRODUCTS = [
     description:
       "Taking inspiration from clay cups made on a spinning wheel, as if the centrifugal force is giving it the widened shape; COVA could be called a close kin to PINO in the way its base takes shape. The difference lies in the upper half as it opens up, creating a symbolic step forward in our design archive.",
     storyExtra:
-      "Five sizes from 14.5 to 32.5 cm. The open upper half gives planting room to spill over the rim.",
+      "Five sizes from 14.5 to 32.5 in. The open upper half gives planting room to spill over the rim.",
     imageAlt: "COVA rounded FRP planter that widens toward the rim",
     shapes: ["Round", "Bowl"],
     features: [
@@ -495,9 +495,9 @@ function largestDimension(value) {
   return numbers.length ? Math.max(...numbers) : 0;
 }
 
-/** @param {number} cm */
-function bucketFor(cm) {
-  const match = SCALE_BUCKETS.find(([, max]) => cm <= max);
+/** @param {number} inches */
+function bucketFor(inches) {
+  const match = SCALE_BUCKETS.find(([, max]) => inches <= max);
   return match ? match[0] : "Large";
 }
 
@@ -508,7 +508,7 @@ function buildSizeVariants(product) {
     sku: `${product.name.toUpperCase().replace(/[^A-Z0-9]+/g, "-")}-${variant}`,
     diameter,
     height,
-    label: diameter && height ? `${variant} - ${diameter} × ${height} cm` : `${variant} - size on request`,
+    label: diameter && height ? `${variant} - ${diameter} × ${height} in` : `${variant} - size on request`,
   }));
 }
 

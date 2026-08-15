@@ -160,7 +160,7 @@ export default async function CollectionDetailPage({ params }: CollectionPagePro
                           <td className="px-3 py-2 text-[color:var(--charcoal)]">{size.variant}</td>
                           <td className="px-3 py-2 text-[color:var(--charcoal)]">
                             {size.diameter && size.height
-                              ? `${size.diameter} × ${size.height} cm`
+                              ? `${size.diameter} × ${size.height} in`
                               : "On request"}
                           </td>
                           <td className="px-3 py-2 text-right font-mono text-[11px] text-muted-foreground">

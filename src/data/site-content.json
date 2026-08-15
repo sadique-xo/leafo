@@ -435,9 +435,9 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 19.5 × 30 cm",
-        "B - 15.5 × 24 cm",
-        "C - 11.5 × 18 cm"
+        "A - 19.5 × 30 in",
+        "B - 15.5 × 24 in",
+        "C - 11.5 × 18 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
@@ -495,21 +495,21 @@
           "sku": "AQUA-A",
           "diameter": "19.5",
           "height": "30",
-          "label": "A - 19.5 × 30 cm"
+          "label": "A - 19.5 × 30 in"
         },
         {
           "variant": "B",
           "sku": "AQUA-B",
           "diameter": "15.5",
           "height": "24",
-          "label": "B - 15.5 × 24 cm"
+          "label": "B - 15.5 × 24 in"
         },
         {
           "variant": "C",
           "sku": "AQUA-C",
           "diameter": "11.5",
           "height": "18",
-          "label": "C - 11.5 × 18 cm"
+          "label": "C - 11.5 × 18 in"
         }
       ],
       "oldName": "Aqua"
@@ -521,17 +521,17 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 22 × 40 cm",
-        "B - 17 × 32 cm",
-        "C - 13 × 25 cm",
-        "D - 10 × 18 cm"
+        "A - 22 × 40 in",
+        "B - 17 × 32 in",
+        "C - 13 × 25 in",
+        "D - 10 × 18 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Exploring the geometrical marriage of a circle & a triangle, ALTA elevates the co-relation into a fresh form that one doesn't expect. The emergence is a curved conical surface softening the gaze of the onlooker.",
       "story": [
         "Exploring the geometrical marriage of a circle & a triangle, ALTA elevates the co-relation into a fresh form that one doesn't expect. The emergence is a curved conical surface softening the gaze of the onlooker.",
-        "Four heights of the same silhouette, from a 40 cm floor piece down to an 18 cm tabletop. Pairs with palms, ficus, and other upright planting."
+        "Four heights of the same silhouette, from a 40 in floor piece down to an 18 in tabletop. Pairs with palms, ficus, and other upright planting."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -588,28 +588,28 @@
           "sku": "ALTA-A",
           "diameter": "22",
           "height": "40",
-          "label": "A - 22 × 40 cm"
+          "label": "A - 22 × 40 in"
         },
         {
           "variant": "B",
           "sku": "ALTA-B",
           "diameter": "17",
           "height": "32",
-          "label": "B - 17 × 32 cm"
+          "label": "B - 17 × 32 in"
         },
         {
           "variant": "C",
           "sku": "ALTA-C",
           "diameter": "13",
           "height": "25",
-          "label": "C - 13 × 25 cm"
+          "label": "C - 13 × 25 in"
         },
         {
           "variant": "D",
           "sku": "ALTA-D",
           "diameter": "10",
           "height": "18",
-          "label": "D - 10 × 18 cm"
+          "label": "D - 10 × 18 in"
         }
       ],
       "oldName": "Conica"
@@ -621,10 +621,10 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 16 × 40 cm",
-        "B - 13 × 33 cm",
-        "C - 11 × 28 cm",
-        "D - 8 × 21 cm"
+        "A - 16 × 40 in",
+        "B - 13 × 33 in",
+        "C - 11 × 28 in",
+        "D - 8 × 21 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
@@ -698,28 +698,28 @@
           "sku": "PINO-A",
           "diameter": "16",
           "height": "40",
-          "label": "A - 16 × 40 cm"
+          "label": "A - 16 × 40 in"
         },
         {
           "variant": "B",
           "sku": "PINO-B",
           "diameter": "13",
           "height": "33",
-          "label": "B - 13 × 33 cm"
+          "label": "B - 13 × 33 in"
         },
         {
           "variant": "C",
           "sku": "PINO-C",
           "diameter": "11",
           "height": "28",
-          "label": "C - 11 × 28 cm"
+          "label": "C - 11 × 28 in"
         },
         {
           "variant": "D",
           "sku": "PINO-D",
           "diameter": "8",
           "height": "21",
-          "label": "D - 8 × 21 cm"
+          "label": "D - 8 × 21 in"
         }
       ],
       "oldName": "Budd"
@@ -731,10 +731,10 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 27.5 × 32.5 cm",
-        "B - 23.5 × 28.5 cm",
-        "C - 20.5 × 24.5 cm",
-        "D - 17 × 20.5 cm"
+        "A - 27.5 × 32.5 in",
+        "B - 23.5 × 28.5 in",
+        "C - 20.5 × 24.5 in",
+        "D - 17 × 20.5 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
@@ -807,28 +807,28 @@
           "sku": "FIORA-A",
           "diameter": "27.5",
           "height": "32.5",
-          "label": "A - 27.5 × 32.5 cm"
+          "label": "A - 27.5 × 32.5 in"
         },
         {
           "variant": "B",
           "sku": "FIORA-B",
           "diameter": "23.5",
           "height": "28.5",
-          "label": "B - 23.5 × 28.5 cm"
+          "label": "B - 23.5 × 28.5 in"
         },
         {
           "variant": "C",
           "sku": "FIORA-C",
           "diameter": "20.5",
           "height": "24.5",
-          "label": "C - 20.5 × 24.5 cm"
+          "label": "C - 20.5 × 24.5 in"
         },
         {
           "variant": "D",
           "sku": "FIORA-D",
           "diameter": "17",
           "height": "20.5",
-          "label": "D - 17 × 20.5 cm"
+          "label": "D - 17 × 20.5 in"
         }
       ],
       "oldName": "Fiora"
@@ -840,22 +840,22 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 36 × 36 cm",
-        "B - 30 × 30 cm",
-        "C - 24 × 24 cm",
-        "D - 22 × 18 cm",
-        "E - 18 × 18 cm",
-        "F - 18 × 14 cm",
-        "G - 15 × 15 cm",
-        "H - 12 × 12 cm",
-        "I - 12 × 9 cm"
+        "A - 36 × 36 in",
+        "B - 30 × 30 in",
+        "C - 24 × 24 in",
+        "D - 22 × 18 in",
+        "E - 18 × 18 in",
+        "F - 18 × 14 in",
+        "G - 15 × 15 in",
+        "H - 12 × 12 in",
+        "I - 12 × 9 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Understated elegance of a cylinder takes flight with a loudly expressed curvature base. BARRIL feels familiar to the eyes while still offering the novelty of grace.",
       "story": [
         "Understated elegance of a cylinder takes flight with a loudly expressed curvature base. BARRIL feels familiar to the eyes while still offering the novelty of grace.",
-        "Nine sizes make this the workhorse of the catalogue, covering everything from a 9 cm desk piece to a 36 cm floor-standing planter."
+        "Nine sizes make this the workhorse of the catalogue, covering everything from a 9 in desk piece to a 36 in floor-standing planter."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -932,63 +932,63 @@
           "sku": "BARRIL-A",
           "diameter": "36",
           "height": "36",
-          "label": "A - 36 × 36 cm"
+          "label": "A - 36 × 36 in"
         },
         {
           "variant": "B",
           "sku": "BARRIL-B",
           "diameter": "30",
           "height": "30",
-          "label": "B - 30 × 30 cm"
+          "label": "B - 30 × 30 in"
         },
         {
           "variant": "C",
           "sku": "BARRIL-C",
           "diameter": "24",
           "height": "24",
-          "label": "C - 24 × 24 cm"
+          "label": "C - 24 × 24 in"
         },
         {
           "variant": "D",
           "sku": "BARRIL-D",
           "diameter": "22",
           "height": "18",
-          "label": "D - 22 × 18 cm"
+          "label": "D - 22 × 18 in"
         },
         {
           "variant": "E",
           "sku": "BARRIL-E",
           "diameter": "18",
           "height": "18",
-          "label": "E - 18 × 18 cm"
+          "label": "E - 18 × 18 in"
         },
         {
           "variant": "F",
           "sku": "BARRIL-F",
           "diameter": "18",
           "height": "14",
-          "label": "F - 18 × 14 cm"
+          "label": "F - 18 × 14 in"
         },
         {
           "variant": "G",
           "sku": "BARRIL-G",
           "diameter": "15",
           "height": "15",
-          "label": "G - 15 × 15 cm"
+          "label": "G - 15 × 15 in"
         },
         {
           "variant": "H",
           "sku": "BARRIL-H",
           "diameter": "12",
           "height": "12",
-          "label": "H - 12 × 12 cm"
+          "label": "H - 12 × 12 in"
         },
         {
           "variant": "I",
           "sku": "BARRIL-I",
           "diameter": "12",
           "height": "9",
-          "label": "I - 12 × 9 cm"
+          "label": "I - 12 × 9 in"
         }
       ],
       "oldName": "Barril"
@@ -1000,11 +1000,11 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 36 × 26 cm",
-        "B - 31 × 22 cm",
-        "C - 25 × 18 cm",
-        "D - 19 × 14 cm",
-        "E - 14 × 10 cm"
+        "A - 36 × 26 in",
+        "B - 31 × 22 in",
+        "C - 25 × 18 in",
+        "D - 19 × 14 in",
+        "E - 14 × 10 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
@@ -1064,35 +1064,35 @@
           "sku": "DOMO-A",
           "diameter": "36",
           "height": "26",
-          "label": "A - 36 × 26 cm"
+          "label": "A - 36 × 26 in"
         },
         {
           "variant": "B",
           "sku": "DOMO-B",
           "diameter": "31",
           "height": "22",
-          "label": "B - 31 × 22 cm"
+          "label": "B - 31 × 22 in"
         },
         {
           "variant": "C",
           "sku": "DOMO-C",
           "diameter": "25",
           "height": "18",
-          "label": "C - 25 × 18 cm"
+          "label": "C - 25 × 18 in"
         },
         {
           "variant": "D",
           "sku": "DOMO-D",
           "diameter": "19",
           "height": "14",
-          "label": "D - 19 × 14 cm"
+          "label": "D - 19 × 14 in"
         },
         {
           "variant": "E",
           "sku": "DOMO-E",
           "diameter": "14",
           "height": "10",
-          "label": "E - 14 × 10 cm"
+          "label": "E - 14 × 10 in"
         }
       ],
       "oldName": "Domo"
@@ -1104,11 +1104,11 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 16 × 30 cm",
-        "B - 14 × 22 cm",
-        "C - 14 × 14 cm",
-        "D - 12 × 16 cm",
-        "E - 10 × 11 cm"
+        "A - 16 × 30 in",
+        "B - 14 × 22 in",
+        "C - 14 × 14 in",
+        "D - 12 × 16 in",
+        "E - 10 × 11 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
@@ -1162,35 +1162,35 @@
           "sku": "FLUTE-A",
           "diameter": "16",
           "height": "30",
-          "label": "A - 16 × 30 cm"
+          "label": "A - 16 × 30 in"
         },
         {
           "variant": "B",
           "sku": "FLUTE-B",
           "diameter": "14",
           "height": "22",
-          "label": "B - 14 × 22 cm"
+          "label": "B - 14 × 22 in"
         },
         {
           "variant": "C",
           "sku": "FLUTE-C",
           "diameter": "14",
           "height": "14",
-          "label": "C - 14 × 14 cm"
+          "label": "C - 14 × 14 in"
         },
         {
           "variant": "D",
           "sku": "FLUTE-D",
           "diameter": "12",
           "height": "16",
-          "label": "D - 12 × 16 cm"
+          "label": "D - 12 × 16 in"
         },
         {
           "variant": "E",
           "sku": "FLUTE-E",
           "diameter": "10",
           "height": "11",
-          "label": "E - 10 × 11 cm"
+          "label": "E - 10 × 11 in"
         }
       ],
       "oldName": "Flute"
@@ -1202,14 +1202,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 18 × 26 cm"
+        "A - 18 × 26 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "As our imagination crystallizes itself into a hex-faceted module, we observe it take shape as a beautiful form offering depth & illusion. HONEYCOMB offers the excitement of a shape that changes and comes to life in the space as one moves around it.",
       "story": [
         "As our imagination crystallizes itself into a hex-faceted module, we observe it take shape as a beautiful form offering depth & illusion. HONEYCOMB offers the excitement of a shape that changes and comes to life in the space as one moves around it.",
-        "A single 18 × 26 cm size. The faceting does the work here, so it is best given room to be walked around."
+        "A single 18 × 26 in size. The faceting does the work here, so it is best given room to be walked around."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1248,7 +1248,7 @@
           "sku": "HONEYCOMB-A",
           "diameter": "18",
           "height": "26",
-          "label": "A - 18 × 26 cm"
+          "label": "A - 18 × 26 in"
         }
       ],
       "oldName": "Cryst"
@@ -1260,14 +1260,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 11 × 14.5 cm"
+        "A - 11 × 14.5 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Shaped like a beloved fruit that surprises with its distinctly flavoured presence, OLIV dances the line between expectation and reality with ease. The slight change in proportions masterfully plays with the idea of appropriation in inspiration, while leaving us with a fresh form to enjoy.",
       "story": [
         "Shaped like a beloved fruit that surprises with its distinctly flavoured presence, OLIV dances the line between expectation and reality with ease. The slight change in proportions masterfully plays with the idea of appropriation in inspiration, while leaving us with a fresh form to enjoy.",
-        "A single 11 × 14.5 cm piece, scaled for desks, shelves, and console tables."
+        "A single 11 × 14.5 in piece, scaled for desks, shelves, and console tables."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1301,7 +1301,7 @@
           "sku": "OLIV-A",
           "diameter": "11",
           "height": "14.5",
-          "label": "A - 11 × 14.5 cm"
+          "label": "A - 11 × 14.5 in"
         }
       ],
       "oldName": "Oliv"
@@ -1313,14 +1313,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 9 × 8 cm"
+        "A - 9 × 8 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "One of our most detailed designs, with a personality that does not shy away from grabbing eyeballs. QUILT plays with an embossed diamond grid, further enhanced by its gently curved profile, coming alive as light around it changes.",
       "story": [
         "One of our most detailed designs, with a personality that does not shy away from grabbing eyeballs. QUILT plays with an embossed diamond grid, further enhanced by its gently curved profile, coming alive as light around it changes.",
-        "The most detailed surface in the catalogue at the smallest scale, at 9 × 8 cm."
+        "The most detailed surface in the catalogue at the smallest scale, at 9 × 8 in."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1364,7 +1364,7 @@
           "sku": "QUILT-A",
           "diameter": "9",
           "height": "8",
-          "label": "A - 9 × 8 cm"
+          "label": "A - 9 × 8 in"
         }
       ],
       "oldName": "Quilt"
@@ -1376,17 +1376,17 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 24x12 × 12 cm",
-        "B - 36x12 × 12 cm",
-        "C - 24x16 × 12 cm",
-        "D - 36x16 × 12 cm"
+        "A - 24x12 × 12 in",
+        "B - 36x12 × 12 in",
+        "C - 24x16 × 12 in",
+        "D - 36x16 × 12 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Imagined in the three standard planes, connecting orthogonally into parallel projections; BALCORA offers infinite possibilities of humble forms not only in creation but also placement in space. The flexibility it offers is unparalleled, pertaining to its modular nature.",
       "story": [
         "Imagined in the three standard planes, connecting orthogonally into parallel projections; BALCORA offers infinite possibilities of humble forms not only in creation but also placement in space. The flexibility it offers is unparalleled, pertaining to its modular nature.",
-        "Four rectangular formats between 24 and 36 cm long that line up end to end, which makes them useful as hedges, dividers, and balcony runs."
+        "Four rectangular formats between 24 and 36 in long that line up end to end, which makes them useful as hedges, dividers, and balcony runs."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1436,28 +1436,28 @@
           "sku": "BALCORA-A",
           "diameter": "24x12",
           "height": "12",
-          "label": "A - 24x12 × 12 cm"
+          "label": "A - 24x12 × 12 in"
         },
         {
           "variant": "B",
           "sku": "BALCORA-B",
           "diameter": "36x12",
           "height": "12",
-          "label": "B - 36x12 × 12 cm"
+          "label": "B - 36x12 × 12 in"
         },
         {
           "variant": "C",
           "sku": "BALCORA-C",
           "diameter": "24x16",
           "height": "12",
-          "label": "C - 24x16 × 12 cm"
+          "label": "C - 24x16 × 12 in"
         },
         {
           "variant": "D",
           "sku": "BALCORA-D",
           "diameter": "36x16",
           "height": "12",
-          "label": "D - 36x16 × 12 cm"
+          "label": "D - 36x16 × 12 in"
         }
       ],
       "oldName": "Axis"
@@ -1469,8 +1469,8 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 32 × 11 cm",
-        "B - 26 × 9 cm"
+        "A - 32 × 11 in",
+        "B - 26 × 9 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
@@ -1521,14 +1521,14 @@
           "sku": "LAGUNA-A",
           "diameter": "32",
           "height": "11",
-          "label": "A - 32 × 11 cm"
+          "label": "A - 32 × 11 in"
         },
         {
           "variant": "B",
           "sku": "LAGUNA-B",
           "diameter": "26",
           "height": "9",
-          "label": "B - 26 × 9 cm"
+          "label": "B - 26 × 9 in"
         }
       ],
       "oldName": "Oasis"
@@ -1540,14 +1540,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 10.5 × 29 cm"
+        "A - 10.5 × 29 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Resembling the ever potent layers of the earth below us, shaped into something so sublime and timeless. AMPHORA connects the process with the concept in the way it's designed.",
       "story": [
         "Resembling the ever potent layers of the earth below us, shaped into something so sublime and timeless. AMPHORA connects the process with the concept in the way it's designed.",
-        "The tallest of the three jars, at 10.5 × 29 cm. Shown as a set with OLLA and TINAJA in the Antique Trio."
+        "The tallest of the three jars, at 10.5 × 29 in. Shown as a set with OLLA and TINAJA in the Antique Trio."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1582,7 +1582,7 @@
           "sku": "AMPHORA-A",
           "diameter": "10.5",
           "height": "29",
-          "label": "A - 10.5 × 29 cm"
+          "label": "A - 10.5 × 29 in"
         }
       ],
       "oldName": "Urth",
@@ -1599,14 +1599,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "B - 12 × 18 cm"
+        "B - 12 × 18 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "The soft curves merging with intentional exaggeration of form prove fruitful when one instantly feels warmth & endearment when looking at it; OLLA plays upon anachronistic wisdom and connects us to something timeless and familiar.",
       "story": [
         "The soft curves merging with intentional exaggeration of form prove fruitful when one instantly feels warmth & endearment when looking at it; OLLA plays upon anachronistic wisdom and connects us to something timeless and familiar.",
-        "The middle jar at 12 × 18 cm, and the widest of the three relative to its height."
+        "The middle jar at 12 × 18 in, and the widest of the three relative to its height."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1646,7 +1646,7 @@
           "sku": "OLLA-B",
           "diameter": "12",
           "height": "18",
-          "label": "B - 12 × 18 cm"
+          "label": "B - 12 × 18 in"
         }
       ],
       "oldName": "Clay",
@@ -1663,14 +1663,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "C - 10 × 14 cm"
+        "C - 10 × 14 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Stylish as it is, the form is inspired from a lump of earth slowly pressed and shaped by human hands. While TINAJA takes inspiration from a universal grounded experience, it yet is presented as a very fashionable form.",
       "story": [
         "Stylish as it is, the form is inspired from a lump of earth slowly pressed and shaped by human hands. While TINAJA takes inspiration from a universal grounded experience, it yet is presented as a very fashionable form.",
-        "The smallest jar at 10 × 14 cm, which puts it at tabletop scale alongside its two larger siblings."
+        "The smallest jar at 10 × 14 in, which puts it at tabletop scale alongside its two larger siblings."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1705,7 +1705,7 @@
           "sku": "TINAJA-C",
           "diameter": "10",
           "height": "14",
-          "label": "C - 10 × 14 cm"
+          "label": "C - 10 × 14 in"
         }
       ],
       "oldName": "Kao",
@@ -1729,7 +1729,7 @@
       "summary": "The three antique jars specified together. AMPHORA, OLLA and TINAJA share a surface and a lineage but not a silhouette, so the set reads as a considered group rather than a repeated form.",
       "story": [
         "The three antique jars specified together. AMPHORA, OLLA and TINAJA share a surface and a lineage but not a silhouette, so the set reads as a considered group rather than a repeated form.",
-        "Supplied as a set of three: AMPHORA at 10.5 × 29 cm, OLLA at 12 × 18 cm, and TINAJA at 10 × 14 cm. Each is also available on its own."
+        "Supplied as a set of three: AMPHORA at 10.5 × 29 in, OLLA at 12 × 18 in, and TINAJA at 10 × 14 in. Each is also available on its own."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1775,18 +1775,18 @@
     {
       "slug": "bead",
       "name": "BEAD",
-      "subtitle": "A 6 cm ellipsoid, alone or in a bunch.",
+      "subtitle": "A 6 in ellipsoid, alone or in a bunch.",
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 6 × 6 cm"
+        "A - 6 × 6 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Despite being small in size, these ellipsoids have an impactful space presence. BEAD is great as both a stand-alone piece or as a bunch, lending lively amusement to any space no matter the scale.",
       "story": [
         "Despite being small in size, these ellipsoids have an impactful space presence. BEAD is great as both a stand-alone piece or as a bunch, lending lively amusement to any space no matter the scale.",
-        "At 6 × 6 cm this is the smallest piece LEAFO makes. Specified in quantity, it behaves more like a surface treatment than a planter."
+        "At 6 × 6 in this is the smallest piece LEAFO makes. Specified in quantity, it behaves more like a surface treatment than a planter."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -1845,7 +1845,7 @@
           "sku": "BEAD-A",
           "diameter": "6",
           "height": "6",
-          "label": "A - 6 × 6 cm"
+          "label": "A - 6 × 6 in"
         }
       ],
       "oldName": "Bead"
@@ -1960,14 +1960,14 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 24x12 × 12 cm"
+        "A - 24x12 × 12 in"
       ],
       "finish": "Wooden",
       "priceNote": "",
       "summary": "Taking the legacy of BALCORA further, this one adds more layers of personality; MADERA comes in wooden textures of your choice, put up as planks. Despite its genesis from a rural element, these look sophisticated in all sorts of applications.",
       "story": [
         "Taking the legacy of BALCORA further, this one adds more layers of personality; MADERA comes in wooden textures of your choice, put up as planks. Despite its genesis from a rural element, these look sophisticated in all sorts of applications.",
-        "A 24 × 12 × 12 cm box in the wood-grain finish, with the plank line carried across the face. Sits alongside BALCORA in the same modular logic."
+        "A 24 × 12 × 12 in box in the wood-grain finish, with the plank line carried across the face. Sits alongside BALCORA in the same modular logic."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -2013,7 +2013,7 @@
           "sku": "MADERA-A",
           "diameter": "24x12",
           "height": "12",
-          "label": "A - 24x12 × 12 cm"
+          "label": "A - 24x12 × 12 in"
         }
       ],
       "oldName": "Barn"
@@ -2025,18 +2025,18 @@
       "category": "Collection",
       "material": "Fiber-reinforced plastic (FRP)",
       "sizes": [
-        "A - 32.5 × 30 cm",
-        "B - 27 × 26 cm",
-        "C - 23 × 22 cm",
-        "D - 19 × 18 cm",
-        "E - 14.5 × 14 cm"
+        "A - 32.5 × 30 in",
+        "B - 27 × 26 in",
+        "C - 23 × 22 in",
+        "D - 19 × 18 in",
+        "E - 14.5 × 14 in"
       ],
       "finish": "Matt · Glossy · Texture · Wooden",
       "priceNote": "",
       "summary": "Taking inspiration from clay cups made on a spinning wheel, as if the centrifugal force is giving it the widened shape; COVA could be called a close kin to PINO in the way its base takes shape. The difference lies in the upper half as it opens up, creating a symbolic step forward in our design archive.",
       "story": [
         "Taking inspiration from clay cups made on a spinning wheel, as if the centrifugal force is giving it the widened shape; COVA could be called a close kin to PINO in the way its base takes shape. The difference lies in the upper half as it opens up, creating a symbolic step forward in our design archive.",
-        "Five sizes from 14.5 to 32.5 cm. The open upper half gives planting room to spill over the rim."
+        "Five sizes from 14.5 to 32.5 in. The open upper half gives planting room to spill over the rim."
       ],
       "features": [
         "Indoor · Outdoor · Both",
@@ -2093,35 +2093,35 @@
           "sku": "COVA-A",
           "diameter": "32.5",
           "height": "30",
-          "label": "A - 32.5 × 30 cm"
+          "label": "A - 32.5 × 30 in"
         },
         {
           "variant": "B",
           "sku": "COVA-B",
           "diameter": "27",
           "height": "26",
-          "label": "B - 27 × 26 cm"
+          "label": "B - 27 × 26 in"
         },
         {
           "variant": "C",
           "sku": "COVA-C",
           "diameter": "23",
           "height": "22",
-          "label": "C - 23 × 22 cm"
+          "label": "C - 23 × 22 in"
         },
         {
           "variant": "D",
           "sku": "COVA-D",
           "diameter": "19",
           "height": "18",
-          "label": "D - 19 × 18 cm"
+          "label": "D - 19 × 18 in"
         },
         {
           "variant": "E",
           "sku": "COVA-E",
           "diameter": "14.5",
           "height": "14",
-          "label": "E - 14.5 × 14 cm"
+          "label": "E - 14.5 × 14 in"
         }
       ],
       "oldName": "Vessel",
